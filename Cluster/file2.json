@@ -1,0 +1,94 @@
+{
+    "size": 1000,
+    "query": {
+        "terms": {
+            "blogpost_id": [
+                3,
+                8,
+                10
+            ],
+            "boost": 1.0
+        }
+    },
+    "_source": {
+        "includes": [
+            "@version",
+            "blogger",
+            "blogpost_id",
+            "blogsite_id",
+            "categories",
+            "influence_score",
+            "language",
+            "location",
+            "num_comments",
+            "num_inlinks",
+            "num_outlinks",
+            "permalink",
+            "post",
+            "post_length",
+            "sentiment",
+            "tags",
+            "title"
+        ],
+        "excludes": []
+    },
+    "docvalue_fields": [
+        {
+            "field": "@timestamp",
+            "format": "epoch_millis"
+        },
+        {
+            "field": "date",
+            "format": "epoch_millis"
+        }
+    ],
+    "sort": [
+        {
+            "_doc": {
+                "order": "asc"
+            }
+        }
+    ]
+}
+
+
+{
+    "size": 1000,
+    "slice": {
+        "max": 2,
+        "id": 1
+    },
+    "query": {
+        "bool": {
+            "adjust_pure_negative": true,
+            "must": [
+                {
+                    "terms": {
+                        "boost": 1,
+                        "blogsiteid": [
+                            182,
+                            142
+                           
+                        ],"blogpost_id": [
+                            3,
+                            8,
+                            10
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "date": {
+                            "include_lower": true,
+                            "include_upper": true,
+                            "from": "2007-08-23",
+                            "boost": 1,
+                            "to": "2018-12-07"
+                        }
+                    }
+                }
+            ],
+            "boost": 1
+        }
+    }
+}

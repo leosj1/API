@@ -1,5 +1,7 @@
 # importing the requests library
 import requests
+import json
+import urllib
 
 # # defining the api-endpoint
 # API_ENDPOINT = "http://144.167.35.138:5000/clusterings"
@@ -36,27 +38,35 @@ import requests
 
 id_ = ""
 
+
 def get_comments_data(comment_id):
-    API_ENDPOINT = "https://public-api.wordpress.com/rest/v1/sites/70000375/comments/" + str(comment_id)
-    r = requests.get(url = API_ENDPOINT, params = {}) 
+    API_ENDPOINT = "https://public-api.wordpress.com/rest/v1/sites/70000375/comments/" + \
+        str(comment_id)
+    r = requests.get(url=API_ENDPOINT, params={})
     if r.status_code == 200:
-        d = r.json() 
+        d = r.json()
     return d
+
 
 def get_stats_data(post_id):
-    API_ENDPOINT = "https://public-api.wordpress.com/rest/v1/sites/70000375/posts/" + str(post_id)
-    r = requests.get(url = API_ENDPOINT, params = {}) 
+    API_ENDPOINT = "https://public-api.wordpress.com/rest/v1/sites/70000375/posts/" + \
+        str(post_id)
+    r = requests.get(url=API_ENDPOINT, params={})
     if r.status_code == 200:
-        d = r.json() 
+        d = r.json()
     return d
+
 
 def make_api_request(endpoint):
-    r = requests.get(url = endpoint, params = {}) 
+    r = requests.get(url=endpoint, params={})
     if r.status_code == 200:
-        d = r.json() 
+        d = r.json()
     return d
 
+
 pids__ = ['6935', '6924', '6886', '8286']
+
+
 def build_batch(pids, siteid):
     api_url = 'https://public-api.wordpress.com/rest/v1/batch?'
     for pid in pids:
@@ -65,8 +75,9 @@ def build_batch(pids, siteid):
     return api_url
 
 # print('----',build_batch(pids__, 70000375))
-req = build_batch(pids__, 70000375)
-print(make_api_request(req))
+# req = build_batch(pids__, 70000375)
+# print(make_api_request(req))
+
 
 if id_:
     data = get_comments_data(id_)
@@ -82,7 +93,7 @@ if id_:
     links = data['meta']['links']
     # parsed_comment['links'] = links
     parsed_comment['published_date'] = data['date']
-    likes = requests.get(url = links['likes'], params = {}) 
+    likes = requests.get(url=links['likes'], params={})
 
     if likes.status_code == 200:
         likes_data = likes.json()
@@ -95,7 +106,7 @@ if id_:
         print('error in comment like')
         parsed_comment['upvotes'] = None
 
-    replies = requests.get(url = links['replies'], params = {}) 
+    replies = requests.get(url=links['replies'], params={})
     if replies.status_code == 200:
         replies_data = replies.json()
         found_replies = replies_data['found']
@@ -139,4 +150,130 @@ if pid:
 # comments = get_comments(response.url)
 # stat['comments'] =  comments['total'] if comments else None
 # stats = get_stats_data()
+body = {"query": "query CoralEmbedStream_Embed($assetId: ID, $assetUrl: String, $commentId: ID!, $hasComment: Boolean!, $excludeIgnored: Boolean, $sortBy: SORT_COMMENTS_BY!, $sortOrder: SORT_ORDER!) {\n  me {\n    id\n    state {\n      status {\n        username {\n          status\n          __typename\n        }\n        banned {\n          status\n          __typename\n        }\n        suspension {\n          until\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  asset(id: $assetId, url: $assetUrl) {\n    ...CoralEmbedStream_Configure_asset\n    ...CoralEmbedStream_Stream_asset\n    ...CoralEmbedStream_AutomaticAssetClosure_asset\n    __typename\n  }\n  ...CoralEmbedStream_Stream_root\n  ...CoralEmbedStream_Configure_root\n}\n\nfragment CoralEmbedStream_Stream_root on RootQuery {\n  me {\n    state {\n      status {\n        username {\n          status\n          __typename\n        }\n        banned {\n          status\n          __typename\n        }\n        suspension {\n          until\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    ignoredUsers {\n      id\n      __typename\n    }\n    role\n    __typename\n  }\n  settings {\n    organizationName\n    __typename\n  }\n  ...TalkSlot_StreamFilter_root\n  ...CoralEmbedStream_Comment_root\n  __typename\n}\n\nfragment CoralEmbedStream_Comment_root on RootQuery {\n  me {\n    ignoredUsers {\n      id\n      __typename\n    }\n    __typename\n  }\n  ...TalkSlot_CommentInfoBar_root\n  ...TalkSlot_CommentAuthorName_root\n  ...TalkEmbedStream_DraftArea_root\n  ...TalkEmbedStream_DraftArea_root\n  __typename\n}\n\nfragment TalkEmbedStream_DraftArea_root on RootQuery {\n  __typename\n}\n\nfragment CoralEmbedStream_Stream_asset on Asset {\n  comment(id: $commentId) @include(if: $hasComment) {\n    ...CoralEmbedStream_Stream_comment\n    parent {\n      ...CoralEmbedStream_Stream_singleComment\n      parent {\n        ...CoralEmbedStream_Stream_singleComment\n        parent {\n          ...CoralEmbedStream_Stream_singleComment\n          parent {\n            ...CoralEmbedStream_Stream_singleComment\n            parent {\n              ...CoralEmbedStream_Stream_singleComment\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  id\n  title\n  url\n  isClosed\n  created_at\n  settings {\n    moderation\n    infoBoxEnable\n    infoBoxContent\n    premodLinksEnable\n    questionBoxEnable\n    questionBoxContent\n    questionBoxIcon\n    closedTimeout\n    closedMessage\n    disableCommenting\n    disableCommentingMessage\n    charCountEnable\n    charCount\n    requireEmailConfirmation\n    __typename\n  }\n  totalCommentCount @skip(if: $hasComment)\n  comments(query: {limit: 50000, excludeIgnored: $excludeIgnored, sortOrder: $sortOrder, sortBy: $sortBy}) @skip(if: $hasComment) {\n    nodes {\n      ...CoralEmbedStream_Stream_comment\n      __typename\n    }\n    hasNextPage\n    startCursor\n    endCursor\n    __typename\n  }\n  ...TalkSlot_StreamFilter_asset\n  ...CoralEmbedStream_Comment_asset\n  __typename\n}\n\nfragment CoralEmbedStream_Comment_asset on Asset {\n  __typename\n  id\n  ...TalkSlot_CommentInfoBar_asset\n  ...TalkSlot_CommentReactions_asset\n  ...TalkSlot_CommentAuthorName_asset\n}\n\nfragment CoralEmbedStream_Stream_comment on Comment {\n  id\n  status\n  user {\n    id\n    __typename\n  }\n  ...CoralEmbedStream_Comment_comment\n  __typename\n}\n\nfragment CoralEmbedStream_Comment_comment on Comment {\n  ...CoralEmbedStream_Comment_SingleComment\n  replies(query: {limit : 50000, excludeIgnored: $excludeIgnored}) {\n    nodes {\n      ...CoralEmbedStream_Comment_SingleComment\n      replies(query: {limit : 50000, excludeIgnored: $excludeIgnored}) {\n        nodes {\n          ...CoralEmbedStream_Comment_SingleComment\n          replies(query: {limit : 50000, excludeIgnored: $excludeIgnored}) {\n            nodes {\n              ...CoralEmbedStream_Comment_SingleComment\n              replies(query: {limit : 50000, excludeIgnored: $excludeIgnored}) {\n                nodes {\n                  ...CoralEmbedStream_Comment_SingleComment\n                  replies(query: {limit : 50000, excludeIgnored: $excludeIgnored}) {\n                    nodes {\n                      ...CoralEmbedStream_Comment_SingleComment\n                      __typename\n                    }\n                    hasNextPage\n                    startCursor\n                    endCursor\n                    __typename\n                  }\n                  __typename\n                }\n                hasNextPage\n                startCursor\n                endCursor\n                __typename\n              }\n              __typename\n            }\n            hasNextPage\n            startCursor\n            endCursor\n            __typename\n          }\n          __typename\n        }\n        hasNextPage\n        startCursor\n        endCursor\n        __typename\n      }\n      __typename\n    }\n    hasNextPage\n    startCursor\n    endCursor\n    __typename\n  }\n  __typename\n}\n\nfragment CoralEmbedStream_Comment_SingleComment on Comment {\n  id\n  body\n  created_at\n  status\n  replyCount\n  tags {\n    tag {\n      name\n      __typename\n    }\n    __typename\n  }\n  user {\n    id\n    username\n    __typename\n  }\n  status_history {\n    type\n    __typename\n  }\n  action_summaries {\n    __typename\n    count\n    current_user {\n      id\n      __typename\n    }\n  }\n  editing {\n    edited\n    editableUntil\n    __typename\n  }\n  ...TalkSlot_CommentInfoBar_comment\n  ...TalkSlot_CommentReactions_comment\n  ...TalkSlot_CommentAvatar_comment\n  ...TalkSlot_CommentAuthorName_comment\n  ...TalkSlot_CommentContent_comment\n  ...TalkEmbedStream_DraftArea_comment\n  ...TalkEmbedStream_DraftArea_comment\n  __typename\n}\n\nfragment TalkEmbedStream_DraftArea_comment on Comment {\n  __typename\n  ...TalkSlot_DraftArea_comment\n}\n\nfragment CoralEmbedStream_Stream_singleComment on Comment {\n  id\n  status\n  user {\n    id\n    __typename\n  }\n  ...CoralEmbedStream_Comment_SingleComment\n  __typename\n}\n\nfragment CoralEmbedStream_Configure_root on RootQuery {\n  __typename\n  ...CoralEmbedStream_Settings_root\n}\n\nfragment CoralEmbedStream_Settings_root on RootQuery {\n  __typename\n}\n\nfragment CoralEmbedStream_Configure_asset on Asset {\n  __typename\n  ...CoralEmbedStream_AssetStatusInfo_asset\n  ...CoralEmbedStream_Settings_asset\n}\n\nfragment CoralEmbedStream_AssetStatusInfo_asset on Asset {\n  id\n  closedAt\n  isClosed\n  __typename\n}\n\nfragment CoralEmbedStream_Settings_asset on Asset {\n  id\n  settings {\n    moderation\n    premodLinksEnable\n    questionBoxEnable\n    questionBoxIcon\n    questionBoxContent\n    __typename\n  }\n  __typename\n}\n\nfragment CoralEmbedStream_AutomaticAssetClosure_asset on Asset {\n  id\n  closedAt\n  __typename\n}\n\nfragment TalkSlot_StreamFilter_root on RootQuery {\n  ...TalkViewingOptions_ViewingOptions_root\n  __typename\n}\n\nfragment TalkViewingOptions_ViewingOptions_root on RootQuery {\n  __typename\n}\n\nfragment TalkSlot_CommentInfoBar_root on RootQuery {\n  ...TalkModerationActions_root\n  __typename\n}\n\nfragment TalkModerationActions_root on RootQuery {\n  me {\n    id\n    __typename\n  }\n  __typename\n}\n\nfragment TalkSlot_CommentAuthorName_root on RootQuery {\n  ...TalkAuthorMenu_AuthorName_root\n  __typename\n}\n\nfragment TalkAuthorMenu_AuthorName_root on RootQuery {\n  __typename\n  ...TalkSlot_AuthorMenuActions_root\n}\n\nfragment TalkSlot_StreamFilter_asset on Asset {\n  ...TalkViewingOptions_ViewingOptions_asset\n  __typename\n}\n\nfragment TalkViewingOptions_ViewingOptions_asset on Asset {\n  __typename\n}\n\nfragment TalkSlot_CommentInfoBar_asset on Asset {\n  ...TalkModerationActions_asset\n  ...TalkPermalink_Button_asset\n  __typename\n}\n\nfragment TalkModerationActions_asset on Asset {\n  id\n  __typename\n}\n\nfragment TalkPermalink_Button_asset on Asset {\n  url\n  __typename\n}\n\nfragment TalkSlot_CommentReactions_asset on Asset {\n  ...VoteButton_asset\n  __typename\n}\n\nfragment VoteButton_asset on Asset {\n  id\n  __typename\n}\n\nfragment TalkSlot_CommentAuthorName_asset on Asset {\n  ...TalkAuthorMenu_AuthorName_asset\n  __typename\n}\n\nfragment TalkAuthorMenu_AuthorName_asset on Asset {\n  __typename\n}\n\nfragment TalkSlot_CommentInfoBar_comment on Comment {\n  ...CollapseCommentButton_comment\n  ...TalkModerationActions_comment\n  ...TalkPermalink_Button_comment\n  ...TalkInfoBar_moveReportButton_Comment\n  ...TalkInfoBar_addEdiableClass_Comment\n  __typename\n}\n\nfragment CollapseCommentButton_comment on Comment {\n  id\n  replyCount\n  __typename\n}\n\nfragment TalkModerationActions_comment on Comment {\n  id\n  status\n  user {\n    id\n    __typename\n  }\n  tags {\n    tag {\n      name\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment TalkPermalink_Button_comment on Comment {\n  id\n  __typename\n}\n\nfragment TalkInfoBar_moveReportButton_Comment on Comment {\n  id\n  __typename\n}\n\nfragment TalkInfoBar_addEdiableClass_Comment on Comment {\n  id\n  editing {\n    __typename\n    editableUntil\n  }\n  __typename\n}\n\nfragment TalkSlot_CommentReactions_comment on Comment {\n  ...TalkDisableDeepReplies_disableDeepReplies_Comment\n  ...VoteButton_comment\n  __typename\n}\n\nfragment TalkDisableDeepReplies_disableDeepReplies_Comment on Comment {\n  id\n  __typename\n}\n\nfragment VoteButton_comment on Comment {\n  id\n  action_summaries {\n    __typename\n    ... on UpvoteActionSummary {\n      count\n      current_user {\n        id\n        __typename\n      }\n      __typename\n    }\n    ... on DownvoteActionSummary {\n      count\n      current_user {\n        id\n        __typename\n      }\n      __typename\n    }\n  }\n  __typename\n}\n\nfragment TalkSlot_CommentAvatar_comment on Comment {\n  ...UserAvatar_comment\n  __typename\n}\n\nfragment UserAvatar_comment on Comment {\n  user {\n    avatar\n    __typename\n  }\n  __typename\n}\n\nfragment TalkSlot_CommentAuthorName_comment on Comment {\n  ...TalkAuthorMenu_AuthorName_comment\n  __typename\n}\n\nfragment TalkAuthorMenu_AuthorName_comment on Comment {\n  __typename\n  id\n  user {\n    username\n    __typename\n  }\n  ...TalkSlot_AuthorMenuActions_comment\n}\n\nfragment TalkSlot_CommentContent_comment on Comment {\n  ...TalkPluginRichText_CommentContent_comment\n  __typename\n}\n\nfragment TalkPluginRichText_CommentContent_comment on Comment {\n  body\n  richTextBody\n  __typename\n}\n\nfragment TalkSlot_DraftArea_comment on Comment {\n  ...TalkPluginRichText_Editor_comment\n  __typename\n}\n\nfragment TalkPluginRichText_Editor_comment on Comment {\n  body\n  richTextBody\n  __typename\n}\n\nfragment TalkSlot_AuthorMenuActions_root on RootQuery {\n  ...TalkIgnoreUser_IgnoreUserAction_root\n  __typename\n}\n\nfragment TalkIgnoreUser_IgnoreUserAction_root on RootQuery {\n  me {\n    id\n    __typename\n  }\n  __typename\n}\n\nfragment TalkSlot_AuthorMenuActions_comment on Comment {\n  ...TalkIgnoreUser_IgnoreUserAction_comment\n  ...TalkDrupalUserId_DrupalProfile_comment\n  __typename\n}\n\nfragment TalkIgnoreUser_IgnoreUserAction_comment on Comment {\n  user {\n    id\n    __typename\n  }\n  ...TalkIgnoreUser_IgnoreUserConfirmation_comment\n  __typename\n}\n\nfragment TalkIgnoreUser_IgnoreUserConfirmation_comment on Comment {\n  user {\n    id\n    username\n    __typename\n  }\n  __typename\n}\n\nfragment TalkDrupalUserId_DrupalProfile_comment on Comment {\n  user {\n    id\n    __typename\n  }\n  __typename\n}\n", "variables": {"assetId": "", "assetUrl": "https://www.zerohedge.com/geopolitical/second-wave-china-orders-partial-lockdown-border-city-seouls-newest-cluster-explodes", "commentId": "", "hasComment": False, "excludeIgnored": False, "sortBy": "CREATED_AT", "sortOrder": "DESC"}, "operationName": "CoralEmbedStream_Embed"}
 
+# r = requests.post(url='https://talk.zerohedge.com/api/v1/graph/ql', json=body)
+# endpoint = "https://www.facebook.com/plugins/comments.php?app_id=249643311490&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df252110aaf68fe%26domain%3Dtorontosun.com%26origin%3Dhttps%253A%252F%252Ftorontosun.com%252Ff3d719544ed86e4%26relation%3Dparent.parent&container_width=1129&height=100&href=https%3A%2F%2Ftorontosun.com%2Fopinion%2Fcolumnists%2Flilley-ford-starts-reopening-but-not-fast-enough&locale=en_US&sdk=joey&width=1129"
+
+# r = requests.get(url=endpoint, params={})
+# # print(r)
+
+# with open("sample.json", "w") as outfile:
+#     json.dump(r.json(), outfile)
+
+
+# https://www.facebook.com/plugins/comments.php?app_id=249643311490&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df2b78156879da74%26domain%3Dtorontosun.com%26origin%3Dhttps%253A%252F%252Ftorontosun.com%252Ff1e62f813d5211c%26relation%3Dparent.parent&container_width=1129&height=100&href=https%3A%2F%2Ftorontosun.com%2Fopinion%2Fcolumnists%2Flilley-ford-starts-reopening-but-not-fast-enough&locale=en_US&sdk=joey&width=1129
+
+
+# https://www.facebook.com/plugins/feedback.php?app_id=249643311490&href=https%3A%2F%2Ftorontosun.com%2Fopinion%2Fcolumnists%2Flilley-ford-starts-reopening-but-not-fast-enough
+
+# comment_id = 3799983366738888
+
+
+def get_comments(post_url, app_id):
+    feed_url = urllib.parse.quote(post_url, safe='')
+    url = f"https://www.facebook.com/plugins/feedback.php?app_id={app_id}&href={feed_url}"
+
+    #Sending request for fb Iframe
+    r = requests.get(url)
+
+    #Getting the main comment id for the article
+    pos = r.text.find("commentIDs") + len("commentIDs") + 4
+    comment_id = r.text[pos:pos+16]
+
+    # comment_id_ = r.text[pos:pos+40]
+    # if '_' in comment_id_:
+    #     comment_id = comment_id_.split('_')[0]
+    # else:
+    #     comment_id = comment_id_
+
+    #Sending the API request for comments, loading data
+    url = f'https://www.facebook.com/plugins/comments/async/{comment_id}/pager/social/'
+
+    form_data = {
+        'limit': 500000,
+        '__a': 1}
+
+    session = requests.Session()
+    r = session.post(url, data=form_data)
+
+    if len(r.content) <= 13:
+        #No comments on the page
+        return None, None
+    else:
+        try:
+            data = json.loads(r.content[9:])
+        except Exception as e:
+            # This only happened once with a very old commnet
+            if "something went wrong" in r.content.decode('utf-8'):
+                # error_url = f"https://www.facebook.com/plugins/feedback.php?app_id=162111247988300&href={buzzfeed_url}"
+                # raise Exception(f"Facebook had trouble getting these comments: {error_url}")
+                pass
+            else:
+                print(e)
+
+    #Parsing the comments
+    comment_list = []
+    author_list = []
+    comments = data['payload']['idMap']
+    for item in comments:
+        # Checking if it's a comment, comments have a longer id than just the comment id, checking that is comment type
+        if comment_id in item and comment_id != item and comments[item]['type'] == 'comment':
+            comment_list.append(comments[item])
+            #Sending additional requests for replies
+            if 'public_replies' in comments[item] and 'afterCursor' in comments[item]['public_replies']:
+                replies, authors = get_replies(item, comments[item]['public_replies']['afterCursor'])
+                comment_list += replies
+                author_list += authors
+        else:
+            author_list.append(comments[item])
+
+    return comment_list, author_list
+
+
+def get_replies(comment_id, after_cursor):
+    #Sending replies request, loading data
+    url = f'https://www.facebook.com/plugins/comments/async/comment/{comment_id}/pager/'
+    form_data = {
+    'after_cursor': after_cursor,
+    'limit': 500000,
+    '__a': 1
+    }
+    session = requests.Session()
+    r = session.post(url, data=form_data)
+    data = json.loads(r.content[9:])
+
+    #Resettign comment id, parsing replies
+    comment_list = []
+    author_list = []
+    original_id = comment_id
+    comment_id = comment_id[:16]
+    comments = data['payload']['idMap']
+    for item in comments:
+        # Checking if it's a comment, comments have a longer id than just the comment id, checking that it is comment type
+        if comment_id in item and comment_id != item and comments[item]['type'] == 'comment':
+            comment_list.append(comments[item])
+            #Sending additional requests for replies
+            if 'public_replies' in comments[item] and 'afterCursor' in comments[item]['public_replies']:
+                replies, authors = get_replies(item, comments[item]['public_replies']['afterCursor'])
+                comment_list += replies
+                author_list += authors
+        elif item != original_id:
+            author_list.append(comments[item])
+    return comment_list, author_list
+
+
+url__ = 'https://torontosun.com/'
+comments = get_comments(url__, 249643311490)
+
+with open("comment_list.json", "w") as outfile:
+    json.dump(comments[0], outfile)
+
+with open("author_list.json", "w") as outfile:
+    json.dump(comments[1], outfile)
+
+if comments[0]:
+    print('number of comments', len(comments[0]))
+    print('number of authors', len(comments[1]))
+    
+# print(get_comments(url__)[0])

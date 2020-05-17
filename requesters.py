@@ -2,6 +2,7 @@
 import requests
 import json
 import urllib
+import re
 
 # # defining the api-endpoint
 # API_ENDPOINT = "http://144.167.35.138:5000/clusterings"
@@ -177,9 +178,20 @@ def get_comments(post_url, app_id):
     #Sending request for fb Iframe
     r = requests.get(url)
 
+    commentcount = 0
+    s = str(r.text)
+    if 'instances' in s:
+        res = re.search('({\"instances\".+}\);)', s).group(0)
+        if str(res)[-2:] == ');':
+            commentcount = json.loads(str(res)[:-2])['require'][2][3][0]['props']['meta']['totalCount']
+
+    print('commentcount--',commentcount)
+
     #Getting the main comment id for the article
     pos = r.text.find("commentIDs") + len("commentIDs") + 4
     comment_id = r.text[pos:pos+16]
+
+
 
     # comment_id_ = r.text[pos:pos+40]
     # if '_' in comment_id_:
@@ -190,6 +202,8 @@ def get_comments(post_url, app_id):
     #Sending the API request for comments, loading data
     url = f'https://www.facebook.com/plugins/comments/async/{comment_id}/pager/social/'
 
+    print('commentid ---', comment_id)
+
     form_data = {
         'limit': 500000,
         '__a': 1}
@@ -197,6 +211,11 @@ def get_comments(post_url, app_id):
     session = requests.Session()
     r = session.post(url, data=form_data)
 
+    with open("sample2.txt", "w") as outfile:
+        outfile.write(str(r.content))
+
+
+    error = False
     if len(r.content) <= 13:
         #No comments on the page
         return None, None
@@ -204,18 +223,27 @@ def get_comments(post_url, app_id):
         try:
             data = json.loads(r.content[9:])
         except Exception as e:
-            # This only happened once with a very old commnet
-            if "something went wrong" in r.content.decode('utf-8'):
-                # error_url = f"https://www.facebook.com/plugins/feedback.php?app_id=162111247988300&href={buzzfeed_url}"
-                # raise Exception(f"Facebook had trouble getting these comments: {error_url}")
-                pass
-            else:
-                print(e)
+            if 'Expecting value:' in str(e):
+                error = True
+            # print('---err',e)
+    
+
+    if error and commentcount == 1:  
+        
+                # comment_array = 
+                comments = json.loads(str(res)[:-2])['require'][2][3][0]['props']['comments']['idMap']
+                print('---', comments)
+    else:
+        print('err----',error)
+        comments = data['payload']['idMap']
+                # 
+            # 
+            # json.loads(d)
 
     #Parsing the comments
     comment_list = []
     author_list = []
-    comments = data['payload']['idMap']
+    
     for item in comments:
         # Checking if it's a comment, comments have a longer id than just the comment id, checking that is comment type
         if comment_id in item and comment_id != item and comments[item]['type'] == 'comment':
@@ -242,6 +270,9 @@ def get_replies(comment_id, after_cursor):
     session = requests.Session()
     r = session.post(url, data=form_data)
     data = json.loads(r.content[9:])
+    # print('r.content---------',r.content)
+
+    
 
     #Resettign comment id, parsing replies
     comment_list = []
@@ -263,8 +294,13 @@ def get_replies(comment_id, after_cursor):
     return comment_list, author_list
 
 
-url__ = 'https://torontosun.com/'
-comments = get_comments(url__, 249643311490)
+# url__ = 'https://torontosun.com/sports/baseball/toronto-blue-jays/astros-blast-off-with-another-victory-over-blue-jays'
+
+# url__ = "https://torontosun.com/news/national/federal-covid-19-wage-subsidy-to-last-through-summer-trudeau-says/wcm/b38e4710-92ba-48cc-b256-b6c1bd1efd9c"
+# url__ = "https://torontosun.com/sports/soccer/mls/toronto-fc/the-nightmare-continues-for-fading-toronto-fc"
+url__ = "https://torontosun.com/opinion/columnists/parkin-ndp-outsider-aims-to-pry-open-ottawas-secret-ways"
+
+comments = get_comments(url__, 162111247988300)
 
 with open("comment_list.json", "w") as outfile:
     json.dump(comments[0], outfile)
@@ -275,5 +311,16 @@ with open("author_list.json", "w") as outfile:
 if comments[0]:
     print('number of comments', len(comments[0]))
     print('number of authors', len(comments[1]))
-    
+
 # print(get_comments(url__)[0])
+
+# https://www.facebook.com/plugins/feedback.php?
+# app_id=162111247988300&
+# channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df2eedbbd2b86f14%26domain%3D
+# www.buzzfeednews.com%26origin%3Dhttps%253A%252F%252F
+# www.buzzfeednews.com%252Ff2cdc29d284cb9%26relation%3Dparent.parent&container_width=443&height=100&
+# href=https%3A%2F%2Fwww.buzzfeed.com%2Fskbaer%2Fcoronavirus-beauty-industry-bailout-hairstylists&
+# locale=en_US&mobile=true&sdk=joey&version=v2.9
+
+
+# print(urllib.parse.quote('https://www.buzzfeednews.com/article/aramroston/in-an-unmarked-grave-a-baby-who-died-on-for-profit-foster-co', safe=''))

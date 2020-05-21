@@ -66,6 +66,31 @@ def query(config,sql):
 
     return result
 
+def getStatus(conf, tid, current):
+    # status = (current/total) * 100
+    status = current
+    # result = status, tid
+
+    config = conf 
+    ip = config[0]
+    user_name = config[1]
+    password = config[2]
+    db = config[3]
+
+    mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
+    mycursor = mydb.cursor()
+    print('stat',status)
+    if int(status) != 100:
+        sql = "update clusters set status = %s, status_percentage = %s where tid = %s"
+        mycursor.execute(sql,(str(0), str(status), str(tid)))
+    else:
+        sql = "update clusters set status = %s, status_percentage = %s where tid = %s"
+        mycursor.execute(sql,(str(1), str(status), str(tid)))
+
+    mydb.commit()
+    mycursor.close()
+    mydb.close()
+
 def getClusterforall(tid, conf):
     stop_words = []
     with open("C:\\API\\stopwords.txt", "r", encoding="utf-8") as f:
@@ -106,7 +131,8 @@ def getClusterforall(tid, conf):
         q_topterms = f'select terms from blogpost_terms where blogpost_id in ({post_ids})'
         topterms_result = query(conf, q_topterms)
         topterms_result
-
+        
+        
         term_dict = {}
         for i in range(len(topterms_result)):
             t = topterms_result[i][0].replace('),', '----').replace('(','').replace(']','').replace('[','').replace(')','').replace('\'','').split('----')
@@ -132,6 +158,7 @@ def getClusterforall(tid, conf):
         return final_terms
 
     # conf = (ip, user_name, password, db)
+    current_ = 5
     q_trackers = f"select * from trackers where tid = {tid}"
     tracker_result = query(conf, q_trackers)
     blogsite_ids = tracker_result[0][5].replace('blogsite_id in', '').strip()
@@ -144,6 +171,9 @@ def getClusterforall(tid, conf):
     q_total = f"select count(*) from blogposts"
     total_result = query(conf,q_total)[0][0]
     print(total_result)
+
+    current_+=5
+    getStatus(conf, tid, current_)
 
     post_ids_ = []
     posts = []
@@ -166,16 +196,24 @@ def getClusterforall(tid, conf):
 
     vectorizer = TfidfVectorizer(stop_words=stop_words)
     print('done getting vectorizer')
+    current_+=10
+    getStatus(conf, tid, current_)
     # for d in documents:
     #     if type(d) == int:
     #         print('found',d)
     vectorizer.fit(documents)
+
+    current_+=10
+    getStatus(conf, tid, current_ )
     print('done fitting data')
     X = vectorizer.transform(documents)
 
     from sklearn.decomposition import PCA, IncrementalPCA, TruncatedSVD
     data = TruncatedSVD(n_components=2, algorithm='arpack')
     new_data = data.fit_transform(X)
+
+    current_+=10
+    getStatus(conf, tid, current_)
 
 # --------------------------------------------
 
@@ -209,11 +247,14 @@ def getClusterforall(tid, conf):
     # print(len(post_ids_), len(posts), len(svd_result), len(data), len(npa))
 
     print('model and necessary parameters are ready')
+
+    current_+=10
+    getStatus(conf, tid, current_)
     # print()
     func = lambda x: str(x)
     new_list = list(map(func,post_ids_))
 
-    df = pd.DataFrame()    
+    df = pd.DataFrame()     
     df['post_id_incluster'] = new_list
     df['cluster'] = labels
     
@@ -255,6 +296,9 @@ def getClusterforall(tid, conf):
         
         test_df_transposed[f'cluster_{i + 1}'] = str(dic)
 
+        current_+=5
+        getStatus(conf, tid, current_)
+
     test_df_transposed['svd'] = str(post_id_svd)
     print(test_df_transposed)
 
@@ -269,30 +313,7 @@ def getClusterforall(tid, conf):
     p = npa, post_ids_
     return test_df_transposed,p
 
-def getStatus(conf, tid, total, current):
-    # status = (current/total) * 100
-    status = current + 2
-    # result = status, tid
 
-    config = conf 
-    ip = config[0]
-    user_name = config[1]
-    password = config[2]
-    db = config[3]
-
-    mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
-    mycursor = mydb.cursor()
-    print('stat',status)
-    if int(status) != 100:
-        sql = "update clusters set status = %s, status_percentage = %s where tid = %s"
-        mycursor.execute(sql,(str(0), str(status), str(tid)))
-    else:
-        sql = "update clusters set status = %s, status_percentage = %s where tid = %s"
-        mycursor.execute(sql,(str(1), str(status), str(tid)))
-
-    mydb.commit()
-    mycursor.close()
-    mydb.close()
 
 def insert_to_cluster(conf, data, tid):
     error = False
@@ -317,9 +338,11 @@ def insert_to_cluster(conf, data, tid):
     print('insertion')
     for i,row in data.iterrows():
         sql = "INSERT INTO `clusters` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
-        
+        print('done inserting to clusters')
         try:
             cursor.execute(sql, tuple(row))
+            connection.commit()
+            connection.close()
         except Exception as e:
             print('originall error', e)
             if 'Duplicate entry' in str(e):
@@ -405,27 +428,22 @@ def upd(all_):
         # x.to_sql('test_upsert', engine, if_exists='append', index=True)
     except Exception as e:
         print(e)
+
 # RUN FOR ALL TRACKERS
-conf = getconf()
+# conf = getconf()
 # for tracker_id in query(conf, "select tid from trackers where userid = 'nihal1' and tid > 238"):
 #     tid = tracker_id[0]
 #     try:
 #         all_ = getClusterforall(tid, conf)
-#         insert_to_cluster(conf,all_[0])
+#         insert_to_cluster(conf,all_[0],tid)
 #         # print('updating svd')y
 #         # upd(all_)
 #     except Exception as e:
 #         print(tid, e)
 
-# # tid = 233
-# for tid in [244,361,429]:
-#     all_ = getClusterforall(tid, conf)
-#     insert_to_cluster(conf,all_[0],tid)
-# upd(all_)
-
-# end = datetime.now()
-# print(f'it took {end - start}')
-# insert_to_cluster(conf,all_[0])
-
-# end = datetime.now()
-# print(f'it took {end - start}')
+# TEST FOR ONE TRACKER
+conf = getconf()
+tid = 7
+all_ = getClusterforall(tid, conf)
+insert_to_cluster(conf,all_[0], tid)
+getStatus(conf, tid, 100)

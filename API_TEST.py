@@ -172,7 +172,7 @@ class Clusters(Resource):
     def post(self):
         conf = c.getconf()
         some_json = request.get_json()
-        print('somejson', some_json)
+        
         tid = some_json['tracker_id']
 
         compare = lambda x, y: collections.Counter(x) == collections.Counter(y)
@@ -181,17 +181,23 @@ class Clusters(Resource):
 
         tracker_details = t.query(conf,f'select query from trackers where tid = {tracker_id}')
 
-        prev_tids = tracker_details[0][0].replace('blogsite_id in (', '').replace(')','').strip()
-        prev_terms_ids = t.query(conf,f'select query from tracker_keyword where tid = {tracker_id}')[0][0].replace('blogsite_id in (', '').replace(')','').strip()
+        count_q = t.query(conf,f'select count(*) from blogposts where {tracker_details[0][0]}')
 
-        prev_tid_split = t.cleanbrackets(prev_tids).split(',')
-        prev_terms_ids_split = t.cleanbrackets(prev_terms_ids).split(',')
+    
+        count_cluster = t.query(conf,f'select total from clusters where tid = {tracker_id}')
+        if not count_cluster:
+            count_cluster=[[0]]
+            print('-------here')
+
+        print('tracker_details--',count_cluster[0][0])
+        # print('somejson', some_json,prev_tid_split,prev_terms_ids_split)
         
-        if not compare(prev_tid_split, prev_terms_ids_split):
-            try:
-                
+
+        if count_q[0][0] != count_cluster[0][0]:
+            try:            
                 all_ = c.getClusterforall(tid, conf)
                 c.insert_to_cluster(conf,all_[0], tid)
+                print('tid-----',tid)
             except Exception as e:
                 print(e)
 

@@ -298,9 +298,9 @@ def get_replies(comment_id, after_cursor):
 
 # url__ = "https://torontosun.com/news/national/federal-covid-19-wage-subsidy-to-last-through-summer-trudeau-says/wcm/b38e4710-92ba-48cc-b256-b6c1bd1efd9c"
 # url__ = "https://torontosun.com/sports/soccer/mls/toronto-fc/the-nightmare-continues-for-fading-toronto-fc"
-url__ = "https://torontosun.com/opinion/columnists/parkin-ndp-outsider-aims-to-pry-open-ottawas-secret-ways"
+url__ = "https://globalnews.ca/video/6955756/investigation-underway-into-cf-snowbirds-crash-in-b-c/"
 
-comments = get_comments(url__, 162111247988300)
+comments = get_comments(url__, 318812448281278)
 
 with open("comment_list.json", "w") as outfile:
     json.dump(comments[0], outfile)
@@ -324,3 +324,5 @@ if comments[0]:
 
 
 # print(urllib.parse.quote('https://www.buzzfeednews.com/article/aramroston/in-an-unmarked-grave-a-baby-who-died-on-for-profit-foster-co', safe=''))
+
+

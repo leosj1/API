@@ -197,6 +197,7 @@ class Clusters(Resource):
             try:            
                 all_ = c.getClusterforall(tid, conf)
                 c.insert_to_cluster(conf,all_[0], tid)
+                c.getStatus(conf, tid, 100)
                 print('tid-----',tid)
             except Exception as e:
                 print(e)

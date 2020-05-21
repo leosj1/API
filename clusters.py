@@ -442,8 +442,8 @@ def upd(all_):
 #         print(tid, e)
 
 # TEST FOR ONE TRACKER
-conf = getconf()
-tid = 7
-all_ = getClusterforall(tid, conf)
-insert_to_cluster(conf,all_[0], tid)
-getStatus(conf, tid, 100)
+# conf = getconf()
+# tid = 7
+# all_ = getClusterforall(tid, conf)
+# insert_to_cluster(conf,all_[0], tid)
+# getStatus(conf, tid, 100)

@@ -151,7 +151,7 @@ class Test(Resource):
                 return jsonify({'success':'No changes made'})
             elif type_ == 'delete':
                 # result = t.getTerms(tracker_id,conf)
-                t.delete_terms(tracker_id, conf)
+                t.delete_terms_and_cluster(tracker_id, conf)
                 return jsonify({'success':'Tracker and details deleted'})
             else:
                 return jsonify({'error':result})
@@ -187,6 +187,7 @@ class Clusters(Resource):
         count_cluster = t.query(conf,f'select total from clusters where tid = {tracker_id}')
         if not count_cluster:
             count_cluster=[[0]]
+            c.insert_single_cluster(tid, 0, 0, conf) 
             print('-------here')
 
         print('tracker_details--',count_cluster[0][0])
@@ -194,7 +195,9 @@ class Clusters(Resource):
         
 
         if count_q[0][0] != count_cluster[0][0]:
-            try:            
+             
+            try:  
+                        
                 all_ = c.getClusterforall(tid, conf)
                 c.insert_to_cluster(conf,all_[0], tid)
                 c.getStatus(conf, tid, 100)

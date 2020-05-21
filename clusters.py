@@ -313,7 +313,27 @@ def getClusterforall(tid, conf):
     p = npa, post_ids_
     return test_df_transposed,p
 
+def insert_single_cluster(tid, status, status_percentage, conf):
+    start = datetime.now()
+    config = conf 
+    ip = config[0]
+    user_name = config[1]
+    password = config[2]
+    db = config[3]
 
+    sql = "insert into clusters (cluster_id, tid, status, status_percentage) values (%s, %s, %s, %s)"
+    mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
+    mycursor = mydb.cursor()
+    # print((str(tid), str(result), str(query)))
+    mycursor.execute(sql,(str(tid), str(tid), str(status), str(status_percentage)))   
+    # result = mycursor.fetchall()
+    mydb.commit()
+
+    mycursor.close()
+    mydb.close()
+
+    end = datetime.now()
+    print(f'it took {end - start}')
 
 def insert_to_cluster(conf, data, tid):
     error = False
@@ -431,11 +451,12 @@ def upd(all_):
 
 # RUN FOR ALL TRACKERS
 # conf = getconf()
-# for tracker_id in query(conf, "select tid from trackers where userid = 'nihal1' and tid > 238"):
+# for tracker_id in query(conf, "select tid from trackers where userid = 'nihal1' "):
 #     tid = tracker_id[0]
 #     try:
 #         all_ = getClusterforall(tid, conf)
 #         insert_to_cluster(conf,all_[0],tid)
+#         getStatus(conf, tid, 100)
 #         # print('updating svd')y
 #         # upd(all_)
 #     except Exception as e:

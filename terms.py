@@ -180,7 +180,7 @@ def update_terms(tid, result, query, keyword_trend, conf):
     # end = datetime.now()
     # print(f'it took {end - start}')
 
-def delete_terms(tid, conf):
+def delete_terms_and_cluster(tid, conf):
     start = datetime.now()
     config = conf 
     ip = config[0]
@@ -189,9 +189,13 @@ def delete_terms(tid, conf):
     db = config[3]
 
     sql = f"delete from tracker_keyword where tid = {tid}"
+    sql2 = f"delete from clusters where cluster_id = {tid}"
+
     mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
     mycursor = mydb.cursor()
+
     mycursor.execute(sql)
+    mycursor.execute(sql2)
     # result = mycursor.fetchall()
     mydb.commit()
 

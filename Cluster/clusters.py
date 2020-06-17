@@ -21,30 +21,14 @@ import numpy as np
 
 start = datetime.now()
 
+def getconf2():
+    return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers')
+
+
 model_path = 'C:\\CLUSTERING_MODEL'
-engine = sqlalchemy.create_engine('mysql+pymysql://wale:abcd1234!@144.167.35.73:3306/blogtrackers')
-# tid = input("PLEASE INPUT TRACKER ID")
-def getconf():
-    config_file = open('C:\\blogtrackers.config','r')
-    data = config_file.readlines()
-    # print(data)
-    # return "144.167.35.73", "wale", "abcd1234!", "blogtrackers"
-    ip = ''
-    user_name = ''
-    password = ''
-    db = 'blogtrackers'
-    for elem in data:
-        if 'dbConnection' in elem:
-            connection_url = elem.split('##')[1]
-            ip_and_port = re.search('mysql://(.*)/blogtrackers', connection_url)
-            ip_and_port_ = ip_and_port.group(1)
-            ip = ip_and_port_.split(':')[0].strip()
-        if 'dbUserName' in elem:
-            user_name = elem.split('##')[1].strip()
-        if 'dbPassword' in elem:
-            password = elem.split('##')[1].strip()
-    
-    return (ip, user_name, password, db)
+conf = getconf2()
+engine = sqlalchemy.create_engine(f'mysql+pymysql://{conf[1]}:{conf[2]}@{conf[0]}:3306/{conf[3]}')
+
 
 print('done getting config')
 # print(ip,user_name,password,db)
@@ -131,7 +115,6 @@ def getClusterforall(tid, conf):
         q_topterms = f'select terms from blogpost_terms where blogpost_id in ({post_ids})'
         topterms_result = query(conf, q_topterms)
         topterms_result
-        
         
         term_dict = {}
         for i in range(len(topterms_result)):
@@ -302,14 +285,7 @@ def getClusterforall(tid, conf):
     test_df_transposed['svd'] = str(post_id_svd)
     print(test_df_transposed)
 
-    # if __name__ == '__main__':
-    #     cores = (multiprocessing.cpu_count()) 
-    #     pool = Pool(int(cores))
-    #     print('cores', cores)
-        
-    #     p = npa, post_ids_, conf
-    #     pool = Pool(len(p))
-    #     response = pool.map(update_svd, p)
+
     p = npa, post_ids_
     return test_df_transposed,p
 
@@ -338,18 +314,19 @@ def insert_single_cluster(tid, status, status_percentage, conf):
 def insert_to_cluster(conf, data, tid):
     error = False
     import pymysql
-    engine = sqlalchemy.create_engine('mysql+pymysql://wale:abcd1234!@144.167.35.73:3306/blogtrackers')
-    # Connect to the database
     ip = conf[0]
     user_name = conf[1]
     password = conf[2]
     db = conf[3]
+
+    engine = sqlalchemy.create_engine(f'mysql+pymysql://{user_name}:{password}@{ip}:3306/{db}')
+    # Connect to the database
+    
     connection = pymysql.connect(host=ip,
                             user=user_name,
                             password=password,
                             db=db)
-    # mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
-    # create cursor
+    
     cursor=connection.cursor()
 
     cols = "`,`".join([str(i) for i in data.columns.tolist()])
@@ -407,8 +384,7 @@ def update_svd(param,conf):
     for svd, post_id in zip(npa, post_ids):
         s = str(svd).replace('[','').replace(']','').strip()
         mycursor.execute(sql,(str(s), str(post_id)))
-        # print(s)
-    # result = mycursor.fetchall()
+
     mydb.commit()
     print('done')
 

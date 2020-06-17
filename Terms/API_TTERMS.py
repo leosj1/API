@@ -12,7 +12,7 @@ from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import as_completed
 
 # FUNCTION TO GET TOP 100 TERMS BY BLOG_IDS INDEXED ON ES
-def getTopKWS(ids):
+def getTopKWS(ids, ip):
     body = {
         "size": 0,
         "query": {
@@ -38,7 +38,7 @@ def getTopKWS(ids):
     }
     # print('body--',body)
     client = Elasticsearch([
-        {'host': '144.167.35.50'},
+        {'host': ip},
 
     ])
     response = client.search(
@@ -54,9 +54,9 @@ def getTopKWS(ids):
     return d
 
 # TO COUNT CONTENT 
-def get_count(ids):
+def get_count(ids, ip):
     client = Elasticsearch([
-        {'host': '144.167.35.50'},
+        {'host': ip},
 
     ])
     response = client.count(
@@ -81,10 +81,16 @@ def get_count(ids):
     return int(response['count'])
 
 # QUERY DB AND RETURN DATAFRAME
-def query_db(query):
+def query_db(query, conf):
     # query,engine = en
+    config = conf 
+    ip = config[0]
+    user_name = config[1]
+    password = config[2]
+    db = config[3]
+
     engine = sqlalchemy.create_engine(
-        'mysql+pymysql://wale:abcd1234!@144.167.35.73:3306/blogtrackers')
+        f'mysql+pymysql://{user_name}:{password}@{ip}:3306/{db}')
     df = pd.read_sql_query(query, engine)
     return df
 
@@ -125,27 +131,33 @@ def query(config,sql):
     return result
 
 # GET CONFIG FROM CONFIG FILE
-def getconf():
-    config_file = open('C:\\blogtrackers.config','r')
-    data = config_file.readlines()
-    # print(data)
+def getconf2():
+    return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers') 
     # return "144.167.35.73", "wale", "abcd1234!", "blogtrackers"
-    ip = ''
-    user_name = ''
-    password = ''
-    db = 'blogtrackers'
-    for elem in data:
-        if 'dbConnection' in elem:
-            connection_url = elem.split('##')[1]
-            ip_and_port = re.search('mysql://(.*)/blogtrackers', connection_url)
-            ip_and_port_ = ip_and_port.group(1)
-            ip = ip_and_port_.split(':')[0].strip()
-        if 'dbUserName' in elem:
-            user_name = elem.split('##')[1].strip()
-        if 'dbPassword' in elem:
-            password = elem.split('##')[1].strip()
-    
-    return (ip, user_name, password, db)    
+
+# def getconf2():
+#     config_file = open('C:\\blogtrackers.config','r')
+#     data = config_file.readlines()
+#     # print(data)
+#     # return "144.167.35.73", "wale", "abcd1234!", "blogtrackers"
+#     ip = ''
+#     user_name = ''
+#     password = ''
+#     db = 'blogtrackers'
+#     for elem in data:
+#         if 'dbConnection' in elem:
+#             connection_url = elem.split('##')[1]
+#             ip_and_port = re.search('mysql://(.*)/blogtrackers', connection_url)
+#             ip_and_port_ = ip_and_port.group(1)
+#             ip = ip_and_port_.split(':')[0].strip()
+#         if 'dbUserName' in elem:
+#             user_name = elem.split('##')[1].strip()
+#         if 'dbPassword' in elem:
+#             password = elem.split('##')[1].strip()
+
+#     # host='cosmos-1.host.ualr.edu',user='ukraine_user', password='summer2014',db='blogtrackers',charset='utf8mb4',use_unicode=True,cursorclass=pymysql.cursors.DictCursor)
+#     return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers') 
+    # return (ip, user_name, password, db)    
 
 # UPDATE STATUS FIELD IN TRACKER_KEYWORD TABLE
 def getStatus(conf, tid, total, current):
@@ -225,8 +237,16 @@ def loop(PARAMS):
     # check if key already exists in DB
     q_checked = f'select terms, keyword_trend from tracker_keyword where tid = {tid}'
     checked_result = query(conf, q_checked)
-    replaced_terms = checked_result[0][0].replace("\'", "\"")
-    replaced_kwt = checked_result[0][1].replace("\'", "\"")
+
+    if checked_result[0][0]:
+        replaced_terms = checked_result[0][0].replace("\'", "\"")
+    else:
+        replaced_terms = "{}"
+
+    if checked_result[0][1]:
+        replaced_kwt = checked_result[0][1].replace("\'", "\"")
+    else:
+        replaced_kwt = "{}"
     
     terms_checked = json.loads(replaced_terms)
     kwt_checked = json.loads(replaced_kwt)
@@ -250,12 +270,25 @@ def loop(PARAMS):
 
     getStatus(conf, tid, 0, count)
 
+def contains_only_integers(tup):
+    try:
+        tup = tuple(map(int, tup[1:-1].split(',')))
+        if tup:
+            return True
+        else:
+            return False
+        # for item in tup[1:]:
+        #     if not isinstance(item, int):
+        #         return False
+        
+    except ValueError:
+        return False
+    
+    
 
-def testingKWT(tid):
+def testingKWT(tid, ip):
     print('here1')
-    data = []
-
-    conf = getconf()
+    conf = getconf2()
     q_trackers = f"select * from trackers where tid = {tid}"
     tracker_result = query(conf, q_trackers)
     if len(tracker_result) > 0:
@@ -270,10 +303,11 @@ def testingKWT(tid):
         blogsite_ids = '()'
     print('here2')
     blog_ids = blogsite_ids
+    if not contains_only_integers(blog_ids):
+        blog_ids = '()'
+        return None
     # blog_ids = "153,148,259,114,32,123,37,155,46,3,170,154,72,38,224,247,157,128,61,112,140,144,116,125,193,9,173,89,68,87,249,250,263,98,69,152,62,78,117,83,73,264,135,184,120,138,133,100,93,143,77,233,139,132,146,147,149,150,43,242,47,111,101,86,81,118,194,45,106,121,129,49,237,66,179,91,176,124,167,84,174,215,141,119,236,252,185,20,162,130,22,76,235,178,232,85,79,26,109,80,131,253,105,151,142,137,115,52,53,65,94,92,96,136,191,27,29,107,63,99,57,190,169,216,122,126,36,127,134,108,54"
     q = f'select terms,date from blogpost_terms_api where blogsiteid in {blog_ids}'
-    # q_count = f'select count(*) as total from blogpost_terms_api where blogsiteid in {blog_ids}'
-    # c = int(query_db(q_count)['total'][0])
     print('here3')
     total =  51
     count = 0
@@ -281,7 +315,7 @@ def testingKWT(tid):
     getStatus(conf, tid, total, 0)
 
     start1 = time.perf_counter()
-    result = query_db(q)
+    result = query_db(q, conf)
     end1 = time.perf_counter()
     print('sql took ', end1 - start1)
     # count =5
@@ -290,23 +324,21 @@ def testingKWT(tid):
 
     print(result.shape)
     print('here5')
+    df = pd.DataFrame()
     df = result
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
+    df = df[df['date'].notna()]
     grouped_by_year = df.groupby(df.date.dt.year)
     years = sorted(df.date.dt.year.unique())
 
     # print('done grouping')
 
-    terms_result = getTopKWS(blog_ids)
+    terms_result = getTopKWS(blog_ids, ip)
 
     # print('KWS DONE')
 
-    final_data = {}
-    total_data = {}
-    
     data_ = []
-    terms_data = []
-    
+
     for i in range(len(terms_result)):
         term = terms_result[i][0]
         # terms_data.append(term)
@@ -316,9 +348,6 @@ def testingKWT(tid):
 
         PARAMS = param_initial,tid, conf, blog_ids
 
-        # loop(PARAMS)
-        # final_data[term] = res
-        # total_data[term] = sum(list(res.values()))
         data_.append(PARAMS)
 
     # if __name__ == '__main__':
@@ -326,7 +355,7 @@ def testingKWT(tid):
     pool = Pool(int(12))
     print('cores', cores)
     # pool = Pool(len(data_))
-    response = pool.map(loop, data_)
+    pool.map(loop, data_)
 
     q_checked = f'select terms,query,keyword_trend from tracker_keyword where tid = {tid}'
     checked_result = query(conf, q_checked)
@@ -339,5 +368,7 @@ def testingKWT(tid):
 
     update_terms(tid, terms_checked,  blog_ids ,kwt_checked , conf)
     getStatus(conf, tid, 0, 98)
+
+
       
 

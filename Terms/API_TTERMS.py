@@ -173,7 +173,7 @@ def getStatus(conf, tid, total, current):
 
     mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
     mycursor = mydb.cursor()
-    print('stat',status)
+    # print('stat',status)
     if int(status) != 100:
         sql = "update tracker_keyword set status = %s, status_percentage = %s where tid = %s"
         mycursor.execute(sql,(str(0), str(status), str(tid)))
@@ -287,7 +287,7 @@ def contains_only_integers(tup):
     
 
 def testingKWT(tid, ip):
-    print('here1')
+    # print('here1')
     conf = getconf2()
     q_trackers = f"select * from trackers where tid = {tid}"
     tracker_result = query(conf, q_trackers)
@@ -301,29 +301,29 @@ def testingKWT(tid, ip):
                 blogsite_ids = s_new
     else:
         blogsite_ids = '()'
-    print('here2')
+    # print('here2')
     blog_ids = blogsite_ids
     if not contains_only_integers(blog_ids):
         blog_ids = '()'
         return None
     # blog_ids = "153,148,259,114,32,123,37,155,46,3,170,154,72,38,224,247,157,128,61,112,140,144,116,125,193,9,173,89,68,87,249,250,263,98,69,152,62,78,117,83,73,264,135,184,120,138,133,100,93,143,77,233,139,132,146,147,149,150,43,242,47,111,101,86,81,118,194,45,106,121,129,49,237,66,179,91,176,124,167,84,174,215,141,119,236,252,185,20,162,130,22,76,235,178,232,85,79,26,109,80,131,253,105,151,142,137,115,52,53,65,94,92,96,136,191,27,29,107,63,99,57,190,169,216,122,126,36,127,134,108,54"
     q = f'select terms,date from blogpost_terms_api where blogsiteid in {blog_ids}'
-    print('here3')
+    # print('here3')
     total =  51
     count = 0
-    print('here4')
+    # print('here4')
     getStatus(conf, tid, total, 0)
 
     start1 = time.perf_counter()
     result = query_db(q, conf)
     end1 = time.perf_counter()
-    print('sql took ', end1 - start1)
+    # print('sql took ', end1 - start1)
     # count =5
 
     getStatus(conf, tid, total, count)
 
-    print(result.shape)
-    print('here5')
+    # print(result.shape)
+    # print('here5')
     df = pd.DataFrame()
     df = result
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
@@ -353,7 +353,7 @@ def testingKWT(tid, ip):
     # if __name__ == '__main__':
     cores = (multiprocessing.cpu_count()) 
     pool = Pool(int(12))
-    print('cores', cores)
+    # print('cores', cores)
     # pool = Pool(len(data_))
     pool.map(loop, data_)
 

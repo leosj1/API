@@ -1,0 +1,158 @@
+{
+    "hits": 1,
+    "timeGI": 648,
+    "data": [
+      {
+        "date": {
+          "str": "d2020-03-13T00:00",
+          "precision": 4,
+          "timestamp": 1584057600000
+        },
+        "types": [
+          "Article",
+          "GlobalIndexDiffbotEntity"
+        ],
+        "images": [
+          {
+            "naturalHeight": 300,
+            "url": "https://bocabeacon.com/wordpress/wp-content/uploads/2020/03/Coronavirus-CDC-645x645-1.jpg",
+            "naturalWidth": 300
+          }
+        ],
+        "author": "Olivia Cameron",
+        "diffbotUri": "http://diffbot.com/entity/ART150859572566",
+        "icon": "http://bocabeacon.com/wordpress/wp-content/uploads/2015/03/faveicon_logo-white.jpg",
+        "estimatedDate": {
+          "str": "d2020-03-13T00:00",
+          "precision": 4,
+          "timestamp": 1584057600000
+        },
+        "siteName": "Boca Beacon",
+        "language": "en",
+        "type": "Article",
+        "title": "Coronavirus 2019 and the week’s events",
+        "tags": [
+          {
+            "score": 0.6088408,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/PopulatedPlace",
+              "http://dbpedia.org/ontology/State"
+            ],
+            "count": 1,
+            "label": "West Virginia",
+            "uri": "https://diffbot.com/entity/ATucmyVfdMcKFOFcctCLlXQ"
+          },
+          {
+            "score": 0.58394396,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/PopulatedPlace",
+              "http://dbpedia.org/ontology/State",
+              "http://dbpedia.org/ontology/Country"
+            ],
+            "count": 2,
+            "label": "People's Republic of China",
+            "uri": "https://diffbot.com/entity/AdI-rIizmN7uzAzt3j0tCGQ"
+          },
+          {
+            "score": 0.59212154,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/Work"
+            ],
+            "count": 1,
+            "label": "Iran–South Korea relations",
+            "uri": "https://diffbot.com/entity/X1yXR-K9MPhq-aJe8-SLUeg"
+          },
+          {
+            "score": 0.7908948,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/Organisation",
+              "http://dbpedia.org/ontology/Company",
+              "http://dbpedia.org/ontology/Skill"
+            ],
+            "count": 1,
+            "label": "World Health Organization",
+            "uri": "https://diffbot.com/entity/CuJj7wZspO0yZ1H9ckj2UoQ"
+          },
+          {
+            "score": 0.55433935,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/PopulatedPlace",
+              "http://dbpedia.org/ontology/Settlement",
+              "http://dbpedia.org/ontology/City"
+            ],
+            "count": 1,
+            "label": "New Rochelle",
+            "uri": "https://diffbot.com/entity/Ajpf4sWJNNseM_YZUbwYRrw"
+          },
+          {
+            "score": 0.5816341,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/Activity",
+              "http://dbpedia.org/ontology/TopicalConcept",
+              "http://dbpedia.org/ontology/AcademicSubject",
+              "http://dbpedia.org/ontology/Skill"
+            ],
+            "count": 0,
+            "label": "effective date",
+            "uri": "https://diffbot.com/entity/XO2-uXVJfN8eFMXNBqKqHYQ"
+          },
+          {
+            "score": 0.54841584,
+            "sentiment": -0.742,
+            "types": [
+              "http://dbpedia.org/ontology/PopulatedPlace",
+              "http://dbpedia.org/ontology/Country"
+            ],
+            "count": 2,
+            "label": "United States of America",
+            "uri": "https://diffbot.com/entity/A01d4EK33MmCosgI2KXa4-A"
+          },
+          {
+            "score": 0.65614134,
+            "sentiment": -0.629,
+            "types": [
+              "http://dbpedia.org/ontology/Disease",
+              "http://dbpedia.org/ontology/Activity"
+            ],
+            "count": 6,
+            "label": "COVID-19",
+            "uri": "https://diffbot.com/entity/XkFmXKkFZMNWNCjQC5MfwUw"
+          },
+          {
+            "score": 0.6802901,
+            "sentiment": 0,
+            "types": [
+              "http://dbpedia.org/ontology/Person"
+            ],
+            "count": 3,
+            "label": "Donald Trump",
+            "uri": "https://diffbot.com/entity/PY1mA3TomNVWxY0sLifAwEQ"
+          },
+          {
+            "score": 0.5542023,
+            "sentiment": -0.592,
+            "count": 2,
+            "label": "disease",
+            "uri": "https://diffbot.com/entity/XXXhNVBGuNl615KgS0xOjVA"
+          }
+        ],
+        "lastCrawlTime": 1590659514,
+        "authorUrl": "https://bocabeacon.com/wordpress/author/ocameron",
+        "pageUrl": "https://bocabeacon.com/wordpress/?p=12102",
+        "html": "<figure><img alt=\"Coronavirus 2019 and the week’s events\" sizes=\"(max-width: 300px) 100vw, 300px\" src=\"https://bocabeacon.com/wordpress/wp-content/uploads/2020/03/Coronavirus-CDC-645x645-1.jpg\" srcset=\"https://bocabeacon.com/wordpress/wp-content/uploads/2020/03/Coronavirus-CDC-645x645-1-300x300.jpg 300w, https://bocabeacon.com/wordpress/wp-content/uploads/2020/03/Coronavirus-CDC-645x645-1-150x150.jpg 150w, https://bocabeacon.com/wordpress/wp-content/uploads/2020/03/Coronavirus-CDC-645x645-1.jpg 645w\"></img></figure>\n<p>BY LAUREN HANA, MD BOCA GRANDE HEALTH CLINIC</p>\n<p>The most recent statistics regarding COVID-19 as of this writing show that over 127,000 people have been infected worldwide, and there have been over 4,700 deaths worldwide to date. On 3/11/20, the World Health Organization declared the coronavirus outbreak a global pandemic (&ldquo;the worldwide spread of a new disease&rdquo;).</p>\n<p>There are over 1,300 U.S. confirmed cases (this includes repatriated individuals).</p>\n<p>There have now been 38 U.S. deaths. All states have confirmed cases of CoVID-19 except Alaska, Alabama, Idaho, Maine and West Virginia. As of 3/11/20, there are 29 cases in varied counties in Florida.</p>\n<p>President Trump&rsquo;s Oval Office address to the nation on March 11 put into effect unprecedented measures to aggressively contain the spread of CoViD-19. A 30-day suspension of travel from Europe, excluding the U.K., was put in place. This is along with the level 3 travel advisories (no nonessential travel) that remain in effect for China, Italy, Iran and South Korea, and the level 2 travel advisory (exercise enhanced precautions) for Japan.</p>\n<p>Those at higher risk of complications of COVID-19, those who are older, those with underlying health issues such as heart disease, lung disease, diabetes and underlying immune system problems, should consider postponing nonessential air travel and all cruise travel, avoid large gatherings and practice &ldquo;social distancing.&rdquo;</p>\n<p>Nursing homes, assisted living facilities and long-term care facilities have been strongly encouraged to suspend all nonmedical visits in an effort to limit exposures to residents. In fact, Governor DeSantis issued an executive order this week specifying the screening criteria for all visitors.</p>\n<p>Polling places have been relocated if they were in assisted living facilities.</p>\n<p>Subsequently, the NBA suspended play for the rest of the season following one player testing preliminarily positive for CoViD-19. Multiple medical conferences and other large gatherings like concerts have been cancelled.</p>\n<p>An announcement was made that Tom Hanks and his wife, Rita Wilson, currently on set for a movie in Australia, have both tested positive for COVID-19.</p>\n<p>All state universities in Florida have transitioned to online classes as of March 12 for at least two weeks.</p>\n<p>A large cluster of cases in New Rochelle, N.Y., has prompted placement of a one-mile containment zone in the area by their governor.</p>\n<p>The entire country of Italy was placed on lockdown due to over 12,000 cases of COVID-19 and 827 deaths, the most in any country outside China.</p>\n<p>President Trump asked Congress to put in place economic relief measures for those affected by the pandemic, including payroll tax relief, suspending taxes due and making more funds available for small-business loans.</p>\n<p>Though studies have shown that 77-98 percent of persons infected will have a fever, the second most common symptom is a dry cough, and 40 percent will have fatigue. Other symptoms may include sore throat, headache and feeling achy as in many other viral illnesses, including Influenza.</p>\n<p>There is currently no vaccine or treatment that is available. Investigation and research continue on both vaccination development and possible antiviral medications to treat the illness. In the last week , President Trump and Congress designated $8.3 billion for COVID-19 research and vaccine development.</p>\n<p>Masks should be worn by sick people to help contain secretions in the event of coughing or sneezing. Healthy people are not afforded protection by wearing a mask .</p>\n<p>There continue to be three Florida state health department labs that are testing for COVID-19 in Tampa, Jacksonville and Miami. Commercial labs like LabCorp and Quest Diagnostics are now able to assist with running tests but do not provide specimen collection. There are still guidelines on prioritizing testing.</p>\n<p>The Boca Grande Health Clinic as well as other local healthcare centers, doctors&rsquo; offices and hospitals are following the recommendations of the Centers for Disease Control and Prevention by posting signs for anyone with fever or other respiratory symptoms to CALL FIRST PRIOR TO ARRIVING so appropriate preparations can be made. At the Clinic we are triaging by phone anyone who calls with these symptoms and providing telemedicine visits by phone from one of our physicians for screening and advice on the appropriate treatment or transfer to a higher level of care such as a local emergency department.</p>\n<p>These continue to be the best ways to prevent spread of illness:</p>\n<p>WASH YOUR HANDS.</p>\n<p>STAY HOME IF YOU ARE ILL.</p>\n<p>AVOID OTHERS WHO ARE ILL.</p>\n<p>DO NOT TOUCH YOUR EYES, NOSE OR MOUTH WITH UNWASHED HANDS.</p>\n<p>COVER YOUR COUGH OR SNEEZE.</p>\n<p>GET YOUR ANNUAL FLU SHOT.</p>\n<p>CLEAN &ldquo;HIGH USE&rdquo; OBJECTS AND SURFACES DAILY WITH DISINFECTANT. (In addition to your cell phone, tablet and TV remote, remember doorknobs, light switches, sink handles and screens in your car! )</p>\n<p>GUIDANCE FROM THE CDC&rsquo;S WEBSITE RECOMMENDS THAT IF YOU DEVELOP SYMPTOMS YOU THINK MAY BE CONSISTENT WITH COVID-19, CALL YOUR PHYSICIAN PRIOR TO ARRIVING FOR INSTRUCTION. WEAR A MASK. STAY HOME EXCEPT FOR GOING TO RECEIVE MEDICAL CARE. ISOLATE IN YOUR HOME FROM OTHERS AND FROM PETS.</p>\n<p>Despite the aggressive measures put in place this week nationwide, note that the CDC&rsquo;s estimate of Influenza illness for last year&rsquo;s 2018-2019 season is 35 MILLION cases with 34,000 deaths in the U.S.</p>\n<p>The bottom line is, use common sense. If you or someone you are close to is over 65 and has underlying chronic medical issues, you are at higher risk of more severe disease and complications should you come down with CoViD-19, so adjust accordingly to limit chances of exposure. Even if you don&rsquo;t feel you are in a high-risk category, be respectful and considerate of others in the community who may be vulnerable, and keep your germs at home!</p>\n<p>Please refer to the following for more detailed information:</p>\n<p>Floridahealth.gov</p>\n<p>Florida Department of Health call center (866)779-6121.</p>\n<p>CDC.gov</p>\n<p><i>Lauren M. Hana, MD</i></p>",
+        "id": "ART150859572566",
+        "text": "BY LAUREN HANA, MD BOCA GRANDE HEALTH CLINIC\nThe most recent statistics regarding COVID-19 as of this writing show that over 127,000 people have been infected worldwide, and there have been over 4,700 deaths worldwide to date. On 3/11/20, the World Health Organization declared the coronavirus outbreak a global pandemic (“the worldwide spread of a new disease”).\nThere are over 1,300 U.S. confirmed cases (this includes repatriated individuals).\nThere have now been 38 U.S. deaths. All states have confirmed cases of CoVID-19 except Alaska, Alabama, Idaho, Maine and West Virginia. As of 3/11/20, there are 29 cases in varied counties in Florida.\nPresident Trump’s Oval Office address to the nation on March 11 put into effect unprecedented measures to aggressively contain the spread of CoViD-19. A 30-day suspension of travel from Europe, excluding the U.K., was put in place. This is along with the level 3 travel advisories (no nonessential travel) that remain in effect for China, Italy, Iran and South Korea, and the level 2 travel advisory (exercise enhanced precautions) for Japan.\nThose at higher risk of complications of COVID-19, those who are older, those with underlying health issues such as heart disease, lung disease, diabetes and underlying immune system problems, should consider postponing nonessential air travel and all cruise travel, avoid large gatherings and practice “social distancing.”\nNursing homes, assisted living facilities and long-term care facilities have been strongly encouraged to suspend all nonmedical visits in an effort to limit exposures to residents. In fact, Governor DeSantis issued an executive order this week specifying the screening criteria for all visitors.\nPolling places have been relocated if they were in assisted living facilities.\nSubsequently, the NBA suspended play for the rest of the season following one player testing preliminarily positive for CoViD-19. Multiple medical conferences and other large gatherings like concerts have been cancelled.\nAn announcement was made that Tom Hanks and his wife, Rita Wilson, currently on set for a movie in Australia, have both tested positive for COVID-19.\nAll state universities in Florida have transitioned to online classes as of March 12 for at least two weeks.\nA large cluster of cases in New Rochelle, N.Y., has prompted placement of a one-mile containment zone in the area by their governor.\nThe entire country of Italy was placed on lockdown due to over 12,000 cases of COVID-19 and 827 deaths, the most in any country outside China.\nPresident Trump asked Congress to put in place economic relief measures for those affected by the pandemic, including payroll tax relief, suspending taxes due and making more funds available for small-business loans.\nThough studies have shown that 77-98 percent of persons infected will have a fever, the second most common symptom is a dry cough, and 40 percent will have fatigue. Other symptoms may include sore throat, headache and feeling achy as in many other viral illnesses, including Influenza.\nThere is currently no vaccine or treatment that is available. Investigation and research continue on both vaccination development and possible antiviral medications to treat the illness. In the last week , President Trump and Congress designated $8.3 billion for COVID-19 research and vaccine development.\nMasks should be worn by sick people to help contain secretions in the event of coughing or sneezing. Healthy people are not afforded protection by wearing a mask .\nThere continue to be three Florida state health department labs that are testing for COVID-19 in Tampa, Jacksonville and Miami. Commercial labs like LabCorp and Quest Diagnostics are now able to assist with running tests but do not provide specimen collection. There are still guidelines on prioritizing testing.\nThe Boca Grande Health Clinic as well as other local healthcare centers, doctors’ offices and hospitals are following the recommendations of the Centers for Disease Control and Prevention by posting signs for anyone with fever or other respiratory symptoms to CALL FIRST PRIOR TO ARRIVING so appropriate preparations can be made. At the Clinic we are triaging by phone anyone who calls with these symptoms and providing telemedicine visits by phone from one of our physicians for screening and advice on the appropriate treatment or transfer to a higher level of care such as a local emergency department.\nThese continue to be the best ways to prevent spread of illness:\nWASH YOUR HANDS.\nSTAY HOME IF YOU ARE ILL.\nAVOID OTHERS WHO ARE ILL.\nDO NOT TOUCH YOUR EYES, NOSE OR MOUTH WITH UNWASHED HANDS.\nCOVER YOUR COUGH OR SNEEZE.\nGET YOUR ANNUAL FLU SHOT.\nCLEAN “HIGH USE” OBJECTS AND SURFACES DAILY WITH DISINFECTANT. (In addition to your cell phone, tablet and TV remote, remember doorknobs, light switches, sink handles and screens in your car! )\nGUIDANCE FROM THE CDC’S WEBSITE RECOMMENDS THAT IF YOU DEVELOP SYMPTOMS YOU THINK MAY BE CONSISTENT WITH COVID-19, CALL YOUR PHYSICIAN PRIOR TO ARRIVING FOR INSTRUCTION. WEAR A MASK. STAY HOME EXCEPT FOR GOING TO RECEIVE MEDICAL CARE. ISOLATE IN YOUR HOME FROM OTHERS AND FROM PETS.\nDespite the aggressive measures put in place this week nationwide, note that the CDC’s estimate of Influenza illness for last year’s 2018-2019 season is 35 MILLION cases with 34,000 deaths in the U.S.\nThe bottom line is, use common sense. If you or someone you are close to is over 65 and has underlying chronic medical issues, you are at higher risk of more severe disease and complications should you come down with CoViD-19, so adjust accordingly to limit chances of exposure. Even if you don’t feel you are in a high-risk category, be respectful and considerate of others in the community who may be vulnerable, and keep your germs at home!\nPlease refer to the following for more detailed information:\nFloridahealth.gov\nFlorida Department of Health call center (866)779-6121.\nCDC.gov\nLauren M. Hana, MD",
+        "resolvedPageUrl": "https://bocabeacon.com/wordpress/news/coronavirus-2019-and-the-weeks-events/"
+      }
+    ],
+    "diffbot_type": "Article",
+    "kgversion": "137",
+    "textFallbackUsed": "false",
+    "facet": false
+  }

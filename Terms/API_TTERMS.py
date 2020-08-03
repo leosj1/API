@@ -13,45 +13,58 @@ from concurrent.futures import as_completed
 
 # FUNCTION TO GET TOP 100 TERMS BY BLOG_IDS INDEXED ON ES
 def getTopKWS(ids, ip):
-    body = {
-        "size": 0,
-        "query": {
-            "bool": {
-                "must": [
-                    {
+    count = 0
+    while True:
+        count +=1
+        try:
+            body = {
+                "size": 0,
+                "query": {
+                    "bool": {
+                        "must": [
+                            {
+                                "terms": {
+                                    "blogsite_id": ids.replace(' ','').replace('(','').replace(')','').split(','),
+                                    "boost": 1
+                                }
+                            }
+                        ]
+                    }
+                },
+                "aggs": {
+                    "frequent_words": {
                         "terms": {
-                            "blogsite_id": ids.replace(' ','').replace('(','').replace(')','').split(','),
-                            "boost": 1
+                            "field": "post",
+                            "size": 50
                         }
                     }
-                ]
-            }
-        },
-        "aggs": {
-            "frequent_words": {
-                "terms": {
-                    "field": "post",
-                    "size": 50
                 }
             }
-        }
-    }
-    # print('body--',body)
-    client = Elasticsearch([
-        {'host': ip},
+            # print('body--',body)
+            client = Elasticsearch([
+                {'host': ip},
 
-    ])
-    response = client.search(
-        index="blogposts",
-    
-        body= body
+            ])
+            response = client.search(
+                index="blogposts",
+            
+                body= body,
+                request_timeout=30
 
-    )
+            )
 
-    data = response['aggregations']['frequent_words']['buckets']
-    func = lambda x:(x['key'],x['doc_count'])
-    d = list(map(func, data))
-    return d
+            data = response['aggregations']['frequent_words']['buckets']
+            func = lambda x:(x['key'],x['doc_count'])
+            d = list(map(func, data))
+            return d
+        except Exception as e:
+            if 'ConnectionTimeout caused by' in str(e):
+                time.sleep(3)
+                count += 1
+                if count > 10: print("Failed to connect to Elasticsearch {} times in a row".format(count))
+            else:
+                print(e)
+
 
 # TO COUNT CONTENT 
 def get_count(ids, ip):
@@ -205,6 +218,26 @@ def update_terms(tid, result, query, keyword_trend, conf):
     mycursor.close()
     mydb.close()
 
+def insert_terms(tid, result, query, keyword_trend, conf):
+    config = conf
+    ip = config[0]
+    user_name = config[1]
+    password = config[2]
+    db = config[3]
+
+    sql = "insert into tracker_keyword (tid, terms, query, keyword_trend) values (%s, %s, %s, %s)"
+    mydb = mysql.connector.connect(
+        host=ip, user=user_name, passwd=password, database=db)
+    mycursor = mydb.cursor()
+
+    mycursor.execute(sql, (str(tid), str(result),
+                           str(query), str(keyword_trend)))
+
+    mydb.commit()
+
+    mycursor.close()
+    mydb.close()
+
 # SORT DICTIONARY
 def sort_dict(dic, limit):
     term_dict_sorted = {k: int(v) for k, v in sorted(dic.items(), key=lambda item: item[1], reverse = True)}
@@ -238,13 +271,16 @@ def loop(PARAMS):
     q_checked = f'select terms, keyword_trend from tracker_keyword where tid = {tid}'
     checked_result = query(conf, q_checked)
 
-    if checked_result[0][0]:
-        replaced_terms = checked_result[0][0].replace("\'", "\"")
+    if checked_result:
+        if checked_result[0][0]:
+            replaced_terms = checked_result[0][0].replace("\'", "\"")
     else:
         replaced_terms = "{}"
+        
 
-    if checked_result[0][1]:
-        replaced_kwt = checked_result[0][1].replace("\'", "\"")
+    if checked_result:
+        if checked_result[0][0]:
+            replaced_kwt = checked_result[0][1].replace("\'", "\"")
     else:
         replaced_kwt = "{}"
     
@@ -255,9 +291,16 @@ def loop(PARAMS):
     terms_checked[term] = total_data[term]
     kwt_checked[term] = final_data[term]
 
+    # Insert if not yet created 
+    try:
+        insert_terms(tid, terms_checked, f'blogsite_id in {blog_ids}', kwt_checked, conf)
+    except:
+        pass
 
-
+    # Update if already created
     update_terms(tid, terms_checked, f'blogsite_id in {blog_ids}',kwt_checked , conf)
+
+    # print("TESTING",tid, terms_checked, f'blogsite_id in {blog_ids}',kwt_checked , conf)
 
     q_count = f'select status_percentage from tracker_keyword where tid = {tid}'
     q_stat_res = query(conf, q_count)
@@ -324,50 +367,69 @@ def testingKWT(tid, ip):
 
     # print(result.shape)
     # print('here5')
-    df = pd.DataFrame()
-    df = result
-    df['date'] = pd.to_datetime(df['date'], errors='coerce')
-    df = df[df['date'].notna()]
-    grouped_by_year = df.groupby(df.date.dt.year)
-    years = sorted(df.date.dt.year.unique())
+    if not result.empty:
+        df = pd.DataFrame()
+        df = result
+        df['date'] = pd.to_datetime(df['date'], errors='coerce')
+        df = df[df['date'].notna()]
+        grouped_by_year = df.groupby(df.date.dt.year)
+        years = sorted(df.date.dt.year.unique())
 
-    # print('done grouping')
+        # print('done grouping')
+        # terms_result = getTopKWS(blog_ids, ip)
 
-    terms_result = getTopKWS(blog_ids, ip)
+        try:
+            terms_result = getTopKWS(blog_ids, ip)
+        except Exception as e:
+            print(e)
+            try:
+                print('Retrying...')
+                terms_result = getTopKWS(blog_ids, ip)
+                print('success')
+            except Exception as e:
+                terms_result = ''
+                print(e)
+            
 
-    # print('KWS DONE')
+        # print('KWS DONE')
 
-    data_ = []
+        data_ = []
+        if terms_result:
+            for i in range(len(terms_result)):
+                term = terms_result[i][0]
+                # terms_data.append(term)
 
-    for i in range(len(terms_result)):
-        term = terms_result[i][0]
-        # terms_data.append(term)
+                param = grouped_by_year, term.replace(' ','')
+                param_initial = years, param
 
-        param = grouped_by_year, term.replace(' ','')
-        param_initial = years, param
+                PARAMS = param_initial,tid, conf, blog_ids
 
-        PARAMS = param_initial,tid, conf, blog_ids
+                data_.append(PARAMS)
 
-        data_.append(PARAMS)
+            # if __name__ == '__main__':
+            cores = (multiprocessing.cpu_count()) 
+            pool = Pool(int(6))
+            # print('cores', cores)
+            # pool = Pool(len(data_))
+            pool.map(loop, data_)
 
-    # if __name__ == '__main__':
-    cores = (multiprocessing.cpu_count()) 
-    pool = Pool(int(12))
-    # print('cores', cores)
-    # pool = Pool(len(data_))
-    pool.map(loop, data_)
+            q_checked = f'select terms,query,keyword_trend from tracker_keyword where tid = {tid}'
+            checked_result = query(conf, q_checked)
+            replaced_terms = checked_result[0][0].replace("\'", "\"")
+            kwt_terms = checked_result[0][2].replace("\'", "\"")
 
-    q_checked = f'select terms,query,keyword_trend from tracker_keyword where tid = {tid}'
-    checked_result = query(conf, q_checked)
-    replaced_terms = checked_result[0][0].replace("\'", "\"")
-    kwt_terms = checked_result[0][2].replace("\'", "\"")
+            terms_checked = sort_dict(json.loads(replaced_terms),50)
+            kwt_checked = json.loads(kwt_terms)
+            blog_ids = checked_result[0][1].replace("\'", "\"")
 
-    terms_checked = sort_dict(json.loads(replaced_terms),50)
-    kwt_checked = json.loads(kwt_terms)
-    blog_ids = checked_result[0][1].replace("\'", "\"")
+            update_terms(tid, terms_checked,  blog_ids ,kwt_checked , conf)
+            getStatus(conf, tid, 0, 98)
 
-    update_terms(tid, terms_checked,  blog_ids ,kwt_checked , conf)
-    getStatus(conf, tid, 0, 98)
+            pool.close()
+            # print("Joining pool")
+            pool.join()
+    # print("Clearing pool")
+
 
 
       

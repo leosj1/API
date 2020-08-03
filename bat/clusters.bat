@@ -1,6 +1,6 @@
 call C:/Users/seun/anaconda3/Scripts/activate.bat C:\Users\seun\anaconda3\
 REM call conda activate base
-cd C:\API
+cd C:\API_LIVE\API\Cluster
 
 set CUR_YYYY=%date:~10,4%
 set CUR_MM=%date:~4,2%
@@ -15,4 +15,4 @@ echo %date%-%time% >> Logs\Log_clusters_%SUBFILENAME%.log
 "C:\Users\seun\anaconda3\python.exe" "update_clusters.py" >> Logs\Log_clusters_%SUBFILENAME%.log 2>&1
 echo %date%-%time% >> Logs\Log_clusters_%SUBFILENAME%.log
 echo ------------------------------------END------------------------------------------ >> Logs\Log_clusters_%SUBFILENAME%.log
-REM pause
+pause

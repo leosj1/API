@@ -30,7 +30,7 @@ conf = getconf2()
 engine = sqlalchemy.create_engine(f'mysql+pymysql://{conf[1]}:{conf[2]}@{conf[0]}:3306/{conf[3]}')
 
 
-print('done getting config')
+# print('done getting config')
 # print(ip,user_name,password,db)
 def query(config,sql):
     ip = config[0]
@@ -63,7 +63,7 @@ def getStatus(conf, tid, current):
 
     mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
     mycursor = mydb.cursor()
-    print('stat',status)
+    # print('stat',status)
     if int(status) != 100:
         sql = "update clusters set status = %s, status_percentage = %s where tid = %s"
         mycursor.execute(sql,(str(0), str(status), str(tid)))
@@ -99,7 +99,7 @@ def getClusterforall(tid, conf):
                             ]
         text = text.lower()
         example_sent = preprocess_string(text, CUSTOM_FILTERS)
-        print('done processing')
+        # print('done processing')
         filtered_sentence = [w for w in example_sent if not w in stop_words]
 
         return filtered_sentence
@@ -107,7 +107,7 @@ def getClusterforall(tid, conf):
     def counter(text):
         from collections import Counter
         st = remove(text)
-        print('done removing')
+        # print('done removing')
         counter_obj = Counter(st)
         return str(counter_obj.most_common(100)),str(counter_obj.most_common(1)[0][0])
         
@@ -140,154 +140,171 @@ def getClusterforall(tid, conf):
         # for k, v in  sorted(x.items()
         return final_terms
 
+    def cleanbrackets(s):
+        s_new = ''
+
+        if s == '':
+            return s_new
+        if s[-1] == ',':
+            s_new = s[0:-1]
+        elif s[-2] == ',' and s[-1] == ')' :
+            s_new = s[0:-2] + ')'
+        else:
+            s_new = s
+
+        return s_new
+
     # conf = (ip, user_name, password, db)
     current_ = 5
     q_trackers = f"select * from trackers where tid = {tid}"
     tracker_result = query(conf, q_trackers)
     blogsite_ids = tracker_result[0][5].replace('blogsite_id in', '').strip()
-    print('done getting tracker info')
+    blogsite_ids = cleanbrackets(blogsite_ids) if blogsite_ids else None
+    # print('done getting tracker info')
 
-    q_post = f"select blogpost_id, post from blogposts where blogsite_id in {blogsite_ids}"
-    post_result = query(conf, q_post)
-    print('done getting posts', len(post_result))
+    if blogsite_ids != '()':
+        q_post = f"select blogpost_id, post from blogposts where blogsite_id in {blogsite_ids}"
+        post_result = query(conf, q_post)
+        # print('done getting posts', len(post_result))
 
-    q_total = f"select count(*) from blogposts"
-    total_result = query(conf,q_total)[0][0]
-    print(total_result)
-
-    current_+=5
-    getStatus(conf, tid, current_)
-
-    post_ids_ = []
-    posts = []
-    
-    for i in range(len(post_result)):
-        post_ids_.append(post_result[i][0])
-        posts.append(post_result[i][1])
-
-        
-    
-    # dat = {}  
-    # print(post_ids_)  
-    # q_svd = f"select post_id, svd from cluster_svd where post_id in ({str(post_ids_).replace('[','').replace(']','')})"
-    # svd_result = query(conf, q_svd)
-
-# -------------------------------------------
-    print('done getting posts')
-    documents = list(map(str,posts))
-
-
-    vectorizer = TfidfVectorizer(stop_words=stop_words)
-    print('done getting vectorizer')
-    current_+=10
-    getStatus(conf, tid, current_)
-    # for d in documents:
-    #     if type(d) == int:
-    #         print('found',d)
-    vectorizer.fit(documents)
-
-    current_+=10
-    getStatus(conf, tid, current_ )
-    print('done fitting data')
-    X = vectorizer.transform(documents)
-
-    from sklearn.decomposition import PCA, IncrementalPCA, TruncatedSVD
-    data = TruncatedSVD(n_components=2, algorithm='arpack')
-    new_data = data.fit_transform(X)
-
-    current_+=10
-    getStatus(conf, tid, current_)
-
-# --------------------------------------------
-
-    # data = []
-    # for i in range(len(svd_result)):
-    #     data.append(np.array(' '.join(svd_result[i][1].split()).split(' ')))  
-    # npa = np.asarray(data, dtype=np.float32)
-
-# ---------------------------------------------
-    npa = np.asarray(new_data, dtype=np.float32)
-    
-    post_id_svd = {}
-    for post_ids, svd in zip(post_ids_, new_data):
-        post_id_svd[f'{post_ids}'] = str(svd)
-#     print(post_id_svd)
-# ---------------------------------------------
-
-    print('data for model is ready...')
-
-    model = KMeans(n_clusters = 10)
-    model.fit(npa)
-    centroids = model.cluster_centers_
-    labels = model.labels_
-
-
-# ----------------------------------------------
-    print(len(post_ids_), len(posts), len(npa))
-    # update_svd(npa, post_ids_, conf)
-    
-# ----------------------------------------------
-    # print(len(post_ids_), len(posts), len(svd_result), len(data), len(npa))
-
-    print('model and necessary parameters are ready')
-
-    current_+=10
-    getStatus(conf, tid, current_)
-    # print()
-    func = lambda x: str(x)
-    new_list = list(map(func,post_ids_))
-
-    df = pd.DataFrame()     
-    df['post_id_incluster'] = new_list
-    df['cluster'] = labels
-    
-#     print(df)
-
-    import json
-    test = df.groupby(['cluster'])['post_id_incluster'].apply(','.join)
-    test_df_transposed = pd.DataFrame(test).transpose()
-    test_df_transposed.insert(0, "cluster_id", tid, True)
-    test_df_transposed.insert(1, "tid", tid, True)
-    test_df_transposed.insert(2, "total", len(post_ids_), True)
-    shape = test_df_transposed.shape
-
-    print('data frame created')
-
-    arr = []
-    for i in range(10):
-        idx = shape[1] + i
-        labll = f"C{i+1}xy"
-        arr.append(labll)
-        cent = str(list(centroids[i]))
-        test_df_transposed.insert(idx, labll, cent, True)
-
-    arr2 = ["cluster_id","tid","total","cluster_1","cluster_2","cluster_3","cluster_4","cluster_5","cluster_6","cluster_7","cluster_8","cluster_9","cluster_10"]
-    newarrs = arr2 + arr
-    test_df_transposed.columns = newarrs
-    # print(test_df_transposed)
-    print('getting topterms')
-
-    for i in range(10):
-        dic = {}
-        pids = test[i]
-    #     s = list(posts)
-    #     string_post = ' '.join(map(str, s))
-        print(f'done joining cluster {i + 0}')
-    #     terms, topterms = counter(string_post)
-        dic['post_ids'] = pids
-        dic['topterms'] = get_topterms(pids)
-        
-        test_df_transposed[f'cluster_{i + 1}'] = str(dic)
+        q_total = f"select count(*) from blogposts"
+        total_result = query(conf,q_total)[0][0]
+        # print(total_result)
 
         current_+=5
         getStatus(conf, tid, current_)
 
-    test_df_transposed['svd'] = str(post_id_svd)
-    print(test_df_transposed)
+        post_ids_ = []
+        posts = []
+        
+        for i in range(len(post_result)):
+            post_ids_.append(post_result[i][0])
+            posts.append(post_result[i][1])
+
+            
+        
+        # dat = {}  
+        # print(post_ids_)  
+        # q_svd = f"select post_id, svd from cluster_svd where post_id in ({str(post_ids_).replace('[','').replace(']','')})"
+        # svd_result = query(conf, q_svd)
+
+    # -------------------------------------------
+        # print('done getting posts')
+        documents = list(map(str,posts))
 
 
-    p = npa, post_ids_
-    return test_df_transposed,p
+        vectorizer = TfidfVectorizer(stop_words=stop_words)
+        # print('done getting vectorizer')
+        current_+=10
+        getStatus(conf, tid, current_)
+        # for d in documents:
+        #     if type(d) == int:
+        #         print('found',d)
+        if documents:
+            vectorizer.fit(documents)
+
+            current_+=10
+            getStatus(conf, tid, current_ )
+            # print('done fitting data')
+            X = vectorizer.transform(documents)
+
+            from sklearn.decomposition import PCA, IncrementalPCA, TruncatedSVD
+            data = TruncatedSVD(n_components=2, algorithm='arpack')
+            new_data = data.fit_transform(X)
+
+            current_+=10
+            getStatus(conf, tid, current_)
+
+        # --------------------------------------------
+
+            # data = []
+            # for i in range(len(svd_result)):
+            #     data.append(np.array(' '.join(svd_result[i][1].split()).split(' ')))  
+            # npa = np.asarray(data, dtype=np.float32)
+
+        # ---------------------------------------------
+            npa = np.asarray(new_data, dtype=np.float32)
+            
+            post_id_svd = {}
+            for post_ids, svd in zip(post_ids_, new_data):
+                post_id_svd[f'{post_ids}'] = str(svd)
+        #     print(post_id_svd)
+        # ---------------------------------------------
+
+            # print('data for model is ready...')
+
+            model = KMeans(n_clusters = 10)
+            model.fit(npa)
+            centroids = model.cluster_centers_
+            labels = model.labels_
+
+
+        # ----------------------------------------------
+            # print(len(post_ids_), len(posts), len(npa))
+            # update_svd(npa, post_ids_, conf)
+            
+        # ----------------------------------------------
+            # print(len(post_ids_), len(posts), len(svd_result), len(data), len(npa))
+
+            # print('model and necessary parameters are ready')
+
+            current_+=10
+            getStatus(conf, tid, current_)
+            # print()
+            func = lambda x: str(x)
+            new_list = list(map(func,post_ids_))
+
+            df = pd.DataFrame()     
+            df['post_id_incluster'] = new_list
+            df['cluster'] = labels
+            
+        #     print(df)
+
+            import json
+            test = df.groupby(['cluster'])['post_id_incluster'].apply(','.join)
+            test_df_transposed = pd.DataFrame(test).transpose()
+            test_df_transposed.insert(0, "cluster_id", tid, True)
+            test_df_transposed.insert(1, "tid", tid, True)
+            test_df_transposed.insert(2, "total", len(post_ids_), True)
+            shape = test_df_transposed.shape
+
+            # print('data frame created')
+
+            arr = []
+            for i in range(10):
+                idx = shape[1] + i
+                labll = f"C{i+1}xy"
+                arr.append(labll)
+                cent = str(list(centroids[i]))
+                test_df_transposed.insert(idx, labll, cent, True)
+
+            arr2 = ["cluster_id","tid","total","cluster_1","cluster_2","cluster_3","cluster_4","cluster_5","cluster_6","cluster_7","cluster_8","cluster_9","cluster_10"]
+            newarrs = arr2 + arr
+            test_df_transposed.columns = newarrs
+            # print(test_df_transposed)
+            # print('getting topterms')
+
+            for i in range(10):
+                dic = {}
+                pids = test[i]
+            #     s = list(posts)
+            #     string_post = ' '.join(map(str, s))
+                # print(f'done joining cluster {i + 0}')
+            #     terms, topterms = counter(string_post)
+                dic['post_ids'] = pids
+                dic['topterms'] = get_topterms(pids)
+                
+                test_df_transposed[f'cluster_{i + 1}'] = str(dic)
+
+                current_+=5
+                getStatus(conf, tid, current_)
+
+            test_df_transposed['svd'] = str(post_id_svd)
+            # print(test_df_transposed)
+
+
+            p = npa, post_ids_
+            return test_df_transposed,p
 
 def insert_single_cluster(tid, status, status_percentage, conf):
     start = datetime.now()
@@ -309,7 +326,7 @@ def insert_single_cluster(tid, status, status_percentage, conf):
     mydb.close()
 
     end = datetime.now()
-    print(f'it took {end - start}')
+    # print(f'it took {end - start}')
 
 def insert_to_cluster(conf, data, tid):
     error = False
@@ -332,34 +349,34 @@ def insert_to_cluster(conf, data, tid):
     cols = "`,`".join([str(i) for i in data.columns.tolist()])
 
     # Insert DataFrame recrds one by one.
-    print('insertion')
+    # print('insertion')
     for i,row in data.iterrows():
         sql = "INSERT INTO `clusters` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
-        print('done inserting to clusters')
+        # print('done inserting to clusters')
         try:
             cursor.execute(sql, tuple(row))
             connection.commit()
             connection.close()
         except Exception as e:
-            print('originall error', e)
+            # print('originall error', e)
             if 'Duplicate entry' in str(e):
-                print(e,'seun')
+                # print(e,'seun')
                 error = True
             
     
     if error:
         connection.commit()
-        print('commited')
+        # print('commited')
         cursor.close()
         connection.close()
         
-        print('here')
+        # print('here')
         engine.execute(f"delete from clusters where cluster_id = {tid}")
         # trans.commit()
-        print('deleted')
+        # print('deleted')
         df = data
         df.to_sql("clusters",engine,if_exists='append',index=False)
-        print('inserted')
+        # print('inserted')
 
         # the connection is not autocommitted by default, so we must commit to save our changes
         
@@ -377,7 +394,7 @@ def update_svd(param,conf):
     db = config[3]
 
     sql = "update cluster_svd set svd = %s where post_id = %s"
-    print(sql)
+    # print(sql)
     mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
     mycursor = mydb.cursor()
 
@@ -386,7 +403,7 @@ def update_svd(param,conf):
         mycursor.execute(sql,(str(s), str(post_id)))
 
     mydb.commit()
-    print('done')
+    # print('done')
 
     
 
@@ -394,7 +411,7 @@ def update_svd(param,conf):
     mydb.close()
 
     end = datetime.now()
-    print(f'it took {end - start}')
+    # print(f'it took {end - start}')
 
 def func(x):
 
@@ -411,7 +428,7 @@ def upd(all_):
     new_svd = list(map(func, svd))
     new_posts = list(map(str,posts))
     # print(posts)
-    print('svdddd', len(new_svd), len(new_posts), new_svd[0])
+    # print('svdddd', len(new_svd), len(new_posts), new_svd[0])
     # print(','.join(new_posts))
     try:
         # delete those rows that we are going to "upsert"
@@ -423,7 +440,8 @@ def upd(all_):
         # insert changed rows
         # x.to_sql('test_upsert', engine, if_exists='append', index=True)
     except Exception as e:
-        print(e)
+        pass
+        # print(e)
 
 # RUN FOR ALL TRACKERS
 # conf = getconf()

@@ -1,0 +1,26 @@
+------------------------------------START------------------------------------------ 
+Tue 08/04/2020- 0:17:26.54 
+Traceback (most recent call last):
+  File "C:\Users\seun\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 489, in cmd_query
+    raw_as_string=raw_as_string)
+_mysql_connector.MySQLInterfaceError: Unknown column 'userid' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\API_LIVE\API\Cluster\update_clusters.py", line 35, in <module>
+    tracker_result = c.query(conf, q_trackers)
+  File "C:\API_LIVE\API\Cluster\clusters.py", line 44, in query
+    mycursor.execute(sql)
+  File "C:\Users\seun\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 266, in execute
+    raw_as_string=self._raw_as_string)
+  File "C:\Users\seun\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 492, in cmd_query
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'userid' in 'where clause'
+Tue 08/04/2020- 0:17:28.28 
+------------------------------------END------------------------------------------ 
+------------------------------------START------------------------------------------ 
+Tue 08/04/2020-23:57:11.78 
+Clusters:   0%|          | 0/14 [00:00<?, ?it/s]Clusters:   7%|7         | 1/14 [01:55<25:01, 115.53s/it]Clusters:  14%|#4        | 2/14 [02:01<16:33, 82.79s/it] Clusters:  21%|##1       | 3/14 [02:30<12:12, 66.59s/it]Clusters:  29%|##8       | 4/14 [03:33<10:55, 65.54s/it]Clusters:  36%|###5      | 5/14 [04:30<09:25, 62.82s/it]Clusters:  43%|####2     | 6/14 [04:36<06:05, 45.74s/it]Clusters:  50%|#####     | 7/14 [06:46<08:18, 71.20s/it]Clusters:  57%|#####7    | 8/14 [07:02<05:27, 54.56s/it]Clusters:  64%|######4   | 9/14 [08:59<06:06, 73.35s/it]Clusters:  71%|#######1  | 10/14 [11:57<06:58, 104.54s/it]Clusters:  79%|#######8  | 11/14 [12:45<04:22, 87.64s/it] Clusters:  86%|########5 | 12/14 [16:25<04:15, 127.52s/it]Clusters:  93%|#########2| 13/14 [17:27<01:47, 107.74s/it]Clusters: 100%|##########| 14/14 [20:56<00:00, 138.04s/it]Clusters: 100%|##########| 14/14 [20:56<00:00, 89.72s/it] 
+Wed 08/05/2020- 0:18:09.66 
+------------------------------------END------------------------------------------ 

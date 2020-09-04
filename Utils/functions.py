@@ -90,11 +90,11 @@ def updateStatus(status, tid):
     conn = getconf2()
     s = SqlFuncs(conn)
 
-    if int(status) != 100:
+    if int(status) < 100:
         data = 0, status, tid
         s.update_insert("update tracker_keyword set status = %s, status_percentage = %s where tid = %s", data, conn)
     else:
-        data = status, 1, tid
+        data = 1, status, tid
         s.update_insert("update tracker_keyword set status = %s, status_percentage = %s where tid = %s", data, conn)
 
 def single_process(parameters):
@@ -128,6 +128,7 @@ def single_process(parameters):
         if records:
             df = pd.DataFrame(records)
             df['count'] = df['count'].map(int)
+            df['date'] = pd.to_datetime(df['date'], errors = 'coerce')
             year_count = df.groupby(df.date.dt.year)['count'].sum().to_dict()
 
             final_data[term] = year_count
@@ -173,7 +174,7 @@ def testingKWT(tid, ip, parallel, update__status, num_processes):
             query = records[0]['query']
             if 'blogsite_id in (' in query:
                 blog_ids = query[query.find("(")+1:query.find(")")]
-                if blog_ids:
+                if blog_ids and 'NaN' not in blog_ids:
                     blog_ids = blog_ids[:-1] if ',' == blog_ids[-1] else blog_ids
 
                     cursor.execute(
@@ -190,6 +191,7 @@ def testingKWT(tid, ip, parallel, update__status, num_processes):
                             terms_result = getTopKWS(blog_ids, ip)
                             print('success')
                         except Exception as e:
+                            terms_result = []
                             print(e)
 
                     # Count terms and group by year
@@ -209,6 +211,8 @@ def testingKWT(tid, ip, parallel, update__status, num_processes):
                                 # Update status on DB
                                 if update__status:
                                     status = round((pbar.last_print_n/len(data_)) * 100)
+                                    if status <= 99 and status >= 90:
+                                        status = 100
                                     updateStatus(status, tid)
 
                             process_pool.close()

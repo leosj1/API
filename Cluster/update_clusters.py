@@ -7,31 +7,34 @@ if __name__ == "__main__":
     import clusters as c
 
     parallel = True
-    num_processes = 8
+    num_processes = 4
     # if __name__ == '__main__':
     # print(f'STARTED AT - {datetime.today().isoformat()}')
     conf = c.getconf2()
-    q_trackers = f'''select t.tid
-                    from trackers t 
-                    left join clusters clst 
-                    on  t.tid = clst.tid 
-                    where t.tid is null 
-                    or clst.tid is null 
-                    or clst.status_percentage < 100 
-                    or clst.status != 1 
-                    or clst.status_percentage is null 
-                    or clst.status is null 
-                    or clst.svd is null '''
+    # q_trackers = f'''select t.tid
+    #                 from trackers t 
+    #                 left join clusters clst 
+    #                 on  t.tid = clst.tid 
+    #                 where t.tid is null 
+    #                 or clst.tid is null 
+    #                 or clst.status_percentage < 100 
+    #                 or clst.status != 1 
+    #                 or clst.status_percentage is null 
+    #                 or clst.status is null 
+    #                 or clst.svd is null '''
 
-    q_trackers = """select tid 
-                    from clusters 
-                    where tid 
-                    in(select tid 
-                    from trackers 
-                    where YEAR(date_created) in (2019,2020) ) 
-                    and DATE(last_modified_time) != CURDATE() 
-                    and userid = 'cosmographers@gmail.com'"""
-                    
+    # q_trackers = """select tid 
+    #                 from clusters 
+    #                 where tid 
+    #                 in(select tid 
+    #                 from trackers 
+    #                 where YEAR(date_created) in (2019,2020) 
+    #                 and userid = 'cosmographers@gmail.com') 
+    #                 and DATE(last_modified_time) != CURDATE() 
+    #                 """
+
+    q_trackers = """select tid from trackers"""
+
     tracker_result = c.query(conf, q_trackers)
     def process_updates(x):
         import clusters as c

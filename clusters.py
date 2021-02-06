@@ -403,7 +403,7 @@ class Clusters(SqlFuncs, Functions, Es):
         return f'{x1} {y1}'
 
     def process_clusters(self):
-        q_trackers = """select tid from trackers  order by tid desc limit 15"""
+        q_trackers = """select tid from trackers"""
         tracker_result = self.query(self.conf, q_trackers)
         TASKS_COMPLETED.inc()
 

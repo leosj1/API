@@ -15,7 +15,7 @@ from Utils.sql import SqlFuncs
 class Functions:
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(r"C:\config.ini")
+        config.read(r"/config.ini")
 
         DB_MOVER=config["DB_MOVER"]
         ip = DB_MOVER["HOST"]

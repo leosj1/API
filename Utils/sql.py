@@ -41,6 +41,7 @@ class SqlFuncs():
             connection = self.get_connection(db_dame)
             with connection.cursor() as cursor:
                 cursor.execute(query, data)
+            
                 connection.commit()
                 connection.close()
                 return
@@ -63,15 +64,36 @@ class SqlFuncs():
 
     def update_insert(self, query, data, conn):
         connection = self.get_connection(conn)
+        start = time.time()
         with connection.cursor() as cursor:
             try:
+                # start = time.time()
                 cursor.execute(query, data)
                 connection.commit()
             except Exception as e:
                 if 'Duplicate entry' in str(e):
                     return str(e)
-                else:
-                    return ''
+                # else:
+                #     raise Exception("MySql error: {}".format(e))
+            finally:
+                end = time.time()
+                print('Elapsed time is:' + str(end-start))
+
 
         connection.close()
         return ''
+
+    def query(self, conn, sql):
+        connection = self.get_connection(conn)
+
+        with connection.cursor() as cursor:
+            try:
+                cursor.execute(sql)
+                result = cursor.fetchall()
+
+                return result
+            except Exception as e:
+                pass
+
+        cursor.close()
+        connection.close()

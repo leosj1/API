@@ -5,7 +5,7 @@ import multiprocessing
 
 
 def getconf2():
-    return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers')
+    return ('144.167.35.89', 'db_mover', 'Cosmos1', 'blogtrackers')
 
 
 def query(config, sql):
@@ -14,8 +14,7 @@ def query(config, sql):
     password = config[2]
     db = config[3]
 
-    mydb = mysql.connector.connect(
-        host=ip, user=user_name, passwd=password, database=db)
+    mydb = mysql.connector.connect(host=ip, user=user_name, passwd=password, database=db)
     # sql = f"select * from trackers where tid = {tid}"
     mycursor = mydb.cursor()
     mycursor.execute(sql)

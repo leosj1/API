@@ -26,9 +26,10 @@ if __name__ == "__main__":
         from Utils.functions import clean_text, getconf2, updateStatus, getTopKWS, single_process, testingKWT
         num_processes = 24
         update__status = True
-        parallel = True
+        parallel = False
         tid = x['tid']
-        # tid = 223
+        print(tid)
+        # tid = 450
         testingKWT(tid, '144.167.35.89', parallel, update__status, num_processes)
 
     conf = getconf2()
@@ -38,15 +39,30 @@ if __name__ == "__main__":
     connection = s.get_connection(conf)
     with connection.cursor() as cursor:
         # cursor.execute("select tid from trackers where userid = 'cosmographers@gmail.com' or YEAR(date_created) in (2019,2020)")
-        # cursor.execute("select tid from trackers")
-        cursor.execute("SELECT tid FROM blogtrackers.tracker_keyword where DATE(last_modified_time) != CURDATE() or status != 1 or status_percentage != 100")
+        cursor.execute("select tid from trackers")
+        # cursor.execute("SELECT tid FROM blogtrackers.tracker_keyword where DATE(last_modified_time) != CURDATE() or status != 1 or status_percentage != 100")
         # cursor.execute("select tid from tracker_keyword where tid in( select tid from trackers where YEAR(date_created) in (2019,2020) or userid = 'cosmographers@gmail.com') and DATE(last_modified_time) != CURDATE()")
+        # cursor.execute("select tid from trackers where tid not in (select tid from tracker_keyword)")
         records = cursor.fetchall()
     connection.close()
 
     if parallel_main:
-        pool = Pool(int(6))
-        pool.map(process_updates, records)
+        # pool = Pool(int(6))
+        # pool.map(process_updates, records)
+        def process_updates(x):
+            from Utils.functions import clean_text, getconf2, updateStatus, getTopKWS, single_process, testingKWT
+            num_processes = 24
+            update__status = True
+            parallel = False
+            tid = x['tid']
+            print(tid)
+            # tid = 424
+            testingKWT(tid, '144.167.35.89', parallel, update__status, num_processes)
+
+        process_pool = ProcessPool(num_processes_main)
+        pbar = tqdm(process_pool.imap(process_updates, records), desc="Terms_", ascii=True,  file=sys.stdout, total=len(records))
+        for x in pbar:
+            pbar.update(1)
     else:
         for x in tqdm(records, desc="Terms", ascii=True,  file=sys.stdout):
             print(x)

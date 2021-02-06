@@ -145,7 +145,8 @@ def query(config,sql):
 
 # GET CONFIG FROM CONFIG FILE
 def getconf2():
-    return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers') 
+    # return ('cosmos-1.host.ualr.edu', 'ukraine_user', 'summer2014', 'blogtrackers') 
+    return ('144.167.35.89', 'db_mover', 'Cosmos1', 'blogtrackers') 
     # return "144.167.35.73", "wale", "abcd1234!", "blogtrackers"
 
 # def getconf2():

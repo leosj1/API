@@ -1,0 +1,1509 @@
+------------------------------------START------------------------------------------ 
+Thu 02/04/2021- 2:41:48.79 
+Clusters:   0%|          | 0/270 [00:00<?, ?it/s, 
+]Clusters:   0%|          | 1/270 [00:07<35:35,  7.94s/it, 
+]Clusters:   1%|          | 2/270 [00:08<25:41,  5.75s/it, 
+]Clusters:   1%|1         | 3/270 [00:13<23:52,  5.37s/it, 
+]Clusters:   1%|1         | 4/270 [00:22<29:32,  6.66s/it, 
+]Clusters:   2%|1         | 5/270 [00:30<30:53,  7.00s/it, 
+]Clusters:   2%|2         | 6/270 [00:33<25:56,  5.89s/it, 
+]Clusters:   3%|2         | 7/270 [00:35<20:14,  4.62s/it, 
+]Clusters:   3%|2         | 8/270 [00:36<15:49,  3.62s/it, 
+]Clusters:   3%|3         | 9/270 [00:42<18:23,  4.23s/it, 
+]Clusters:   4%|3         | 10/270 [00:43<13:57,  3.22s/it, 
+]Clusters:   4%|4         | 11/270 [00:51<20:27,  4.74s/it, 
+]Clusters:   4%|4         | 12/270 [00:56<20:17,  4.72s/it, 
+]Clusters:   5%|4         | 13/270 [01:05<26:19,  6.15s/it, 
+]Clusters:   5%|5         | 14/270 [01:09<23:24,  5.49s/it, 
+]Clusters:   6%|5         | 15/270 [01:21<31:53,  7.51s/it, 
+]Clusters:   6%|5         | 16/270 [01:23<24:01,  5.68s/it, 
+]Clusters:   6%|6         | 17/270 [01:32<28:15,  6.70s/it, 
+]Clusters:   7%|6         | 18/270 [01:46<37:14,  8.87s/it, 
+]Clusters:   7%|7         | 19/270 [01:48<28:05,  6.71s/it, 
+]Clusters:   7%|7         | 20/270 [01:50<22:11,  5.33s/it, 
+]Clusters:   8%|7         | 21/270 [02:34<1:10:39, 17.03s/it, 
+]Clusters:   8%|8         | 22/270 [02:51<1:10:41, 17.10s/it, 
+]Clusters:   9%|8         | 23/270 [02:52<50:10, 12.19s/it, 
+]  Clusters:   9%|8         | 24/270 [02:56<39:30,  9.64s/it, 
+]Clusters:   9%|9         | 25/270 [03:00<32:57,  8.07s/it, 
+]Clusters:  10%|#         | 27/270 [03:04<25:30,  6.30s/it, 
+]Clusters:  10%|#         | 28/270 [03:05<18:49,  4.67s/it, 
+]Clusters:  11%|#         | 29/270 [03:06<14:37,  3.64s/it, 
+]Clusters:  11%|#1        | 30/270 [03:18<23:50,  5.96s/it, 
+]Clusters:  11%|#1        | 31/270 [03:27<28:05,  7.05s/it, 
+]Clusters:  12%|#1        | 32/270 [03:35<29:09,  7.35s/it, 
+]Clusters:  12%|#2        | 33/270 [03:38<23:43,  6.01s/it, 
+]Clusters:  13%|#2        | 34/270 [03:42<20:56,  5.32s/it, 
+]Clusters:  13%|#2        | 35/270 [04:17<56:13, 14.36s/it, 
+]Clusters:  13%|#3        | 36/270 [04:18<39:35, 10.15s/it, 
+]Clusters:  14%|#3        | 37/270 [04:19<29:20,  7.56s/it, 
+]Clusters:  14%|#4        | 38/270 [05:02<1:09:50, 18.06s/it, 
+]Clusters:  14%|#4        | 39/270 [06:08<2:04:26, 32.32s/it, 
+]Clusters:  15%|#4        | 40/270 [06:11<1:31:11, 23.79s/it, 
+]Clusters:  15%|#5        | 41/270 [06:15<1:07:35, 17.71s/it, 
+]Clusters:  16%|#5        | 42/270 [06:25<58:37, 15.43s/it, 
+]  Clusters:  16%|#5        | 43/270 [06:43<1:01:35, 16.28s/it, 
+]Clusters:  16%|#6        | 44/270 [06:45<44:52, 11.91s/it, 
+]  Clusters:  17%|#6        | 45/270 [07:00<47:40, 12.71s/it, 
+]Clusters:  17%|#7        | 46/270 [07:16<51:57, 13.92s/it, 
+]Clusters:  17%|#7        | 47/270 [07:53<1:17:03, 20.73s/it, 
+]Clusters:  18%|#7        | 48/270 [08:30<1:34:31, 25.55s/it, 
+]Clusters:  18%|#8        | 49/270 [08:33<1:09:29, 18.86s/it, 
+]Clusters:  19%|#8        | 50/270 [09:09<1:28:04, 24.02s/it, 
+]Clusters:  19%|#8        | 51/270 [09:11<1:03:23, 17.37s/it, 
+]Clusters:  19%|#9        | 52/270 [09:13<46:19, 12.75s/it, 
+]  Clusters:  20%|#9        | 53/270 [09:58<1:20:44, 22.33s/it, 
+]Clusters:  20%|##        | 54/270 [10:13<1:12:28, 20.13s/it, 
+]Clusters:  20%|##        | 55/270 [10:20<58:30, 16.33s/it, 
+]  Clusters:  21%|##        | 56/270 [10:24<45:16, 12.69s/it, 
+]Clusters:  21%|##1       | 57/270 [10:56<1:05:05, 18.34s/it, 
+]Clusters:  21%|##1       | 58/270 [11:27<1:18:05, 22.10s/it, 
+]Clusters:  22%|##1       | 59/270 [11:40<1:08:44, 19.55s/it, 
+]Clusters:  22%|##2       | 60/270 [11:44<51:28, 14.71s/it, 
+]  Clusters:  23%|##2       | 61/270 [11:54<47:02, 13.50s/it, 
+]Clusters:  23%|##2       | 62/270 [12:16<55:04, 15.89s/it, 
+]Clusters:  23%|##3       | 63/270 [12:43<1:06:28, 19.27s/it, 
+]Clusters:  24%|##3       | 64/270 [12:55<58:38, 17.08s/it, 
+]  Clusters:  24%|##4       | 65/270 [13:36<1:22:55, 24.27s/it, 
+]Clusters:  24%|##4       | 66/270 [13:43<1:05:16, 19.20s/it, 
+]Clusters:  25%|##4       | 67/270 [13:54<55:52, 16.52s/it, 
+]  Clusters:  25%|##5       | 68/270 [13:56<41:14, 12.25s/it, 
+]Clusters:  26%|##5       | 69/270 [14:03<36:02, 10.76s/it, 
+]Clusters:  26%|##5       | 70/270 [14:05<26:31,  7.96s/it, 
+]Clusters:  26%|##6       | 71/270 [14:37<50:21, 15.18s/it, 
+]Clusters:  27%|##6       | 72/270 [14:52<49:53, 15.12s/it, 
+]Clusters:  27%|##7       | 73/270 [15:05<48:25, 14.75s/it, 
+]Clusters:  27%|##7       | 74/270 [15:06<34:38, 10.61s/it, 
+]Clusters:  28%|##7       | 75/270 [15:17<34:11, 10.52s/it, 
+]Clusters:  28%|##8       | 76/270 [15:55<1:01:04, 18.89s/it, 
+]Clusters:  29%|##8       | 77/270 [15:57<43:51, 13.64s/it, 
+]  Clusters:  29%|##8       | 78/270 [16:07<40:22, 12.62s/it, 
+]Clusters:  29%|##9       | 79/270 [16:24<45:03, 14.15s/it, 
+]Clusters:  30%|##9       | 80/270 [18:24<2:25:17, 45.88s/it, 
+]Clusters:  30%|###       | 81/270 [19:06<2:20:19, 44.55s/it, 
+]Clusters:  30%|###       | 82/270 [19:33<2:03:40, 39.47s/it, 
+]Clusters:  31%|###       | 83/270 [19:37<1:29:49, 28.82s/it, 
+]Clusters:  31%|###1      | 84/270 [19:50<1:14:16, 23.96s/it, 
+]Clusters:  31%|###1      | 85/270 [20:01<1:02:14, 20.19s/it, 
+]Clusters:  32%|###1      | 86/270 [20:12<53:28, 17.44s/it, 
+]  Clusters:  32%|###2      | 87/270 [20:41<1:03:21, 20.77s/it, 
+]Clusters:  33%|###2      | 88/270 [21:19<1:18:29, 25.88s/it, 
+]Clusters:  33%|###2      | 89/270 [21:32<1:06:47, 22.14s/it, 
+]Clusters:  33%|###3      | 90/270 [22:50<1:56:20, 38.78s/it, 
+]Clusters:  34%|###3      | 91/270 [23:50<2:14:51, 45.20s/it, 
+]Clusters:  34%|###4      | 92/270 [23:55<1:38:33, 33.22s/it, 
+]Clusters:  34%|###4      | 93/270 [24:15<1:26:24, 29.29s/it, 
+]Clusters:  35%|###4      | 94/270 [24:21<1:05:22, 22.29s/it, 
+]Clusters:  35%|###5      | 95/270 [24:34<56:47, 19.47s/it, 
+]  Clusters:  36%|###5      | 96/270 [24:44<48:10, 16.61s/it, 
+]Clusters:  36%|###5      | 97/270 [25:29<1:12:23, 25.11s/it, 
+]Clusters:  36%|###6      | 98/270 [25:56<1:13:44, 25.72s/it, 
+]Clusters:  37%|###6      | 99/270 [26:23<1:14:09, 26.02s/it, 
+]Clusters:  37%|###7      | 100/270 [26:42<1:07:35, 23.85s/it, 
+]Clusters:  37%|###7      | 101/270 [26:43<48:18, 17.15s/it, 
+]  Clusters:  38%|###7      | 102/270 [27:06<52:30, 18.75s/it, 
+]Clusters:  38%|###8      | 103/270 [27:06<36:46, 13.21s/it, 
+]Clusters:  39%|###8      | 104/270 [27:37<50:53, 18.39s/it, 
+]Clusters:  39%|###8      | 105/270 [27:50<46:35, 16.94s/it, 
+]Clusters:  39%|###9      | 106/270 [28:09<47:30, 17.38s/it, 
+]Clusters:  40%|###9      | 107/270 [28:37<56:32, 20.81s/it, 
+]Clusters:  40%|####      | 108/270 [28:43<44:15, 16.39s/it, 
+]Clusters:  40%|####      | 109/270 [28:44<31:38, 11.79s/it, 
+]Clusters:  41%|####      | 110/270 [29:06<39:23, 14.77s/it, 
+]Clusters:  41%|####1     | 111/270 [29:09<29:31, 11.14s/it, 
+]Clusters:  41%|####1     | 112/270 [29:09<20:50,  7.91s/it, 
+]Clusters:  42%|####1     | 113/270 [29:13<17:14,  6.59s/it, 
+]Clusters:  42%|####2     | 114/270 [29:39<32:12, 12.39s/it, 
+]Clusters:  43%|####2     | 115/270 [29:40<23:04,  8.93s/it, 
+]Clusters:  43%|####2     | 116/270 [29:41<17:02,  6.64s/it, 
+]Clusters:  43%|####3     | 117/270 [29:41<12:21,  4.85s/it, 
+]Clusters:  44%|####3     | 118/270 [29:55<19:13,  7.59s/it, 
+]Clusters:  44%|####4     | 119/270 [29:56<13:56,  5.54s/it, 
+]Clusters:  44%|####4     | 120/270 [29:59<12:05,  4.84s/it, 
+]Clusters:  45%|####4     | 121/270 [30:02<10:01,  4.03s/it, 
+]Clusters:  45%|####5     | 122/270 [30:10<13:02,  5.29s/it, 
+]Clusters:  46%|####5     | 123/270 [30:17<14:30,  5.92s/it, 
+]Clusters:  46%|####5     | 124/270 [30:22<13:47,  5.67s/it, 
+]Clusters:  46%|####6     | 125/270 [30:25<11:24,  4.72s/it, 
+]Clusters:  47%|####6     | 126/270 [31:20<47:41, 19.87s/it, 
+]Clusters:  47%|####7     | 127/270 [31:40<47:09, 19.78s/it, 
+]Clusters:  47%|####7     | 128/270 [31:42<34:13, 14.46s/it, 
+]Clusters:  48%|####7     | 129/270 [31:51<30:07, 12.82s/it, 
+]Clusters:  48%|####8     | 130/270 [31:57<25:04, 10.74s/it, 
+]Clusters:  49%|####8     | 131/270 [31:57<17:33,  7.58s/it, 
+]Clusters:  49%|####8     | 132/270 [32:18<26:40, 11.60s/it, 
+]Clusters:  49%|####9     | 133/270 [32:23<22:13,  9.73s/it, 
+]Clusters:  50%|####9     | 134/270 [34:19<1:34:00, 41.48s/it, 
+]Clusters:  50%|#####     | 135/270 [35:01<1:34:09, 41.85s/it, 
+]Clusters:  50%|#####     | 136/270 [35:25<1:21:18, 36.41s/it, 
+]Clusters:  51%|#####     | 137/270 [35:31<1:00:06, 27.12s/it, 
+]Clusters:  51%|#####1    | 138/270 [35:32<42:46, 19.45s/it, 
+]  Clusters:  51%|#####1    | 139/270 [35:40<34:55, 16.00s/it, 
+]Clusters:  52%|#####1    | 140/270 [35:43<26:02, 12.02s/it, 
+]Clusters:  52%|#####2    | 141/270 [35:51<23:35, 10.97s/it, 
+]Clusters:  53%|#####2    | 142/270 [35:55<18:44,  8.78s/it, 
+]Clusters:  53%|#####2    | 143/270 [36:14<25:05, 11.86s/it, 
+]Clusters:  53%|#####3    | 144/270 [36:14<17:39,  8.41s/it, 
+]Clusters:  54%|#####3    | 145/270 [36:20<15:39,  7.52s/it, 
+]Clusters:  54%|#####4    | 146/270 [36:35<20:30,  9.93s/it, 
+]Clusters:  54%|#####4    | 147/270 [36:53<24:59, 12.19s/it, 
+]Clusters:  55%|#####4    | 148/270 [36:59<20:56, 10.30s/it, 
+]Clusters:  55%|#####5    | 149/270 [37:04<17:30,  8.68s/it, 
+]Clusters:  56%|#####5    | 150/270 [37:30<28:05, 14.04s/it, 
+]Clusters:  56%|#####5    | 151/270 [38:10<43:08, 21.75s/it, 
+]Clusters:  56%|#####6    | 152/270 [38:56<57:04, 29.02s/it, 
+]Clusters:  57%|#####6    | 153/270 [38:56<39:58, 20.50s/it, 
+]Clusters:  57%|#####7    | 154/270 [39:01<30:13, 15.63s/it, 
+]Clusters:  57%|#####7    | 155/270 [39:20<32:16, 16.84s/it, 
+]Clusters:  58%|#####7    | 156/270 [39:34<30:06, 15.84s/it, 
+]Clusters:  58%|#####8    | 157/270 [39:41<24:58, 13.26s/it, 
+]Clusters:  59%|#####8    | 158/270 [39:42<18:00,  9.65s/it, 
+]Clusters:  59%|#####8    | 159/270 [39:46<14:37,  7.91s/it, 
+]Clusters:  59%|#####9    | 160/270 [39:51<12:37,  6.89s/it, 
+]Clusters:  60%|#####9    | 161/270 [40:03<15:14,  8.39s/it, 
+]Clusters:  60%|######    | 162/270 [40:06<12:28,  6.93s/it, 
+]Clusters:  60%|######    | 163/270 [40:15<13:38,  7.65s/it, 
+]Clusters:  61%|######    | 164/270 [40:22<12:40,  7.18s/it, 
+]Clusters:  61%|######1   | 165/270 [40:24<09:57,  5.69s/it, 
+]Clusters:  61%|######1   | 166/270 [40:42<16:28,  9.51s/it, 
+]Clusters:  62%|######1   | 167/270 [40:44<12:21,  7.20s/it, 
+]Clusters:  62%|######2   | 168/270 [40:46<09:33,  5.63s/it, 
+]Clusters:  63%|######2   | 169/270 [40:48<07:34,  4.50s/it, 
+]Clusters:  63%|######2   | 170/270 [40:50<06:19,  3.79s/it, 
+]Clusters:  63%|######3   | 171/270 [42:34<55:49, 33.83s/it, 
+]Clusters:  64%|######3   | 172/270 [42:35<39:16, 24.05s/it, 
+]Clusters:  64%|######4   | 173/270 [42:43<31:16, 19.35s/it, 
+]Clusters:  64%|######4   | 174/270 [42:46<22:38, 14.15s/it, 
+]Clusters:  65%|######4   | 175/270 [43:31<37:16, 23.54s/it, 
+]Clusters:  65%|######5   | 176/270 [43:33<26:58, 17.22s/it, 
+]Clusters:  66%|######5   | 177/270 [43:38<20:35, 13.29s/it, 
+]Clusters:  66%|######5   | 178/270 [44:05<26:40, 17.40s/it, 
+]Clusters:  66%|######6   | 179/270 [44:06<18:56, 12.49s/it, 
+]Clusters:  67%|######6   | 180/270 [44:47<31:41, 21.13s/it, 
+]Clusters:  67%|######7   | 181/270 [45:09<31:58, 21.55s/it, 
+]Clusters:  67%|######7   | 182/270 [45:24<28:30, 19.44s/it, 
+]Clusters:  68%|######7   | 183/270 [45:41<26:58, 18.61s/it, 
+]Clusters:  68%|######8   | 184/270 [45:58<26:14, 18.31s/it, 
+]Clusters:  69%|######8   | 185/270 [46:12<23:54, 16.88s/it, 
+]Clusters:  69%|######8   | 186/270 [46:14<17:17, 12.35s/it, 
+]Clusters:  69%|######9   | 187/270 [47:17<38:16, 27.66s/it, 
+]Clusters:  70%|######9   | 188/270 [56:29<4:13:00, 185.13s/it, 
+]Clusters:  70%|#######   | 189/270 [57:49<3:27:20, 153.58s/it, 
+]Clusters:  70%|#######   | 190/270 [58:11<2:31:54, 113.94s/it, 
+]Clusters:  71%|#######   | 191/270 [58:34<1:53:57, 86.55s/it, 
+] Clusters:  71%|#######1  | 192/270 [58:43<1:22:20, 63.34s/it, 
+]Clusters:  71%|#######1  | 193/270 [58:59<1:03:01, 49.11s/it, 
+]Clusters:  72%|#######1  | 194/270 [1:00:04<1:08:15, 53.88s/it, 
+]Clusters:  72%|#######2  | 195/270 [1:00:06<47:52, 38.30s/it, 
+]  Clusters:  73%|#######2  | 196/270 [1:00:10<34:34, 28.03s/it, 
+]Clusters:  73%|#######3  | 198/270 [1:00:29<27:00, 22.50s/it, 
+]Clusters:  74%|#######3  | 199/270 [1:00:52<26:54, 22.74s/it, 
+]Clusters:  74%|#######4  | 200/270 [1:01:01<21:44, 18.64s/it, 
+]Clusters:  74%|#######4  | 201/270 [1:01:02<15:26, 13.43s/it, 
+]Clusters:  75%|#######4  | 202/270 [1:01:08<12:32, 11.07s/it, 
+]Clusters:  75%|#######5  | 203/270 [1:01:28<15:22, 13.76s/it, 
+]Clusters:  76%|#######5  | 204/270 [1:01:34<12:28, 11.34s/it, 
+]Clusters:  76%|#######5  | 205/270 [1:02:29<26:34, 24.53s/it, 
+]Clusters:  76%|#######6  | 206/270 [1:02:33<19:27, 18.24s/it, 
+]Clusters:  77%|#######6  | 207/270 [1:02:43<16:47, 15.99s/it, 
+]Clusters:  77%|#######7  | 208/270 [1:03:36<27:50, 26.94s/it, 
+]Clusters:  77%|#######7  | 209/270 [1:03:37<19:33, 19.24s/it, 
+]Clusters:  78%|#######7  | 210/270 [1:03:40<14:27, 14.46s/it, 
+]Clusters:  78%|#######8  | 211/270 [1:03:41<10:13, 10.39s/it, 
+]Clusters:  79%|#######8  | 212/270 [1:03:42<07:11,  7.44s/it, 
+]Clusters:  79%|#######8  | 213/270 [1:03:47<06:30,  6.85s/it, 
+]Clusters:  79%|#######9  | 214/270 [1:05:23<31:09, 33.38s/it, 
+]Clusters:  80%|#######9  | 215/270 [1:06:19<36:51, 40.20s/it, 
+]Clusters:  80%|########  | 216/270 [1:06:26<27:18, 30.34s/it, 
+]Clusters:  80%|########  | 217/270 [1:08:44<55:14, 62.54s/it, 
+]Clusters:  81%|########  | 218/270 [1:09:03<42:54, 49.51s/it, 
+]Clusters:  81%|########1 | 219/270 [1:10:04<44:56, 52.87s/it, 
+]Clusters:  81%|########1 | 220/270 [1:11:25<51:08, 61.37s/it, 
+]Clusters:  82%|########1 | 221/270 [1:13:29<1:05:37, 80.36s/it, 
+]Clusters:  82%|########2 | 222/270 [1:13:39<47:11, 59.00s/it, 
+]  Clusters:  83%|########2 | 223/270 [1:13:39<32:24, 41.38s/it, 
+]Clusters:  83%|########2 | 224/270 [1:13:55<25:57, 33.86s/it, 
+]Clusters:  83%|########3 | 225/270 [1:15:19<36:32, 48.71s/it, 
+]Clusters:  84%|########3 | 226/270 [1:15:33<28:05, 38.30s/it, 
+]Clusters:  84%|########4 | 227/270 [1:15:39<20:41, 28.88s/it, 
+]Clusters:  84%|########4 | 228/270 [1:16:45<27:52, 39.83s/it, 
+]Clusters:  85%|########4 | 229/270 [1:17:00<22:03, 32.28s/it, 
+]Clusters:  85%|########5 | 230/270 [1:19:15<42:13, 63.34s/it, 
+]Clusters:  86%|########5 | 231/270 [1:19:16<29:02, 44.67s/it, 
+]Clusters:  86%|########5 | 232/270 [1:20:57<38:53, 61.40s/it, 
+]Clusters:  86%|########6 | 233/270 [1:21:16<30:05, 48.79s/it, 
+]Clusters:  87%|########6 | 234/270 [1:23:40<46:26, 77.39s/it, 
+]Clusters:  87%|########7 | 235/270 [1:24:55<44:42, 76.65s/it, 
+]Clusters:  87%|########7 | 236/270 [1:26:06<42:29, 74.98s/it, 
+]Clusters:  88%|########7 | 237/270 [1:27:30<42:40, 77.60s/it, 
+]Clusters:  88%|########8 | 238/270 [1:27:50<32:13, 60.41s/it, 
+]Clusters:  89%|########8 | 239/270 [1:30:30<46:36, 90.22s/it, 
+]Clusters:  89%|########8 | 240/270 [1:31:34<41:05, 82.18s/it, 
+]Clusters:  89%|########9 | 241/270 [1:34:06<49:55, 103.28s/it, 
+]Clusters:  90%|########9 | 242/270 [1:34:26<36:35, 78.39s/it, 
+] Clusters:  90%|######### | 243/270 [1:39:33<1:06:05, 146.86s/it, 
+]Clusters:  90%|######### | 244/270 [1:39:47<46:18, 106.88s/it, 
+]  Clusters:  91%|######### | 245/270 [1:41:08<41:20, 99.22s/it, 
+] Clusters:  91%|#########1| 246/270 [1:49:08<1:25:25, 213.55s/it, 
+]Clusters:  91%|#########1| 246/270 [2:03:03<12:00, 30.01s/it, 
+]   C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+----------------------------------------
+Exception happened during processing of request from ('144.167.34.179', 47820)
+Traceback (most recent call last):
+  File "C:\Users\seun\anaconda3\lib\socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\seun\anaconda3\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\seun\anaconda3\lib\socketserver.py", line 720, in __init__
+    self.handle()
+  File "C:\Users\seun\anaconda3\lib\http\server.py", line 426, in handle
+    self.handle_one_request()
+  File "C:\Users\seun\anaconda3\lib\http\server.py", line 414, in handle_one_request
+    method()
+  File "C:\Users\seun\anaconda3\lib\site-packages\prometheus_client\exposition.py", line 159, in do_GET
+    self.wfile.write(output)
+  File "C:\Users\seun\anaconda3\lib\socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+
+Traceback (most recent call last):
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\seun\anaconda3\lib\http\client.py", line 1344, in getresponse
+    response.begin()
+  File "C:\Users\seun\anaconda3\lib\http\client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\seun\anaconda3\lib\http\client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\seun\anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\seun\anaconda3\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\util\retry.py", line 376, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 423, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\seun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 331, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "clusters.py", line 391, in <module>
+    main()
+  File "<decorator-gen-1>", line 2, in main
+  File "C:\Users\seun\anaconda3\lib\site-packages\prometheus_client\context_managers.py", line 66, in wrapped
+    return func(*args, **kwargs)
+  File "clusters.py", line 387, in main
+    c.process_clusters()
+  File "clusters.py", line 347, in process_clusters
+    insert = self.insert_record(client, "clusters", tracker_result[i]["tid"], "", json_body)
+  File "C:\API\Utils\es.py", line 97, in insert_record
+    request_timeout=30
+  File "C:\Users\seun\anaconda3\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "C:\Users\seun\anaconda3\lib\site-packages\elasticsearch\client\__init__.py", line 407, in index
+    body=body,
+  File "C:\Users\seun\anaconda3\lib\site-packages\elasticsearch\transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "C:\Users\seun\anaconda3\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Thu 02/04/2021- 4:45:08.99 
+------------------------------------END------------------------------------------ 
+------------------------------------START------------------------------------------ 
+Thu 02/04/2021- 8:46:55.39 
+Clusters:   0%|          | 0/270 [00:00<?, ?it/s, 
+]Failed on insert 102 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 104 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 106 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 108 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 110 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 112 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 114 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 116 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 118 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 120 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 122 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 124 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 126 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 128 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 130 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Failed on insert 132 times in a row, error is ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='144.167.35.89', port=9200): Read timed out. (read timeout=30))
+Clusters:   0%|          | 1/270 [36:06<161:51:25, 2166.12s/it, 
+]Clusters:   1%|          | 2/270 [36:09<112:57:44, 1517.41s/it, 
+]Clusters:   1%|1         | 3/270 [36:11<78:48:18, 1062.54s/it, 
+] Clusters:   1%|1         | 4/270 [36:11<54:57:52, 743.88s/it, 
+] Clusters:   2%|1         | 5/270 [36:11<38:20:15, 520.81s/it, 
+]Clusters:   2%|2         | 6/270 [36:12<26:44:56, 364.76s/it, 
+]Clusters:   3%|2         | 7/270 [36:12<18:39:39, 255.44s/it, 
+]Clusters:   3%|2         | 8/270 [36:12<13:01:09, 178.89s/it, 
+]Clusters:   3%|3         | 9/270 [36:13<9:05:01, 125.29s/it, 
+] Clusters:   4%|3         | 10/270 [36:13<6:20:17, 87.76s/it, 
+]Clusters:   4%|4         | 11/270 [36:13<4:25:29, 61.51s/it, 
+]Clusters:   4%|4         | 12/270 [36:13<3:05:21, 43.11s/it, 
+]Clusters:   5%|4         | 13/270 [36:14<2:09:32, 30.24s/it, 
+]Clusters:   5%|5         | 14/270 [36:14<1:30:38, 21.24s/it, 
+]Clusters:   6%|5         | 15/270 [36:14<1:03:44, 15.00s/it, 
+]Clusters:   6%|5         | 16/270 [36:14<44:35, 10.53s/it, 
+]  Clusters:   6%|6         | 17/270 [36:15<31:31,  7.48s/it, 
+]Clusters:   7%|6         | 18/270 [36:15<22:24,  5.34s/it, 
+]Clusters:   7%|7         | 19/270 [36:16<17:02,  4.07s/it, 
+]Clusters:   7%|7         | 20/270 [36:17<12:23,  2.97s/it, 
+]Clusters:   8%|7         | 21/270 [36:17<09:33,  2.30s/it, 
+]Clusters:   8%|8         | 22/270 [36:18<07:14,  1.75s/it, 
+]Clusters:   9%|8         | 23/270 [36:18<05:51,  1.42s/it, 
+]Clusters:   9%|8         | 24/270 [36:19<04:30,  1.10s/it, 
+]Clusters:   9%|9         | 25/270 [36:20<04:11,  1.03s/it, 
+]Clusters:  10%|9         | 26/270 [36:21<04:09,  1.02s/it, 
+]Clusters:  10%|#         | 27/270 [36:21<03:02,  1.33it/s, 
+]Clusters:  10%|#         | 28/270 [36:21<02:48,  1.44it/s, 
+]Clusters:  11%|#         | 29/270 [36:22<02:59,  1.34it/s, 
+]Clusters:  11%|#1        | 30/270 [36:23<02:45,  1.45it/s, 
+]Clusters:  11%|#1        | 31/270 [36:23<02:13,  1.79it/s, 
+]Clusters:  12%|#1        | 32/270 [36:24<02:21,  1.69it/s, 
+]Clusters:  12%|#2        | 33/270 [36:25<03:27,  1.14it/s, 
+]Clusters:  13%|#2        | 34/270 [36:25<02:42,  1.46it/s, 
+]Clusters:  13%|#2        | 35/270 [36:26<02:10,  1.80it/s, 
+]Clusters:  13%|#3        | 36/270 [36:28<03:38,  1.07it/s, 
+]Clusters:  14%|#3        | 37/270 [36:28<02:52,  1.35it/s, 
+]Clusters:  14%|#4        | 38/270 [36:28<02:23,  1.62it/s, 
+]Clusters:  14%|#4        | 39/270 [36:29<02:59,  1.29it/s, 
+]Clusters:  15%|#4        | 40/270 [36:30<02:22,  1.61it/s, 
+]Clusters:  15%|#5        | 41/270 [36:31<03:03,  1.25it/s, 
+]Clusters:  16%|#5        | 42/270 [36:32<03:04,  1.24it/s, 
+]Clusters:  16%|#5        | 43/270 [36:32<02:41,  1.40it/s, 
+]Clusters:  16%|#6        | 44/270 [36:32<02:05,  1.80it/s, 
+]Clusters:  17%|#6        | 45/270 [36:33<01:45,  2.13it/s, 
+]Clusters:  17%|#7        | 46/270 [36:33<01:31,  2.46it/s, 
+]Clusters:  17%|#7        | 47/270 [36:34<01:57,  1.90it/s, 
+]Clusters:  18%|#7        | 48/270 [36:34<01:57,  1.89it/s, 
+]Clusters:  18%|#8        | 49/270 [36:34<01:44,  2.11it/s, 
+]Clusters:  19%|#8        | 50/270 [36:35<01:27,  2.51it/s, 
+]Clusters:  19%|#8        | 51/270 [36:35<01:13,  2.97it/s, 
+]Clusters:  19%|#9        | 52/270 [36:35<01:03,  3.43it/s, 
+]Clusters:  20%|#9        | 53/270 [36:35<00:54,  3.96it/s, 
+]Clusters:  20%|##        | 54/270 [36:36<01:21,  2.65it/s, 
+]Clusters:  20%|##        | 55/270 [36:36<01:19,  2.70it/s, 
+]Clusters:  21%|##        | 56/270 [36:37<01:15,  2.82it/s, 
+]Clusters:  21%|##1       | 57/270 [36:38<01:57,  1.81it/s, 
+]Clusters:  21%|##1       | 58/270 [36:39<02:46,  1.27it/s, 
+]Clusters:  22%|##1       | 59/270 [36:39<02:09,  1.63it/s, 
+]Clusters:  22%|##2       | 60/270 [36:39<01:49,  1.92it/s, 
+]Clusters:  23%|##2       | 61/270 [36:40<02:03,  1.69it/s, 
+]Clusters:  23%|##2       | 62/270 [36:41<01:52,  1.85it/s, 
+]Clusters:  23%|##3       | 63/270 [36:41<01:37,  2.12it/s, 
+]Clusters:  24%|##3       | 64/270 [36:41<01:20,  2.57it/s, 
+]Clusters:  24%|##4       | 65/270 [36:41<01:14,  2.74it/s, 
+]Clusters:  24%|##4       | 66/270 [36:42<01:04,  3.17it/s, 
+]Clusters:  25%|##5       | 68/270 [36:42<00:53,  3.79it/s, 
+]Clusters:  26%|##5       | 69/270 [36:42<00:43,  4.63it/s, 
+]Clusters:  26%|##5       | 70/270 [36:42<00:49,  4.02it/s, 
+]Clusters:  26%|##6       | 71/270 [36:43<00:56,  3.54it/s, 
+]Clusters:  27%|##6       | 72/270 [36:43<00:57,  3.44it/s, 
+]Clusters:  27%|##7       | 73/270 [36:43<00:55,  3.53it/s, 
+]Clusters:  27%|##7       | 74/270 [36:44<01:06,  2.96it/s, 
+]Clusters:  28%|##7       | 75/270 [36:44<00:55,  3.52it/s, 
+]Clusters:  28%|##8       | 76/270 [36:44<01:10,  2.74it/s, 
+]Clusters:  29%|##8       | 77/270 [36:45<01:08,  2.82it/s, 
+]Clusters:  29%|##8       | 78/270 [36:46<01:36,  2.00it/s, 
+]Clusters:  29%|##9       | 79/270 [36:46<01:15,  2.52it/s, 
+]Clusters:  30%|##9       | 80/270 [36:46<01:27,  2.16it/s, 
+]Clusters:  30%|###       | 81/270 [36:47<01:14,  2.53it/s, 
+]Clusters:  30%|###       | 82/270 [36:47<01:03,  2.97it/s, 
+]Clusters:  31%|###       | 83/270 [36:47<00:56,  3.31it/s, 
+]Clusters:  31%|###1      | 84/270 [36:47<00:58,  3.16it/s, 
+]Clusters:  31%|###1      | 85/270 [36:48<00:55,  3.31it/s, 
+]Clusters:  32%|###1      | 86/270 [36:48<00:51,  3.61it/s, 
+]Clusters:  32%|###2      | 87/270 [36:48<00:45,  3.98it/s, 
+]Clusters:  33%|###2      | 88/270 [36:48<00:43,  4.17it/s, 
+]Clusters:  33%|###2      | 89/270 [36:49<00:59,  3.06it/s, 
+]Clusters:  33%|###3      | 90/270 [36:49<00:54,  3.33it/s, 
+]Clusters:  34%|###3      | 91/270 [36:49<00:50,  3.54it/s, 
+]Clusters:  34%|###4      | 92/270 [36:50<00:49,  3.60it/s, 
+]Clusters:  34%|###4      | 93/270 [36:50<00:47,  3.69it/s, 
+]Clusters:  35%|###4      | 94/270 [36:50<00:46,  3.81it/s, 
+]Clusters:  35%|###5      | 95/270 [36:50<00:52,  3.36it/s, 
+]Clusters:  36%|###5      | 96/270 [36:51<00:48,  3.61it/s, 
+]Clusters:  37%|###6      | 99/270 [36:51<00:38,  4.43it/s, 
+]Clusters:  37%|###7      | 100/270 [36:51<00:39,  4.31it/s, 
+]Clusters:  37%|###7      | 101/270 [36:52<00:40,  4.16it/s, 
+]Clusters:  38%|###7      | 102/270 [36:52<00:41,  4.02it/s, 
+]Clusters:  38%|###8      | 103/270 [36:52<00:40,  4.15it/s, 
+]Clusters:  39%|###8      | 105/270 [36:52<00:35,  4.59it/s, 
+]Clusters:  39%|###9      | 106/270 [36:53<00:36,  4.46it/s, 
+]Clusters:  40%|###9      | 107/270 [36:53<00:36,  4.43it/s, 
+]Clusters:  40%|####      | 109/270 [36:53<00:32,  4.98it/s, 
+]Clusters:  41%|####1     | 111/270 [36:53<00:25,  6.17it/s, 
+]Clusters:  42%|####1     | 113/270 [36:53<00:20,  7.63it/s, 
+]Clusters:  43%|####2     | 116/270 [36:53<00:16,  9.59it/s, 
+]Clusters:  44%|####3     | 118/270 [37:04<04:17,  1.70s/it, 
+]Clusters:  44%|####4     | 119/270 [37:17<12:45,  5.07s/it, 
+]Clusters:  44%|####4     | 120/270 [37:54<36:14, 14.50s/it, 
+]Clusters:  45%|####4     | 121/270 [38:12<38:59, 15.70s/it, 
+]Clusters:  45%|####5     | 122/270 [38:21<33:40, 13.66s/it, 
+]Clusters:  46%|####5     | 123/270 [38:24<25:35, 10.45s/it, 
+]Clusters:  46%|####5     | 124/270 [38:25<18:28,  7.59s/it, 
+]Clusters:  46%|####6     | 125/270 [38:26<13:44,  5.68s/it, 
+]Clusters:  47%|####6     | 126/270 [38:29<11:34,  4.83s/it, 
+]Clusters:  47%|####7     | 127/270 [38:35<12:11,  5.12s/it, 
+]Clusters:  47%|####7     | 128/270 [38:39<11:44,  4.96s/it, 
+]Clusters:  48%|####7     | 129/270 [38:58<21:24,  9.11s/it, 
+]Clusters:  48%|####8     | 130/270 [40:12<1:06:44, 28.60s/it, 
+]Clusters:  49%|####8     | 131/270 [40:18<50:04, 21.61s/it, 
+]  Clusters:  49%|####8     | 132/270 [40:20<36:07, 15.71s/it, 
+]Clusters:  49%|####9     | 133/270 [40:22<26:38, 11.67s/it, 
+]Clusters:  50%|####9     | 134/270 [41:58<1:23:38, 36.90s/it, 
+]Clusters:  50%|#####     | 135/270 [42:22<1:14:16, 33.01s/it, 
+]Clusters:  50%|#####     | 136/270 [42:26<54:44, 24.51s/it, 
+]  Clusters:  51%|#####     | 137/270 [42:27<38:50, 17.52s/it, 
+]Clusters:  51%|#####1    | 138/270 [42:42<36:38, 16.66s/it, 
+]Clusters:  51%|#####1    | 139/270 [42:46<28:19, 12.98s/it, 
+]Clusters:  52%|#####1    | 140/270 [42:47<20:00,  9.23s/it, 
+]Clusters:  52%|#####2    | 141/270 [43:03<24:07, 11.22s/it, 
+]Clusters:  53%|#####2    | 142/270 [43:08<20:21,  9.54s/it, 
+]Clusters:  53%|#####2    | 143/270 [43:16<18:57,  8.95s/it, 
+]Clusters:  53%|#####3    | 144/270 [43:18<14:26,  6.88s/it, 
+]Clusters:  54%|#####3    | 145/270 [43:20<11:25,  5.49s/it, 
+]Clusters:  54%|#####4    | 146/270 [43:36<17:38,  8.54s/it, 
+]Clusters:  54%|#####4    | 147/270 [43:42<16:00,  7.81s/it, 
+]Clusters:  55%|#####4    | 148/270 [43:47<14:10,  6.97s/it, 
+]Clusters:  55%|#####5    | 149/270 [43:48<10:28,  5.19s/it, 
+]Clusters:  56%|#####5    | 150/270 [44:04<16:59,  8.50s/it, 
+]Clusters:  56%|#####5    | 151/270 [45:06<48:16, 24.34s/it, 
+]Clusters:  56%|#####6    | 152/270 [45:18<41:01, 20.86s/it, 
+]Clusters:  57%|#####6    | 153/270 [45:51<47:40, 24.45s/it, 
+]Clusters:  57%|#####7    | 154/270 [45:57<36:14, 18.74s/it, 
+]Clusters:  57%|#####7    | 155/270 [46:00<27:04, 14.13s/it, 
+]Clusters:  58%|#####7    | 156/270 [46:04<21:04, 11.09s/it, 
+]Clusters:  58%|#####8    | 157/270 [46:09<17:15,  9.16s/it, 
+]Clusters:  59%|#####8    | 158/270 [46:10<12:43,  6.82s/it, 
+]Clusters:  59%|#####8    | 159/270 [46:14<10:47,  5.83s/it, 
+]Clusters:  59%|#####9    | 160/270 [46:23<12:57,  7.07s/it, 
+]Clusters:  60%|#####9    | 161/270 [46:29<11:54,  6.55s/it, 
+]Clusters:  60%|######    | 162/270 [46:31<09:28,  5.26s/it, 
+]Clusters:  60%|######    | 163/270 [46:33<07:33,  4.24s/it, 
+]Clusters:  61%|######    | 164/270 [46:35<06:12,  3.51s/it, 
+]Clusters:  61%|######1   | 165/270 [46:36<05:06,  2.91s/it, 
+]Clusters:  61%|######1   | 166/270 [46:49<10:06,  5.83s/it, 
+]Clusters:  62%|######1   | 167/270 [46:50<07:41,  4.48s/it, 
+]Clusters:  62%|######2   | 168/270 [46:52<06:08,  3.62s/it, 
+]Clusters:  63%|######2   | 169/270 [46:53<04:51,  2.89s/it, 
+]Clusters:  63%|######2   | 170/270 [46:54<04:03,  2.43s/it, 
+]Clusters:  63%|######3   | 171/270 [48:15<42:37, 25.83s/it, 
+]Clusters:  64%|######3   | 172/270 [48:16<30:13, 18.51s/it, 
+]Clusters:  64%|######4   | 173/270 [48:24<24:50, 15.36s/it, 
+]Clusters:  64%|######4   | 174/270 [49:19<43:17, 27.06s/it, 
+]Clusters:  65%|######4   | 175/270 [49:32<36:18, 22.93s/it, 
+]Clusters:  65%|######5   | 176/270 [49:41<29:28, 18.81s/it, 
+]Clusters:  66%|######5   | 177/270 [49:46<22:50, 14.74s/it, 
+]Clusters:  66%|######5   | 178/270 [50:55<47:21, 30.88s/it, 
+]Clusters:  66%|######6   | 179/270 [50:57<33:40, 22.20s/it, 
+]Clusters:  67%|######6   | 180/270 [51:18<32:42, 21.81s/it, 
+]Clusters:  67%|######7   | 181/270 [51:30<28:12, 19.01s/it, 
+]Clusters:  67%|######7   | 182/270 [51:32<20:13, 13.78s/it, 
+]Clusters:  68%|######7   | 183/270 [51:48<21:14, 14.65s/it, 
+]Clusters:  68%|######8   | 184/270 [52:03<20:51, 14.55s/it, 
+]Clusters:  69%|######8   | 185/270 [52:18<20:49, 14.70s/it, 
+]Clusters:  69%|######8   | 186/270 [52:22<16:09, 11.54s/it, 
+]Clusters:  69%|######9   | 187/270 [53:04<28:24, 20.54s/it, 
+]Clusters:  70%|######9   | 188/270 [1:00:27<3:21:16, 147.28s/it, 
+]Clusters:  70%|#######   | 189/270 [1:01:21<2:41:03, 119.30s/it, 
+]Clusters:  70%|#######   | 190/270 [1:01:41<1:59:21, 89.52s/it, 
+] Clusters:  71%|#######   | 191/270 [1:01:46<1:24:34, 64.24s/it, 
+]Clusters:  71%|#######1  | 192/270 [1:01:59<1:03:24, 48.77s/it, 
+]Clusters:  71%|#######1  | 193/270 [1:02:03<45:35, 35.53s/it, 
+]  Clusters:  72%|#######1  | 194/270 [1:02:34<43:05, 34.03s/it, 
+]Clusters:  72%|#######2  | 195/270 [1:02:35<30:19, 24.26s/it, 
+]Clusters:  73%|#######2  | 196/270 [1:02:46<24:47, 20.10s/it, 
+]Clusters:  73%|#######3  | 198/270 [1:02:58<19:05, 15.91s/it, 
+]Clusters:  74%|#######3  | 199/270 [1:03:00<13:48, 11.67s/it, 
+]Clusters:  74%|#######4  | 200/270 [1:03:14<14:35, 12.51s/it, 
+]Clusters:  74%|#######4  | 201/270 [1:03:19<11:54, 10.35s/it, 
+]Clusters:  75%|#######4  | 202/270 [1:03:23<09:20,  8.24s/it, 
+]Clusters:  75%|#######5  | 203/270 [1:03:42<12:56, 11.58s/it, 
+]Clusters:  76%|#######5  | 204/270 [1:03:43<09:06,  8.28s/it, 
+]Clusters:  76%|#######5  | 205/270 [1:04:12<15:42, 14.50s/it, 
+]Clusters:  76%|#######6  | 206/270 [1:04:15<11:45, 11.02s/it, 
+]Clusters:  77%|#######6  | 207/270 [1:04:24<11:00, 10.48s/it, 
+]Clusters:  77%|#######7  | 208/270 [1:04:52<16:15, 15.74s/it, 
+]Clusters:  77%|#######7  | 209/270 [1:04:53<11:25, 11.24s/it, 
+]Clusters:  78%|#######7  | 210/270 [1:04:54<08:17,  8.30s/it, 
+]Clusters:  78%|#######8  | 211/270 [1:04:54<05:51,  5.96s/it, 
+]Clusters:  79%|#######8  | 212/270 [1:04:55<04:08,  4.29s/it, 
+]Clusters:  79%|#######8  | 213/270 [1:04:59<04:03,  4.26s/it, 
+]Clusters:  79%|#######9  | 214/270 [1:05:59<19:37, 21.02s/it, 
+]Clusters:  80%|#######9  | 215/270 [1:07:35<39:56, 43.57s/it, 
+]Clusters:  80%|########  | 216/270 [1:07:40<28:38, 31.83s/it, 
+]Clusters:  80%|########  | 217/270 [1:09:24<47:11, 53.42s/it, 
+]Clusters:  81%|########  | 218/270 [1:22:17<3:53:29, 269.41s/it, 
+]Clusters:  81%|########1 | 219/270 [1:22:27<2:42:46, 191.49s/it, 
+]Clusters:  81%|########1 | 220/270 [1:24:30<2:22:34, 171.09s/it, 
+]Clusters:  82%|########1 | 221/270 [1:24:56<1:44:01, 127.38s/it, 
+]Clusters:  82%|########2 | 222/270 [1:25:00<1:12:28, 90.59s/it, 
+] Clusters:  83%|########2 | 223/270 [1:26:20<1:08:29, 87.44s/it, 
+]Clusters:  83%|########2 | 224/270 [1:26:25<47:53, 62.46s/it, 
+]  Clusters:  83%|########3 | 225/270 [1:26:41<36:35, 48.78s/it, 
+]Clusters:  84%|########3 | 226/270 [1:26:45<25:50, 35.23s/it, 
+]Clusters:  84%|########4 | 227/270 [1:26:51<18:54, 26.38s/it, 
+]Clusters:  84%|########4 | 228/270 [1:26:59<14:33, 20.79s/it, 
+]Clusters:  85%|########4 | 229/270 [1:27:07<11:46, 17.24s/it, 
+]Clusters:  85%|########5 | 230/270 [1:28:33<25:08, 37.72s/it, 
+]Clusters:  86%|########5 | 231/270 [1:28:57<21:52, 33.66s/it, 
+]Clusters:  86%|########5 | 232/270 [1:29:47<24:27, 38.63s/it, 
+]Clusters:  86%|########6 | 233/270 [1:29:51<17:20, 28.12s/it, 
+]Clusters:  87%|########6 | 234/270 [1:30:54<23:05, 38.48s/it, 
+]Clusters:  87%|########7 | 235/270 [1:31:44<24:31, 42.05s/it, 
+]Clusters:  87%|########7 | 236/270 [1:32:34<25:14, 44.56s/it, 
+]Clusters:  88%|########7 | 237/270 [1:32:59<21:14, 38.63s/it, 
+]Clusters:  88%|########8 | 238/270 [1:34:07<25:15, 47.37s/it, 
+]Clusters:  89%|########8 | 239/270 [1:34:48<23:33, 45.59s/it, 
+]Clusters:  89%|########8 | 240/270 [1:36:13<28:40, 57.36s/it, 
+]Clusters:  89%|########9 | 241/270 [1:37:11<27:45, 57.45s/it, 
+]Clusters:  90%|########9 | 242/270 [1:37:24<20:39, 44.27s/it, 
+]Clusters:  90%|######### | 243/270 [1:42:51<58:04, 129.04s/it, 
+]Clusters:  90%|######### | 244/270 [1:43:24<43:21, 100.07s/it, 
+]Clusters:  91%|######### | 245/270 [1:44:18<35:55, 86.23s/it, 
+] Clusters:  91%|#########1| 246/270 [1:50:14<1:06:56, 167.37s/it, 
+]Clusters:  91%|#########1| 247/270 [1:52:00<57:03, 148.87s/it, 
+]  Clusters:  92%|#########1| 248/270 [1:53:10<45:54, 125.21s/it, 
+]Clusters:  92%|#########2| 249/270 [2:05:29<1:48:15, 309.32s/it, 
+]Clusters:  93%|#########2| 250/270 [2:09:26<1:35:50, 287.55s/it, 
+]Clusters:  93%|#########2| 251/270 [2:09:59<1:06:52, 211.20s/it, 
+]Clusters:  93%|#########3| 252/270 [2:22:44<1:53:11, 377.31s/it, 
+]Clusters:  94%|#########3| 253/270 [3:03:52<4:44:36, 1004.48s/it, 
+]Clusters:  94%|#########4| 254/270 [3:09:05<3:32:36, 797.28s/it, 
+] Clusters:  94%|#########4| 255/270 [3:09:16<2:20:20, 561.38s/it, 
+]Clusters:  95%|#########4| 256/270 [3:47:13<4:11:01, 1075.85s/it, 
+]Clusters:  95%|#########4| 256/270 [3:47:13<12:25, 53.25s/it, 
+]    C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+
+Finished processing!
+
+
+Database up to date!
+Time to complete: 227.0 Mins 14.0 Secs AT - 2021-02-04T12:34:11.293030
+
+Closing pool
+Joining pool
+Clearing pool
+Finished!
+Thu 02/04/2021-12:34:11.50 
+------------------------------------END------------------------------------------ 
+------------------------------------START------------------------------------------ 
+Thu 02/04/2021-20:38:03.31 
+Clusters:   0%|          | 0/270 [00:00<?, ?it/s, 
+]Clusters:   0%|          | 1/270 [00:05<24:59,  5.58s/it, 
+]Clusters:   1%|          | 2/270 [00:06<18:00,  4.03s/it, 
+]Clusters:   1%|1         | 3/270 [00:08<15:55,  3.58s/it, 
+]Clusters:   1%|1         | 4/270 [00:15<20:13,  4.56s/it, 
+]Clusters:   2%|1         | 5/270 [00:17<17:16,  3.91s/it, 
+]Clusters:   2%|2         | 6/270 [00:22<17:57,  4.08s/it, 
+]Clusters:   3%|2         | 7/270 [00:25<16:26,  3.75s/it, 
+]Clusters:   3%|2         | 8/270 [00:29<17:20,  3.97s/it, 
+]Clusters:   3%|3         | 9/270 [00:35<19:04,  4.39s/it, 
+]Clusters:   4%|3         | 10/270 [00:36<15:39,  3.61s/it, 
+]Clusters:   4%|4         | 11/270 [00:37<12:03,  2.79s/it, 
+]Clusters:   4%|4         | 12/270 [00:44<16:28,  3.83s/it, 
+]Clusters:   5%|4         | 13/270 [00:49<19:04,  4.45s/it, 
+]Clusters:   5%|5         | 14/270 [00:52<16:26,  3.86s/it, 
+]Clusters:   6%|5         | 15/270 [00:57<18:18,  4.31s/it, 
+]Clusters:   6%|5         | 16/270 [00:58<13:54,  3.29s/it, 
+]Clusters:   6%|6         | 17/270 [01:14<30:04,  7.13s/it, 
+]Clusters:   7%|6         | 18/270 [01:16<23:36,  5.62s/it, 
+]Clusters:   7%|7         | 19/270 [01:23<24:35,  5.88s/it, 
+]Clusters:   7%|7         | 20/270 [01:24<18:15,  4.38s/it, 
+]Clusters:   8%|7         | 21/270 [01:32<23:06,  5.57s/it, 
+]Clusters:   8%|8         | 22/270 [01:33<17:06,  4.14s/it, 
+]Clusters:   9%|8         | 23/270 [01:35<15:06,  3.67s/it, 
+]Clusters:   9%|8         | 24/270 [01:37<12:15,  2.99s/it, 
+]Clusters:   9%|9         | 25/270 [01:40<12:39,  3.10s/it, 
+]Clusters:  10%|9         | 26/270 [01:51<22:19,  5.49s/it, 
+]Clusters:  10%|#         | 27/270 [01:56<21:47,  5.38s/it, 
+]Clusters:  10%|#         | 28/270 [02:10<32:02,  7.94s/it, 
+]Clusters:  11%|#         | 29/270 [02:11<22:57,  5.71s/it, 
+]Clusters:  11%|#1        | 30/270 [02:27<35:46,  8.94s/it, 
+]Clusters:  11%|#1        | 31/270 [02:29<26:49,  6.74s/it, 
+]Clusters:  12%|#1        | 32/270 [02:30<20:30,  5.17s/it, 
+]Clusters:  12%|#2        | 33/270 [02:33<17:43,  4.49s/it, 
+]Clusters:  13%|#2        | 34/270 [02:36<15:34,  3.96s/it, 
+]Clusters:  13%|#2        | 35/270 [03:13<54:34, 13.93s/it, 
+]Clusters:  13%|#3        | 36/270 [03:39<1:07:38, 17.35s/it, 
+]Clusters:  14%|#3        | 37/270 [03:45<54:45, 14.10s/it, 
+]  Clusters:  14%|#4        | 38/270 [03:58<53:25, 13.82s/it, 
+]Clusters:  14%|#4        | 39/270 [04:27<1:10:39, 18.35s/it, 
+]Clusters:  15%|#4        | 40/270 [04:30<52:21, 13.66s/it, 
+]  Clusters:  15%|#5        | 41/270 [04:31<37:15,  9.76s/it, 
+]Clusters:  16%|#5        | 42/270 [04:40<36:16,  9.55s/it, 
+]Clusters:  16%|#5        | 43/270 [04:43<29:37,  7.83s/it, 
+]Clusters:  16%|#6        | 44/270 [05:04<44:15, 11.75s/it, 
+]Clusters:  17%|#6        | 45/270 [05:28<57:02, 15.21s/it, 
+]Clusters:  17%|#7        | 46/270 [06:27<1:46:34, 28.55s/it, 
+]Clusters:  17%|#7        | 47/270 [06:28<1:15:14, 20.24s/it, 
+]Clusters:  18%|#7        | 48/270 [06:35<1:00:07, 16.25s/it, 
+]Clusters:  18%|#8        | 49/270 [06:36<42:26, 11.52s/it, 
+]  Clusters:  19%|#8        | 50/270 [06:47<41:40, 11.36s/it, 
+]Clusters:  19%|#8        | 51/270 [06:54<37:37, 10.31s/it, 
+]Clusters:  19%|#9        | 52/270 [07:17<51:13, 14.10s/it, 
+]Clusters:  20%|#9        | 53/270 [07:55<1:16:28, 21.15s/it, 
+]Clusters:  20%|##        | 54/270 [08:42<1:44:07, 28.93s/it, 
+]Clusters:  20%|##        | 55/270 [08:44<1:14:31, 20.80s/it, 
+]Clusters:  21%|##        | 56/270 [08:50<58:48, 16.49s/it, 
+]  Clusters:  21%|##1       | 57/270 [08:52<42:59, 12.11s/it, 
+]Clusters:  21%|##1       | 58/270 [09:26<1:05:43, 18.60s/it, 
+]Clusters:  22%|##1       | 59/270 [09:33<53:40, 15.26s/it, 
+]  Clusters:  22%|##2       | 60/270 [09:48<53:08, 15.19s/it, 
+]Clusters:  23%|##2       | 61/270 [09:50<38:47, 11.14s/it, 
+]Clusters:  23%|##2       | 62/270 [10:03<40:24, 11.65s/it, 
+]Clusters:  23%|##3       | 63/270 [10:46<1:12:35, 21.04s/it, 
+]Clusters:  24%|##3       | 64/270 [10:57<1:02:17, 18.14s/it, 
+]Clusters:  24%|##4       | 65/270 [11:05<51:31, 15.08s/it, 
+]  Clusters:  24%|##4       | 66/270 [11:13<43:41, 12.85s/it, 
+]Clusters:  25%|##4       | 67/270 [11:17<34:12, 10.11s/it, 
+]Clusters:  25%|##5       | 68/270 [11:21<28:43,  8.53s/it, 
+]Clusters:  26%|##5       | 69/270 [12:12<1:10:47, 21.13s/it, 
+]Clusters:  26%|##5       | 70/270 [12:14<51:34, 15.47s/it, 
+]  Clusters:  26%|##6       | 71/270 [12:21<42:30, 12.82s/it, 
+]Clusters:  27%|##6       | 72/270 [12:38<47:01, 14.25s/it, 
+]Clusters:  27%|##7       | 73/270 [12:44<38:39, 11.77s/it, 
+]Clusters:  27%|##7       | 74/270 [12:50<31:56,  9.78s/it, 
+]Clusters:  28%|##7       | 75/270 [12:53<25:11,  7.75s/it, 
+]Clusters:  28%|##8       | 76/270 [13:08<32:16,  9.98s/it, 
+]Clusters:  29%|##8       | 77/270 [13:36<50:05, 15.57s/it, 
+]Clusters:  29%|##8       | 78/270 [13:46<44:02, 13.76s/it, 
+]Clusters:  29%|##9       | 79/270 [14:16<59:18, 18.63s/it, 
+]Clusters:  30%|##9       | 80/270 [15:33<1:54:20, 36.11s/it, 
+]Clusters:  30%|###       | 81/270 [15:47<1:33:01, 29.53s/it, 
+]Clusters:  30%|###       | 82/270 [16:40<1:54:28, 36.53s/it, 
+]Clusters:  31%|###       | 83/270 [16:42<1:21:33, 26.17s/it, 
+]Clusters:  31%|###1      | 84/270 [16:43<57:32, 18.56s/it, 
+]  Clusters:  31%|###1      | 85/270 [16:45<42:37, 13.82s/it, 
+]Clusters:  32%|###1      | 86/270 [16:57<40:38, 13.25s/it, 
+]Clusters:  32%|###2      | 87/270 [17:09<38:54, 12.75s/it, 
+]Clusters:  33%|###2      | 88/270 [17:09<27:35,  9.10s/it, 
+]Clusters:  33%|###2      | 89/270 [18:02<1:06:27, 22.03s/it, 
+]Clusters:  33%|###3      | 90/270 [19:09<1:46:58, 35.66s/it, 
+]Clusters:  34%|###3      | 91/270 [19:35<1:37:46, 32.77s/it, 
+]Clusters:  34%|###4      | 92/270 [20:09<1:38:20, 33.15s/it, 
+]Clusters:  34%|###4      | 93/270 [20:15<1:13:57, 25.07s/it, 
+]Clusters:  35%|###4      | 94/270 [20:37<1:10:04, 23.89s/it, 
+]Clusters:  35%|###5      | 95/270 [20:48<58:46, 20.15s/it, 
+]  Clusters:  36%|###5      | 96/270 [20:51<43:25, 14.97s/it, 
+]Clusters:  36%|###5      | 97/270 [21:05<42:30, 14.74s/it, 
+]Clusters:  36%|###6      | 98/270 [21:08<31:49, 11.10s/it, 
+]Clusters:  37%|###6      | 99/270 [21:10<23:43,  8.32s/it, 
+]Clusters:  37%|###7      | 100/270 [21:14<20:22,  7.19s/it, 
+]Clusters:  37%|###7      | 101/270 [21:22<20:51,  7.40s/it, 
+]Clusters:  38%|###7      | 102/270 [21:24<16:35,  5.92s/it, 
+]Clusters:  38%|###8      | 103/270 [21:46<29:35, 10.63s/it, 
+]Clusters:  39%|###8      | 104/270 [23:20<1:38:44, 35.69s/it, 
+]Clusters:  39%|###8      | 105/270 [23:24<1:11:47, 26.10s/it, 
+]Clusters:  39%|###9      | 106/270 [23:29<54:11, 19.83s/it, 
+]  Clusters:  40%|###9      | 107/270 [23:35<42:22, 15.60s/it, 
+]Clusters:  40%|####      | 108/270 [23:45<37:18, 13.82s/it, 
+]Clusters:  40%|####      | 109/270 [24:01<39:29, 14.72s/it, 
+]Clusters:  41%|####      | 110/270 [24:02<27:59, 10.50s/it, 
+]Clusters:  41%|####1     | 111/270 [24:03<20:02,  7.56s/it, 
+]Clusters:  41%|####1     | 112/270 [24:05<15:32,  5.90s/it, 
+]Clusters:  42%|####1     | 113/270 [24:18<21:09,  8.08s/it, 
+]Clusters:  42%|####2     | 114/270 [24:19<15:51,  6.10s/it, 
+]Clusters:  43%|####2     | 115/270 [24:22<13:17,  5.15s/it, 
+]Clusters:  43%|####2     | 116/270 [24:27<12:42,  4.95s/it, 
+]Clusters:  43%|####3     | 117/270 [24:33<13:44,  5.39s/it, 
+]Clusters:  44%|####3     | 118/270 [24:36<11:40,  4.61s/it, 
+]Clusters:  44%|####4     | 119/270 [24:41<12:13,  4.86s/it, 
+]Clusters:  44%|####4     | 120/270 [25:04<25:12, 10.08s/it, 
+]Clusters:  45%|####4     | 121/270 [25:16<26:27, 10.65s/it, 
+]Clusters:  45%|####5     | 122/270 [25:34<32:15, 13.08s/it, 
+]Clusters:  46%|####5     | 123/270 [25:37<24:18,  9.92s/it, 
+]Clusters:  46%|####5     | 124/270 [25:39<18:04,  7.43s/it, 
+]Clusters:  46%|####6     | 125/270 [25:50<20:49,  8.62s/it, 
+]Clusters:  47%|####6     | 126/270 [25:51<14:51,  6.19s/it, 
+]Clusters:  47%|####7     | 127/270 [26:16<28:36, 12.01s/it, 
+]Clusters:  47%|####7     | 128/270 [27:00<50:50, 21.49s/it, 
+]Clusters:  48%|####7     | 129/270 [27:05<38:58, 16.58s/it, 
+]Clusters:  48%|####8     | 130/270 [27:06<27:37, 11.84s/it, 
+]Clusters:  49%|####8     | 131/270 [27:07<19:57,  8.61s/it, 
+]Clusters:  49%|####8     | 132/270 [27:15<19:52,  8.64s/it, 
+]Clusters:  49%|####9     | 133/270 [27:21<17:24,  7.62s/it, 
+]Clusters:  50%|####9     | 134/270 [29:28<1:38:57, 43.66s/it, 
+]Clusters:  50%|#####     | 135/270 [29:44<1:19:28, 35.32s/it, 
+]Clusters:  50%|#####     | 136/270 [29:48<57:32, 25.76s/it, 
+]  Clusters:  51%|#####     | 137/270 [29:48<40:19, 18.19s/it, 
+]Clusters:  51%|#####1    | 138/270 [29:53<31:18, 14.23s/it, 
+]Clusters:  51%|#####1    | 139/270 [30:01<26:40, 12.22s/it, 
+]Clusters:  52%|#####1    | 140/270 [30:05<21:23,  9.88s/it, 
+]Clusters:  52%|#####2    | 141/270 [30:19<23:40, 11.01s/it, 
+]Clusters:  53%|#####2    | 142/270 [30:21<18:03,  8.47s/it, 
+]Clusters:  53%|#####2    | 143/270 [30:25<14:38,  6.91s/it, 
+]Clusters:  53%|#####3    | 144/270 [30:28<12:02,  5.74s/it, 
+]Clusters:  54%|#####3    | 145/270 [30:29<08:58,  4.31s/it, 
+]Clusters:  54%|#####4    | 146/270 [30:45<16:15,  7.87s/it, 
+]Clusters:  54%|#####4    | 147/270 [30:46<11:48,  5.76s/it, 
+]Clusters:  55%|#####4    | 148/270 [30:55<13:50,  6.81s/it, 
+]Clusters:  55%|#####5    | 149/270 [31:22<25:49, 12.81s/it, 
+]Clusters:  56%|#####5    | 150/270 [31:48<33:59, 17.00s/it, 
+]Clusters:  56%|#####5    | 151/270 [32:19<41:45, 21.06s/it, 
+]Clusters:  56%|#####6    | 152/270 [32:22<30:35, 15.55s/it, 
+]Clusters:  57%|#####6    | 153/270 [32:25<23:23, 12.00s/it, 
+]Clusters:  57%|#####7    | 154/270 [32:46<27:57, 14.46s/it, 
+]Clusters:  57%|#####7    | 155/270 [33:13<35:24, 18.48s/it, 
+]Clusters:  58%|#####7    | 156/270 [33:16<26:02, 13.71s/it, 
+]Clusters:  58%|#####8    | 157/270 [33:22<21:21, 11.34s/it, 
+]Clusters:  59%|#####8    | 158/270 [33:23<15:33,  8.34s/it, 
+]Clusters:  59%|#####8    | 159/270 [33:27<12:48,  6.92s/it, 
+]Clusters:  59%|#####9    | 160/270 [33:35<13:26,  7.33s/it, 
+]Clusters:  60%|#####9    | 161/270 [33:37<10:30,  5.78s/it, 
+]Clusters:  60%|######    | 162/270 [33:39<08:23,  4.66s/it, 
+]Clusters:  60%|######    | 163/270 [34:12<23:17, 13.06s/it, 
+]Clusters:  61%|######    | 164/270 [34:26<23:44, 13.44s/it, 
+]Clusters:  61%|######1   | 165/270 [34:28<17:07,  9.79s/it, 
+]Clusters:  61%|######1   | 166/270 [34:28<12:14,  7.06s/it, 
+]Clusters:  62%|######1   | 167/270 [34:29<09:01,  5.25s/it, 
+]Clusters:  62%|######2   | 168/270 [34:31<07:00,  4.12s/it, 
+]Clusters:  63%|######2   | 169/270 [34:32<05:35,  3.32s/it, 
+]Clusters:  63%|######2   | 170/270 [34:34<04:36,  2.76s/it, 
+]Clusters:  63%|######3   | 171/270 [35:39<35:18, 21.40s/it, 
+]Clusters:  64%|######3   | 172/270 [35:39<24:54, 15.25s/it, 
+]Clusters:  64%|######4   | 173/270 [35:46<20:37, 12.76s/it, 
+]Clusters:  64%|######4   | 174/270 [36:30<35:01, 21.89s/it, 
+]Clusters:  65%|######4   | 175/270 [36:32<25:09, 15.89s/it, 
+]Clusters:  65%|######5   | 176/270 [36:49<25:27, 16.25s/it, 
+]Clusters:  66%|######5   | 177/270 [36:53<19:30, 12.58s/it, 
+]Clusters:  66%|######5   | 178/270 [37:54<41:31, 27.08s/it, 
+]Clusters:  66%|######6   | 179/270 [37:54<29:03, 19.16s/it, 
+]Clusters:  67%|######6   | 180/270 [38:08<26:11, 17.46s/it, 
+]Clusters:  67%|######7   | 181/270 [38:20<23:28, 15.83s/it, 
+]Clusters:  67%|######7   | 182/270 [38:24<18:06, 12.35s/it, 
+]Clusters:  68%|######7   | 183/270 [38:35<17:08, 11.82s/it, 
+]Clusters:  68%|######8   | 184/270 [38:43<15:39, 10.93s/it, 
+]Clusters:  69%|######8   | 185/270 [38:52<14:16, 10.08s/it, 
+]Clusters:  69%|######8   | 186/270 [39:31<26:40, 19.05s/it, 
+]Clusters:  69%|######9   | 187/270 [40:13<35:48, 25.88s/it, 
+]Clusters:  70%|######9   | 188/270 [46:25<2:57:12, 129.66s/it, 
+]Clusters:  70%|#######   | 189/270 [47:33<2:30:07, 111.20s/it, 
+]Clusters:  70%|#######   | 190/270 [47:46<1:48:49, 81.62s/it, 
+] Clusters:  71%|#######   | 191/270 [47:48<1:16:16, 57.93s/it, 
+]Clusters:  71%|#######1  | 192/270 [47:59<56:56, 43.80s/it, 
+]  Clusters:  71%|#######1  | 193/270 [48:06<42:06, 32.81s/it, 
+]Clusters:  72%|#######1  | 194/270 [48:54<47:03, 37.15s/it, 
+]Clusters:  72%|#######2  | 195/270 [48:56<33:12, 26.56s/it, 
+]Clusters:  73%|#######2  | 196/270 [49:10<28:09, 22.83s/it, 
+]Clusters:  73%|#######3  | 198/270 [49:11<19:28, 16.23s/it, 
+]Clusters:  74%|#######3  | 199/270 [49:34<21:33, 18.22s/it, 
+]Clusters:  74%|#######4  | 200/270 [49:41<17:17, 14.83s/it, 
+]Clusters:  74%|#######4  | 201/270 [49:43<12:32, 10.91s/it, 
+]Clusters:  75%|#######4  | 202/270 [49:48<10:28,  9.24s/it, 
+]Clusters:  75%|#######5  | 203/270 [50:01<11:37, 10.41s/it, 
+]Clusters:  76%|#######5  | 204/270 [50:04<08:54,  8.10s/it, 
+]Clusters:  76%|#######5  | 205/270 [50:36<16:35, 15.32s/it, 
+]Clusters:  76%|#######6  | 206/270 [50:39<12:10, 11.41s/it, 
+]Clusters:  77%|#######6  | 207/270 [50:45<10:32, 10.05s/it, 
+]Clusters:  77%|#######7  | 208/270 [51:27<20:08, 19.49s/it, 
+]Clusters:  77%|#######7  | 209/270 [51:28<14:08, 13.90s/it, 
+]Clusters:  78%|#######7  | 210/270 [51:30<10:19, 10.32s/it, 
+]Clusters:  78%|#######8  | 211/270 [51:31<07:19,  7.45s/it, 
+]Clusters:  79%|#######8  | 212/270 [51:31<05:09,  5.34s/it, 
+]Clusters:  79%|#######8  | 213/270 [51:34<04:23,  4.63s/it, 
+]Clusters:  79%|#######9  | 214/270 [52:39<21:12, 22.73s/it, 
+]Clusters:  80%|#######9  | 215/270 [53:55<35:32, 38.77s/it, 
+]Clusters:  80%|########  | 216/270 [53:58<25:04, 27.86s/it, 
+]Clusters:  80%|########  | 217/270 [56:01<49:54, 56.50s/it, 
+]Clusters:  81%|########  | 218/270 [56:02<34:41, 40.03s/it, 
+]Clusters:  81%|########1 | 219/270 [57:15<42:11, 49.63s/it, 
+]Clusters:  81%|########1 | 220/270 [57:50<37:49, 45.38s/it, 
+]Clusters:  82%|########1 | 221/270 [57:57<27:45, 34.00s/it, 
+]Clusters:  82%|########2 | 222/270 [58:03<20:17, 25.37s/it, 
+]Clusters:  83%|########2 | 223/270 [59:20<32:00, 40.86s/it, 
+]Clusters:  83%|########2 | 224/270 [1:00:01<31:33, 41.15s/it, 
+]Clusters:  83%|########3 | 225/270 [1:01:26<40:31, 54.03s/it, 
+]Clusters:  84%|########3 | 226/270 [1:01:41<31:03, 42.36s/it, 
+]Clusters:  84%|########4 | 227/270 [1:02:31<32:04, 44.76s/it, 
+]Clusters:  84%|########4 | 228/270 [1:02:50<26:00, 37.15s/it, 
+]Clusters:  85%|########4 | 229/270 [1:03:01<19:52, 29.08s/it, 
+]Clusters:  85%|########5 | 230/270 [1:04:40<33:28, 50.20s/it, 
+]Clusters:  86%|########5 | 231/270 [1:06:02<38:49, 59.74s/it, 
+]Clusters:  86%|########5 | 232/270 [1:06:36<32:51, 51.88s/it, 
+]Clusters:  86%|########6 | 233/270 [1:07:02<27:10, 44.08s/it, 
+]Clusters:  87%|########6 | 234/270 [1:08:21<32:45, 54.61s/it, 
+]Clusters:  87%|########7 | 235/270 [1:09:34<35:08, 60.25s/it, 
+]Clusters:  87%|########7 | 236/270 [1:10:21<31:49, 56.17s/it, 
+]Clusters:  88%|########7 | 237/270 [1:10:54<27:01, 49.14s/it, 
+]Clusters:  88%|########8 | 238/270 [1:11:30<24:07, 45.23s/it, 
+]Clusters:  89%|########8 | 239/270 [1:12:53<29:18, 56.74s/it, 
+]Clusters:  89%|########8 | 240/270 [1:14:16<32:12, 64.42s/it, 
+]Clusters:  89%|########9 | 241/270 [1:16:36<42:12, 87.31s/it, 
+]Clusters:  90%|########9 | 242/270 [1:16:54<31:03, 66.55s/it, 
+]Clusters:  90%|######### | 243/270 [1:21:06<54:57, 122.15s/it, 
+]Clusters:  90%|######### | 244/270 [1:22:20<46:34, 107.49s/it, 
+]Clusters:  91%|######### | 245/270 [1:22:50<35:07, 84.30s/it, 
+] Clusters:  91%|#########1| 246/270 [1:29:38<1:12:36, 181.51s/it, 
+]Clusters:  91%|#########1| 247/270 [1:30:25<54:06, 141.16s/it, 
+]  Clusters:  92%|#########1| 248/270 [1:30:46<38:33, 105.14s/it, 
+]Clusters:  92%|#########2| 249/270 [1:54:23<2:54:29, 498.54s/it, 
+]Clusters:  93%|#########2| 250/270 [1:54:35<1:57:34, 352.73s/it, 
+]Clusters:  93%|#########2| 251/270 [1:55:24<1:22:48, 261.47s/it, 
+]forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFE5CE83B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFE9AC5005F  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFE9BB113F2  Unknown               Unknown  Unknown
+ntdll.dll          00007FFE9D9154F4  Unknown               Unknown  Unknown

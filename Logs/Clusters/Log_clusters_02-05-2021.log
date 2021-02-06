@@ -1,0 +1,850 @@
+------------------------------------START------------------------------------------ 
+Fri 02/05/2021-11:15:53.89 
+Clusters:   0%|          | 0/270 [00:00<?, ?it/s, 
+]Clusters:   0%|          | 1/270 [00:04<19:46,  4.41s/it, 
+]Clusters:   1%|          | 2/270 [00:14<27:33,  6.17s/it, 
+]Clusters:   1%|1         | 3/270 [00:16<21:32,  4.84s/it, 
+]Clusters:   1%|1         | 4/270 [00:19<19:42,  4.44s/it, 
+]Clusters:   2%|1         | 5/270 [00:24<19:28,  4.41s/it, 
+]Clusters:   2%|2         | 6/270 [00:24<13:54,  3.16s/it, 
+]Clusters:   3%|2         | 7/270 [00:26<12:41,  2.89s/it, 
+]Clusters:   3%|2         | 8/270 [00:32<15:44,  3.60s/it, 
+]Clusters:   3%|3         | 9/270 [00:33<12:35,  2.90s/it, 
+]Clusters:   4%|3         | 10/270 [00:40<18:26,  4.25s/it, 
+]Clusters:   4%|4         | 11/270 [01:18<1:01:51, 14.33s/it, 
+]Clusters:   4%|4         | 12/270 [01:21<46:35, 10.84s/it, 
+]  Clusters:   5%|4         | 13/270 [01:21<32:43,  7.64s/it, 
+]Clusters:   5%|5         | 14/270 [01:23<25:25,  5.96s/it, 
+]Clusters:   6%|5         | 15/270 [01:24<18:35,  4.38s/it, 
+]Clusters:   6%|5         | 16/270 [01:28<18:37,  4.40s/it, 
+]Clusters:   6%|6         | 17/270 [01:32<18:05,  4.29s/it, 
+]Clusters:   7%|6         | 18/270 [01:35<15:36,  3.72s/it, 
+]Clusters:   7%|7         | 19/270 [01:38<14:57,  3.58s/it, 
+]Clusters:   7%|7         | 20/270 [01:39<11:34,  2.78s/it, 
+]Clusters:   8%|7         | 21/270 [01:48<19:20,  4.66s/it, 
+]Clusters:   8%|8         | 22/270 [02:03<32:31,  7.87s/it, 
+]Clusters:   9%|8         | 23/270 [02:06<25:43,  6.25s/it, 
+]Clusters:   9%|8         | 24/270 [02:16<31:14,  7.62s/it, 
+]Clusters:   9%|9         | 25/270 [02:20<25:53,  6.34s/it, 
+]Clusters:  10%|9         | 26/270 [02:41<44:22, 10.91s/it, 
+]Clusters:  10%|#         | 27/270 [02:43<32:57,  8.14s/it, 
+]Clusters:  10%|#         | 28/270 [02:46<26:17,  6.52s/it, 
+]Clusters:  11%|#         | 29/270 [02:47<20:15,  5.04s/it, 
+]Clusters:  11%|#1        | 30/270 [02:51<18:10,  4.54s/it, 
+]Clusters:  11%|#1        | 31/270 [02:56<18:58,  4.76s/it, 
+]Clusters:  12%|#1        | 32/270 [03:12<32:53,  8.29s/it, 
+]Clusters:  12%|#2        | 33/270 [03:15<25:42,  6.51s/it, 
+]Clusters:  13%|#2        | 34/270 [03:18<22:09,  5.63s/it, 
+]Clusters:  13%|#2        | 35/270 [03:23<20:26,  5.22s/it, 
+]Clusters:  13%|#3        | 36/270 [03:31<24:31,  6.29s/it, 
+]Clusters:  14%|#3        | 37/270 [03:53<42:06, 10.84s/it, 
+]Clusters:  14%|#4        | 38/270 [03:57<34:02,  8.80s/it, 
+]Clusters:  14%|#4        | 39/270 [04:23<54:18, 14.10s/it, 
+]Clusters:  15%|#4        | 40/270 [05:03<1:23:01, 21.66s/it, 
+]Clusters:  15%|#5        | 41/270 [05:23<1:21:05, 21.24s/it, 
+]Clusters:  16%|#5        | 42/270 [05:32<1:06:24, 17.48s/it, 
+]Clusters:  16%|#5        | 43/270 [05:58<1:16:25, 20.20s/it, 
+]Clusters:  16%|#6        | 44/270 [06:01<56:35, 15.02s/it, 
+]  Clusters:  17%|#6        | 45/270 [06:45<1:28:42, 23.65s/it, 
+]Clusters:  17%|#7        | 46/270 [06:55<1:12:55, 19.53s/it, 
+]Clusters:  17%|#7        | 47/270 [07:11<1:08:41, 18.48s/it, 
+]Clusters:  18%|#7        | 48/270 [07:46<1:27:14, 23.58s/it, 
+]Clusters:  18%|#8        | 49/270 [08:23<1:40:57, 27.41s/it, 
+]Clusters:  19%|#8        | 50/270 [08:24<1:12:07, 19.67s/it, 
+]Clusters:  19%|#8        | 51/270 [08:38<1:04:57, 17.80s/it, 
+]Clusters:  19%|#9        | 52/270 [08:54<1:02:26, 17.19s/it, 
+]Clusters:  20%|#9        | 53/270 [09:32<1:25:06, 23.53s/it, 
+]Clusters:  20%|##        | 54/270 [10:14<1:45:14, 29.23s/it, 
+]Clusters:  20%|##        | 55/270 [10:25<1:24:10, 23.49s/it, 
+]Clusters:  21%|##        | 56/270 [10:32<1:06:20, 18.60s/it, 
+]Clusters:  21%|##1       | 57/270 [10:50<1:05:39, 18.49s/it, 
+]Clusters:  21%|##1       | 58/270 [11:09<1:06:15, 18.75s/it, 
+]Clusters:  22%|##1       | 59/270 [11:18<54:51, 15.60s/it, 
+]  Clusters:  22%|##2       | 60/270 [11:20<41:02, 11.73s/it, 
+]Clusters:  23%|##2       | 61/270 [11:48<57:25, 16.49s/it, 
+]Clusters:  23%|##2       | 62/270 [12:03<55:18, 15.95s/it, 
+]Clusters:  23%|##3       | 63/270 [12:20<56:17, 16.31s/it, 
+]Clusters:  24%|##3       | 64/270 [12:26<45:52, 13.36s/it, 
+]Clusters:  24%|##4       | 65/270 [12:46<52:22, 15.33s/it, 
+]Clusters:  24%|##4       | 66/270 [13:04<55:00, 16.18s/it, 
+]Clusters:  25%|##4       | 67/270 [13:24<58:48, 17.38s/it, 
+]Clusters:  25%|##5       | 68/270 [13:58<1:14:49, 22.22s/it, 
+]Clusters:  26%|##5       | 69/270 [14:08<1:01:55, 18.49s/it, 
+]Clusters:  26%|##5       | 70/270 [14:11<46:26, 13.93s/it, 
+]  Clusters:  26%|##6       | 71/270 [14:33<54:21, 16.39s/it, 
+]Clusters:  27%|##6       | 72/270 [14:35<39:37, 12.01s/it, 
+]Clusters:  27%|##7       | 73/270 [14:51<43:13, 13.16s/it, 
+]Clusters:  27%|##7       | 74/270 [14:55<34:02, 10.42s/it, 
+]Clusters:  28%|##7       | 75/270 [15:11<39:45, 12.23s/it, 
+]Clusters:  28%|##8       | 76/270 [15:31<46:45, 14.46s/it, 
+]Clusters:  29%|##8       | 77/270 [15:40<41:07, 12.79s/it, 
+]Clusters:  29%|##8       | 78/270 [15:51<39:47, 12.44s/it, 
+]Clusters:  29%|##9       | 79/270 [16:08<43:32, 13.68s/it, 
+]Clusters:  30%|##9       | 80/270 [17:41<1:58:17, 37.36s/it, 
+]Clusters:  30%|###       | 81/270 [17:51<1:31:59, 29.20s/it, 
+]Clusters:  30%|###       | 82/270 [18:18<1:29:44, 28.64s/it, 
+]Clusters:  31%|###       | 83/270 [18:29<1:12:17, 23.20s/it, 
+]Clusters:  31%|###1      | 84/270 [18:33<54:34, 17.60s/it, 
+]  Clusters:  31%|###1      | 85/270 [19:13<1:15:07, 24.37s/it, 
+]Clusters:  32%|###1      | 86/270 [20:30<2:02:39, 39.99s/it, 
+]Clusters:  32%|###2      | 87/270 [20:31<1:26:30, 28.36s/it, 
+]Clusters:  33%|###2      | 88/270 [21:09<1:34:47, 31.25s/it, 
+]Clusters:  33%|###2      | 89/270 [21:09<1:06:10, 21.93s/it, 
+]Clusters:  33%|###3      | 90/270 [21:19<54:59, 18.33s/it, 
+]  Clusters:  34%|###3      | 91/270 [22:17<1:29:50, 30.11s/it, 
+]Clusters:  34%|###4      | 92/270 [23:23<2:01:06, 40.82s/it, 
+]Clusters:  34%|###4      | 93/270 [23:31<1:31:26, 31.00s/it, 
+]Clusters:  35%|###4      | 94/270 [23:55<1:25:09, 29.03s/it, 
+]Clusters:  35%|###5      | 95/270 [24:09<1:11:35, 24.55s/it, 
+]Clusters:  36%|###5      | 96/270 [24:12<52:13, 18.01s/it, 
+]  Clusters:  36%|###5      | 97/270 [25:27<1:41:14, 35.11s/it, 
+]Clusters:  36%|###6      | 98/270 [26:19<1:55:26, 40.27s/it, 
+]Clusters:  37%|###6      | 99/270 [26:32<1:30:57, 31.92s/it, 
+]Clusters:  37%|###7      | 100/270 [26:35<1:05:53, 23.26s/it, 
+]Clusters:  37%|###7      | 101/270 [27:03<1:10:04, 24.88s/it, 
+]Clusters:  38%|###7      | 102/270 [27:10<54:02, 19.30s/it, 
+]  Clusters:  38%|###8      | 103/270 [27:13<40:19, 14.49s/it, 
+]Clusters:  39%|###8      | 104/270 [27:15<29:33, 10.68s/it, 
+]Clusters:  39%|###8      | 105/270 [27:23<27:42, 10.08s/it, 
+]Clusters:  39%|###9      | 106/270 [28:33<1:16:11, 27.87s/it, 
+]Clusters:  40%|###9      | 107/270 [28:33<53:24, 19.66s/it, 
+]  Clusters:  40%|####      | 108/270 [28:41<43:25, 16.09s/it, 
+]Clusters:  40%|####      | 109/270 [28:49<36:41, 13.68s/it, 
+]Clusters:  41%|####1     | 111/270 [29:29<41:17, 15.58s/it, 
+]Clusters:  41%|####1     | 112/270 [29:32<31:05, 11.81s/it, 
+]Clusters:  42%|####1     | 113/270 [29:38<26:35, 10.16s/it, 
+]Clusters:  42%|####2     | 114/270 [29:43<21:51,  8.41s/it, 
+]Clusters:  43%|####2     | 115/270 [29:55<25:00,  9.68s/it, 
+]Clusters:  43%|####2     | 116/270 [30:07<25:56, 10.10s/it, 
+]Clusters:  43%|####3     | 117/270 [30:11<21:08,  8.29s/it, 
+]Clusters:  44%|####3     | 118/270 [30:12<15:47,  6.23s/it, 
+]Clusters:  44%|####4     | 119/270 [30:15<13:23,  5.32s/it, 
+]Clusters:  44%|####4     | 120/270 [30:20<13:07,  5.25s/it, 
+]Clusters:  45%|####4     | 121/270 [30:23<10:57,  4.41s/it, 
+]Clusters:  45%|####5     | 122/270 [30:30<13:04,  5.30s/it, 
+]Clusters:  46%|####5     | 123/270 [30:41<16:48,  6.86s/it, 
+]Clusters:  46%|####5     | 124/270 [30:54<21:08,  8.69s/it, 
+]Clusters:  46%|####6     | 125/270 [30:59<18:35,  7.69s/it, 
+]Clusters:  47%|####6     | 126/270 [31:09<20:07,  8.39s/it, 
+]Clusters:  47%|####7     | 127/270 [31:31<29:54, 12.55s/it, 
+]Clusters:  47%|####7     | 128/270 [31:40<27:04, 11.44s/it, 
+]Clusters:  48%|####7     | 129/270 [31:45<22:04,  9.40s/it, 
+]Clusters:  48%|####8     | 130/270 [31:50<18:43,  8.02s/it, 
+]Clusters:  49%|####8     | 131/270 [32:22<35:18, 15.24s/it, 
+]Clusters:  49%|####8     | 132/270 [32:31<30:40, 13.34s/it, 
+]Clusters:  49%|####9     | 133/270 [32:44<30:20, 13.29s/it, 
+]Clusters:  50%|####9     | 134/270 [34:02<1:14:01, 32.66s/it, 
+]Clusters:  50%|#####     | 135/270 [34:37<1:15:19, 33.48s/it, 
+]Clusters:  50%|#####     | 136/270 [34:51<1:01:30, 27.54s/it, 
+]Clusters:  51%|#####     | 137/270 [35:01<49:21, 22.27s/it, 
+]  Clusters:  51%|#####1    | 138/270 [35:05<37:09, 16.89s/it, 
+]Clusters:  51%|#####1    | 139/270 [35:22<36:44, 16.83s/it, 
+]Clusters:  52%|#####1    | 140/270 [35:35<34:27, 15.90s/it, 
+]Clusters:  52%|#####2    | 141/270 [35:43<28:39, 13.33s/it, 
+]Clusters:  53%|#####2    | 142/270 [35:43<20:09,  9.45s/it, 
+]Clusters:  53%|#####2    | 143/270 [35:55<21:40, 10.24s/it, 
+]Clusters:  53%|#####3    | 144/270 [36:16<27:56, 13.31s/it, 
+]Clusters:  54%|#####3    | 145/270 [37:02<48:10, 23.13s/it, 
+]Clusters:  54%|#####4    | 146/270 [37:32<52:31, 25.41s/it, 
+]Clusters:  54%|#####4    | 147/270 [37:39<40:41, 19.85s/it, 
+]Clusters:  55%|#####4    | 148/270 [37:43<30:32, 15.02s/it, 
+]Clusters:  55%|#####5    | 149/270 [37:48<24:22, 12.08s/it, 
+]Clusters:  56%|#####5    | 150/270 [37:51<18:24,  9.20s/it, 
+]Clusters:  56%|#####5    | 151/270 [37:56<16:02,  8.08s/it, 
+]Clusters:  56%|#####6    | 152/270 [38:12<20:39, 10.51s/it, 
+]Clusters:  57%|#####6    | 153/270 [38:19<18:18,  9.39s/it, 
+]Clusters:  57%|#####7    | 154/270 [38:33<20:35, 10.65s/it, 
+]Clusters:  57%|#####7    | 155/270 [38:57<28:02, 14.63s/it, 
+]Clusters:  58%|#####7    | 156/270 [39:14<29:21, 15.45s/it, 
+]Clusters:  58%|#####8    | 157/270 [39:54<42:46, 22.71s/it, 
+]Clusters:  59%|#####8    | 158/270 [40:16<42:24, 22.72s/it, 
+]Clusters:  59%|#####8    | 159/270 [40:45<45:03, 24.36s/it, 
+]Clusters:  59%|#####9    | 160/270 [41:22<51:55, 28.33s/it, 
+]Clusters:  60%|#####9    | 161/270 [41:26<38:18, 21.09s/it, 
+]Clusters:  60%|######    | 162/270 [41:28<27:15, 15.14s/it, 
+]Clusters:  60%|######    | 163/270 [41:31<20:49, 11.68s/it, 
+]Clusters:  61%|######    | 164/270 [42:07<33:22, 18.89s/it, 
+]Clusters:  61%|######1   | 165/270 [42:35<37:43, 21.56s/it, 
+]Clusters:  61%|######1   | 166/270 [42:36<26:48, 15.47s/it, 
+]Clusters:  62%|######1   | 167/270 [42:42<21:41, 12.64s/it, 
+]Clusters:  62%|######2   | 168/270 [42:54<20:55, 12.31s/it, 
+]Clusters:  63%|######2   | 169/270 [42:55<15:02,  8.94s/it, 
+]Clusters:  63%|######2   | 170/270 [43:51<38:36, 23.17s/it, 
+]Clusters:  63%|######3   | 171/270 [43:52<27:06, 16.43s/it, 
+]Clusters:  64%|######3   | 172/270 [43:53<19:15, 11.79s/it, 
+]Clusters:  64%|######4   | 173/270 [43:54<13:48,  8.55s/it, 
+]Clusters:  64%|######4   | 174/270 [43:55<10:00,  6.25s/it, 
+]Clusters:  65%|######4   | 175/270 [45:01<38:15, 24.16s/it, 
+]Clusters:  65%|######5   | 176/270 [45:01<26:41, 17.04s/it, 
+]Clusters:  66%|######5   | 177/270 [45:05<20:13, 13.04s/it, 
+]Clusters:  66%|######5   | 178/270 [45:33<26:55, 17.56s/it, 
+]Clusters:  66%|######6   | 179/270 [47:02<59:21, 39.13s/it, 
+]Clusters:  67%|######6   | 180/270 [50:47<2:22:04, 94.72s/it, 
+]Clusters:  67%|######7   | 181/270 [50:48<1:38:51, 66.65s/it, 
+]Clusters:  67%|######7   | 182/270 [51:43<1:32:49, 63.29s/it, 
+]Clusters:  68%|######7   | 183/270 [51:44<1:04:22, 44.39s/it, 
+]Clusters:  68%|######8   | 184/270 [53:05<1:19:22, 55.38s/it, 
+]Clusters:  69%|######8   | 185/270 [53:15<59:27, 41.97s/it, 
+]  Clusters:  69%|######8   | 186/270 [54:22<1:09:07, 49.38s/it, 
+]Clusters:  69%|######9   | 187/270 [54:30<51:09, 36.98s/it, 
+]  Clusters:  70%|######9   | 188/270 [54:37<38:16, 28.00s/it, 
+]Clusters:  70%|#######   | 189/270 [54:44<29:23, 21.77s/it, 
+]Clusters:  70%|#######   | 190/270 [55:04<28:14, 21.19s/it, 
+]Clusters:  71%|#######   | 191/270 [1:00:42<2:33:11, 116.35s/it, 
+]Clusters:  71%|#######1  | 192/270 [1:01:18<1:59:33, 91.96s/it, 
+] Clusters:  71%|#######1  | 193/270 [1:01:27<1:26:18, 67.26s/it, 
+]Clusters:  72%|#######1  | 194/270 [1:01:39<1:04:00, 50.53s/it, 
+]Clusters:  72%|#######2  | 195/270 [1:01:52<49:20, 39.47s/it, 
+]  Clusters:  73%|#######2  | 196/270 [1:02:14<41:58, 34.03s/it, 
+]Clusters:  73%|#######2  | 197/270 [1:02:18<30:35, 25.15s/it, 
+]Clusters:  73%|#######3  | 198/270 [1:02:55<34:23, 28.66s/it, 
+]Clusters:  74%|#######3  | 199/270 [1:02:57<24:29, 20.70s/it, 
+]C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+Clusters:  74%|#######4  | 201/270 [1:02:57<16:44, 14.55s/it, 
+]Clusters:  75%|#######4  | 202/270 [1:03:07<14:54, 13.15s/it, 
+]Clusters:  75%|#######5  | 203/270 [1:03:20<14:32, 13.02s/it, 
+]Clusters:  76%|#######5  | 205/270 [1:03:24<10:28,  9.67s/it, 
+]Clusters:  76%|#######6  | 206/270 [1:03:26<07:50,  7.35s/it, 
+]Clusters:  77%|#######6  | 207/270 [1:03:36<08:38,  8.23s/it, 
+]Clusters:  77%|#######7  | 208/270 [1:03:39<06:53,  6.67s/it, 
+]Clusters:  77%|#######7  | 209/270 [1:06:10<50:50, 50.01s/it, 
+]Clusters:  78%|#######7  | 210/270 [1:06:12<35:42, 35.70s/it, 
+]Clusters:  78%|#######8  | 211/270 [1:06:18<26:17, 26.73s/it, 
+]Clusters:  79%|#######8  | 212/270 [1:06:50<27:20, 28.28s/it, 
+]Clusters:  79%|#######8  | 213/270 [1:06:51<19:01, 20.03s/it, 
+]Clusters:  79%|#######9  | 214/270 [1:06:54<13:56, 14.93s/it, 
+]Clusters:  80%|#######9  | 215/270 [1:06:54<09:43, 10.61s/it, 
+]Clusters:  80%|########  | 216/270 [1:06:55<06:46,  7.54s/it, 
+]Clusters:  80%|########  | 217/270 [1:06:58<05:37,  6.36s/it, 
+]Clusters:  81%|########  | 218/270 [1:07:37<13:46, 15.89s/it, 
+]Clusters:  81%|########1 | 219/270 [1:09:47<42:45, 50.31s/it, 
+]Clusters:  81%|########1 | 220/270 [1:09:49<29:43, 35.68s/it, 
+]Clusters:  82%|########1 | 221/270 [1:10:50<35:25, 43.38s/it, 
+]Clusters:  82%|########2 | 222/270 [1:11:50<38:34, 48.21s/it, 
+]Clusters:  83%|########2 | 223/270 [1:13:07<44:38, 56.99s/it, 
+]Clusters:  83%|########2 | 224/270 [1:18:02<1:38:26, 128.40s/it, 
+]Clusters:  83%|########3 | 225/270 [1:18:32<1:14:07, 98.84s/it, 
+] Clusters:  84%|########3 | 226/270 [1:18:37<51:50, 70.69s/it, 
+]  Clusters:  84%|########4 | 227/270 [1:19:29<46:33, 64.96s/it, 
+]Clusters:  84%|########4 | 228/270 [1:19:41<34:31, 49.32s/it, 
+]Clusters:  85%|########4 | 229/270 [1:21:34<46:38, 68.25s/it, 
+]Clusters:  85%|########5 | 230/270 [1:21:40<33:10, 49.77s/it, 
+]Clusters:  86%|########5 | 231/270 [1:22:34<33:11, 51.05s/it, 
+]Clusters:  86%|########5 | 232/270 [1:23:40<35:02, 55.33s/it, 
+]Clusters:  86%|########6 | 233/270 [1:23:51<25:57, 42.11s/it, 
+]C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+Clusters:  87%|########6 | 234/270 [1:24:57<29:33, 49.27s/it, 
+]C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+Clusters:  87%|########7 | 235/270 [1:25:40<27:36, 47.32s/it, 
+]Clusters:  87%|########7 | 236/270 [1:26:46<29:56, 52.84s/it, 
+]Clusters:  88%|########7 | 237/270 [1:28:02<32:54, 59.82s/it, 
+]Clusters:  88%|########8 | 238/270 [1:30:32<46:26, 87.07s/it, 
+]Clusters:  89%|########8 | 239/270 [1:31:09<37:09, 71.92s/it, 
+]Clusters:  89%|########8 | 240/270 [1:31:49<31:09, 62.33s/it, 
+]Clusters:  89%|########9 | 241/270 [1:32:44<29:05, 60.18s/it, 
+]Clusters:  90%|########9 | 242/270 [1:34:38<35:40, 76.46s/it, 
+]C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+Clusters:  90%|######### | 243/270 [1:38:49<57:51, 128.59s/it, 
+]C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+Clusters:  90%|######### | 244/270 [1:43:05<1:12:19, 166.89s/it, 
+]Clusters:  91%|######### | 245/270 [1:44:10<56:46, 136.28s/it, 
+]  Clusters:  91%|#########1| 246/270 [1:44:19<39:15, 98.15s/it, 
+] Clusters:  91%|#########1| 247/270 [1:47:24<47:35, 124.16s/it, 
+]Clusters:  92%|#########1| 248/270 [1:54:27<1:18:23, 213.81s/it, 
+]Clusters:  92%|#########2| 249/270 [1:59:17<1:22:49, 236.65s/it, 
+]Clusters:  93%|#########2| 250/270 [1:59:21<55:38, 166.91s/it, 
+]  Clusters:  93%|#########2| 251/270 [2:12:23<1:51:19, 351.57s/it, 
+]Clusters:  93%|#########3| 252/270 [2:30:07<2:49:35, 565.30s/it, 
+]Clusters:  94%|#########3| 253/270 [2:46:06<3:13:37, 683.35s/it, 
+]Clusters:  94%|#########4| 254/270 [2:49:28<2:23:42, 538.90s/it, 
+]Clusters:  94%|#########4| 255/270 [2:51:05<1:41:33, 406.23s/it, 
+]Clusters:  95%|#########4| 256/270 [3:30:56<3:53:45, 1001.86s/it, 
+]Clusters:  95%|#########4| 256/270 [3:30:56<11:32, 49.44s/it, 
+]    C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (1681, 'Integer display width is deprecated and will be removed in a future release.')
+  self._do_get_result()
+C:\Users\seun\anaconda3\lib\site-packages\pymysql\cursors.py:329: Warning: (3170, "Memory capacity of 8388608 bytes for 'range_optimizer_max_mem_size' exceeded. Range optimization was not done for this query.")
+  self._do_get_result()
+
+Finished processing!
+
+
+Database up to date!
+Time to complete: 210.0 Mins 57.0 Secs AT - 2021-02-05T14:46:53.537067
+
+Closing pool
+Joining pool
+Clearing pool
+Finished!
+Fri 02/05/2021-14:46:53.73 
+------------------------------------END------------------------------------------ 

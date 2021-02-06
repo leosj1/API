@@ -27,7 +27,7 @@ class Functions:
 
     def get_stop_words(self):
         stop_words = []
-        with open("C:\\API\\stopwords.txt", "r", encoding="utf-8") as f:
+        with open("/stopwords.txt", "r", encoding="utf-8") as f:
             for line in f:
                 stop_words.append(str(line.strip()))
                 

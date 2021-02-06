@@ -47,7 +47,7 @@ class Clusters(SqlFuncs, Functions, Es):
         self.update_stat = update_stat
 
         stop_words = []
-        with open("C:\\API\\Utils\\stopwords.txt", "r", encoding="utf-8") as f:
+        with open("/stopwords.txt", "r", encoding="utf-8") as f:
             for line in f:
                 stop_words.append(str(line.strip()))
 

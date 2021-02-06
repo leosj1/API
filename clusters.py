@@ -456,11 +456,11 @@ class Clusters(SqlFuncs, Functions, Es):
 
 @RUN_TIME.time()
 def main():
-    parallel = False
+    parallel = True
     num_processes = 6
     functions = Functions()
     connect = functions.get_config()
-    update_stat = True
+    update_stat = False
 
     c = Clusters(connect, num_processes, parallel, update_stat)
     TOTAL_TASKS.observe(2)

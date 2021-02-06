@@ -468,5 +468,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # start_http_server(8009)
+    start_http_server(8009)
     main()
